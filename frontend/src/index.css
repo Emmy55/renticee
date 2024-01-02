@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .backdrop-blur {
+      backdrop-filter: blur(15.9px);
+    }
+
+    .link {
+      font-size: 0.8125rem;
+      color: #FFFFFF;
+      font-family: Roboto;
+      cursor: pointer;
+    }
+    
+    .linkHover:hover {
+      transform: scale(1.3);
+    }
+
+    .footerTop {
+      font-size: 1.028125rem;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-family: Roboto;
+    }
+
+    .footerText {
+      font-size: 0.835625rem;
+      color: #FFFFFF;
+      font-family: Roboto;
+      font-weight: 400;
+    }
+    .socialHover:hover {
+      transform: scale(1.2);
+    }
+  }
