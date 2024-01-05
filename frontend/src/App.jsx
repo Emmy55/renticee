@@ -8,6 +8,8 @@ import FindProperty from "./components/home/FindProperty";
 import SendMessage from "./components/home/SendMessage";
 import LogIn from "./components/login/LogIn";
 import SignUp from "./components/signup/SignUp";
+import VerifyCode from "./components/verifyCode/VerifyCode";
+import ChooseCategory from "./components/chooseCategory/ChooseCategory";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
       {/* <FindProperty /> */}
       {/* <SendMessage /> */}
       {/* <LogIn /> */}
-      <SignUp />
+      {/* <SignUp /> */}
+      {/* <VerifyCode /> */}
+      <ChooseCategory />
     </>
   );
 }
