@@ -3,9 +3,11 @@ import React from "react";
 function LeftMain(props) {
   return (
     <div>
-      <div className="flex justify-center">
-        <div className="w-[570px] h-[463.17px] bg-white pt-[70px] px-[70px] shadow-3xl">
-          <h1 className="w-[338px] text-[2.5rem] text-[#282D3A] font-bold font-Roboto">
+      <div className={`flex justify-center ${props.reverse} mb-5`}>
+        <div
+          className={`w-[570px] h-[463.17px] bg-white pt-[70px] px-[70px] shadow-3xl ${props.round}`}
+        >
+          <h1 className="w-[345px] text-[2.5rem] text-[#282D3A] font-bold font-Roboto">
             {props.title}
           </h1>
           <p className="w-[423px] text-base text-[#282D3A] font-normal font-Roboto pt-5">
