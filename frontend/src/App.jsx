@@ -10,6 +10,7 @@ import LogIn from "./components/login/LogIn";
 import SignUp from "./components/signup/SignUp";
 import VerifyCode from "./components/verifyCode/VerifyCode";
 import ChooseCategory from "./components/chooseCategory/ChooseCategory";
+import Identifiction from "./components/identifiction/Identifiction";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       {/* <LogIn /> */}
       {/* <SignUp /> */}
       {/* <VerifyCode /> */}
-      <ChooseCategory />
+      {/* <ChooseCategory /> */}
+      <Identifiction />
     </>
   );
 }
