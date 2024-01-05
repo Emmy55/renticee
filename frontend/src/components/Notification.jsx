@@ -2,21 +2,9 @@ import FinanceService from "./FinanceService.jsx";
 import Commercial from "./Media/commercial.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import React, { useEffect } from 'react';
 
 
 import {
-  faLocationDot,
-  faVideo,
-  faCamera,
-  faCar,
-  faBath,
-  faMaximize,
-  faEnvelopeOpenText,
-  faChevronLeft,
-  faChevronRight,
-  faAnglesRight,
-  faMagnifyingGlass,
   faBell,
 } from "@fortawesome/free-solid-svg-icons";
 
