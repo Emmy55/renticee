@@ -11,6 +11,7 @@ import SignUp from "./components/signup/SignUp";
 import VerifyCode from "./components/verifyCode/VerifyCode";
 import ChooseCategory from "./components/chooseCategory/ChooseCategory";
 import Identifiction from "./components/identifiction/Identifiction";
+import GDPRagreement from "./components/GDPRagreement/GDPRagreement";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <SignUp /> */}
       {/* <VerifyCode /> */}
       {/* <ChooseCategory /> */}
-      <Identifiction />
+      {/* <Identifiction /> */}
+      <GDPRagreement />
     </>
   );
 }
