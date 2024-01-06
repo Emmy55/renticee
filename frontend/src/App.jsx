@@ -16,8 +16,8 @@ import GDPRagreement from "./components/GDPRagreement/GDPRagreement";
 function App() {
   return (
     <>
-      <Header />
-      {/* <Footer /> */}
+      {/* <Header /> */}
+      <Footer />
       {/* <Hero /> */}
       {/* <Home /> */}
       {/* <Main /> */}

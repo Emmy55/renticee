@@ -13,10 +13,10 @@ import Thread from "../assets/images/thread.svg";
 function Footer() {
   return (
     <div>
-      <footer className="lg:h-[357px] bg-[#001733] lg:flex lg:pl-[10.3%] lg:pr-[5%] lg:gap-[7.4%] lg:pt-8">
+      <footer className="pl-5 py-4 lg:h-[357px] bg-[#001733] lg:flex lg:pl-[10.3%] lg:pr-[5%] lg:gap-[7.4%] lg:pt-8">
         <div>
-          <h3 className="lg:footerTop cursor-pointer">Rentice</h3>
-          <p className="lg:w-[502px] footerText lg:mt-3">
+          <h3 className="footerTop cursor-pointer">Rentice</h3>
+          <p className="w-[339px] md:w-[539px] lg:w-[502px] footerText lg:mt-3">
             At Rentice, our mission is to revolutionize the real estate industry
             in Nigeria by providing a comprehensive and user-centric platform
             that connects house and property agents with clients. We aim to
@@ -26,36 +26,36 @@ function Footer() {
           </p>
         </div>
         <div>
-          <h3 className="lg:footerTop lg:mt-[30px] lg:w-[115px]">
+          <h3 className="mt-7 footerTop lg:mt-[30px] lg:w-[115px]">
             Quick Links
           </h3>
-          <p className="footerText pt-3 linkHover cursor-pointer">
+          <p className="footerText pt-3 lg:linkHover cursor-pointer">
             Support Center
           </p>
-          <p className="footerText pt-3 linkHover cursor-pointer">
+          <p className="footerText pt-3 lg:linkHover cursor-pointer">
             Terms Conditions
           </p>
-          <p className="footerText pt-3 linkHover cursor-pointer">
+          <p className="footerText pt-3 lg:linkHover cursor-pointer">
             Terms & Conditions
           </p>
         </div>
-        <div>
-          <h3 className="lg:footerTop lg:mt-[30px]">Contact</h3>
-          <div className="pt-3 lg:flex lg:items-center gap-2">
+        <div className="mt-7 lg:mt-0">
+          <h3 className="footerTop lg:mt-[30px]">Contact</h3>
+          <div className="pt-3 flex items-center gap-2">
             <img src={Address} alt="" />
             <p className="footerText">
               No. 4 ugwuike street umuchigbo iji Nike Enugu
             </p>
           </div>
-          <div className="pt-4 lg:flex lg:items-center gap-2">
+          <div className="pt-4 flex items-center gap-2">
             <img src={Phone} alt="" />
             <p className="footerText cursor-pointer">0704 668 1895</p>
           </div>
-          <div className="pt-4 lg:flex lg:items-center gap-2">
+          <div className="pt-4 flex items-center gap-2">
             <img src={Email} alt="" />
             <p className="footerText cursor-pointer">rentice.co@gmail.com </p>
           </div>
-          <div className="lg:flex lg:items-center lg:gap-4 lg:mt-5 lg:">
+          <div className="flex items-center gap-4 mt-7 ">
             <img src={Facebook} alt="" className="socialHover cursor-pointer" />
             <img
               src={Instagram}
