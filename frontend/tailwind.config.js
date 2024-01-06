@@ -7,6 +7,9 @@ export default {
         "blue-rgba": "rgba(3, 95, 206, 0.90)",
         "verify-rgba1": "rgba(4, 11, 171, 0.90)",
         "verify-rgba2": "rgba(14, 21, 178, 0.78)",
+        primary: "#01257D",
+        secondary: "#00FFFF",
+        b: "#222222",
       },
       backgroundImage: {
         "hero-img": "url('/src/assets/images/hero-bg2.svg')",
