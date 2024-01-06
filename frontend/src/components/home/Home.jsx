@@ -10,11 +10,9 @@ function Home() {
   return (
     <div>
       <Header />
-      <div className="relative">
-        <Hero />
-        <div className="mt-[-195px]">
-          <Main />
-        </div>
+      <Hero />
+      <div className="mt-[-35px] lg:mt-[-175px] xl:mt-[-195px]">
+        <Main />
       </div>
       <FindProperty />
       <SendMessage />

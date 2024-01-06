@@ -13,6 +13,7 @@ export default {
       },
       backgroundImage: {
         "hero-img": "url('/src/assets/images/hero-bg2.svg')",
+        "hero-img2": "url('/src/assets/images/hero-bg-img-2.svg')",
       },
       boxShadow: {
         "3xl": "0px 40px 100px 0px rgba(119, 122, 242, 0.10)",

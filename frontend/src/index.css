@@ -36,20 +36,22 @@
     }
 
     .heroTop {
-      height: 42px;
       border-radius: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.8125rem;
+      /* font-size: 0.8125rem; */
       font-family: "Roboto";
       font-weight: bold;
     }
     .heroBottom {
-      font-size: 0.8125rem;
       font-family: "Roboto";
       color: #FFFFFF;
       text-align: center;
-      padding-top: 10px;
+    }
+
+    .bg-cover {
+      background-size: cover;
+      background-position: center;
     }
   }

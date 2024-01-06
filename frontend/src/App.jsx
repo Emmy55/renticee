@@ -17,9 +17,9 @@ function App() {
   return (
     <>
       {/* <Header /> */}
-      <Footer />
+      {/* <Footer /> */}
       {/* <Hero /> */}
-      {/* <Home /> */}
+      <Home />
       {/* <Main /> */}
       {/* <FindProperty /> */}
       {/* <SendMessage /> */}
