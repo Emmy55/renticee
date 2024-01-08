@@ -12,6 +12,9 @@ import VerifyCode from "./components/verifyCode/VerifyCode";
 import ChooseCategory from "./components/chooseCategory/ChooseCategory";
 import Identifiction from "./components/identifiction/Identifiction";
 import GDPRagreement from "./components/GDPRagreement/GDPRagreement";
+import HouseInsuranceHero from "./components/houseInsurance/HouseInsuranceHero";
+import HouseInsurance from "./components/houseInsurance/HouseInsurance";
+import Pricing from "./components/houseInsurance/Pricing";
 
 function App() {
   return (
@@ -19,7 +22,7 @@ function App() {
       {/* <Header /> */}
       {/* <Footer /> */}
       {/* <Hero /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <Main /> */}
       {/* <FindProperty /> */}
       {/* <SendMessage /> */}
@@ -29,6 +32,9 @@ function App() {
       {/* <ChooseCategory /> */}
       {/* <Identifiction /> */}
       {/* <GDPRagreement /> */}
+      {/* <HouseInsuranceHero /> */}
+      <HouseInsurance />
+      {/* <Pricing /> */}
     </>
   );
 }

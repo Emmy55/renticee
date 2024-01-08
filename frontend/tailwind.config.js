@@ -14,6 +14,8 @@ export default {
       backgroundImage: {
         "hero-img": "url('/src/assets/images/hero-bg2.svg')",
         "hero-img2": "url('/src/assets/images/hero-bg-img-2.svg')",
+        "insura-hero-img": "url('/src/components/houseInsurance/images/bg-hero.svg')",
+        "insura-hero-img2": "url('/src/components/houseInsurance/images/bg-hero-2.svg')",
       },
       boxShadow: {
         "3xl": "0px 40px 100px 0px rgba(119, 122, 242, 0.10)",
