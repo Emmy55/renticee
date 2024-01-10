@@ -15,6 +15,8 @@ import GDPRagreement from "./components/GDPRagreement/GDPRagreement";
 import HouseInsuranceHero from "./components/houseInsurance/HouseInsuranceHero";
 import HouseInsurance from "./components/houseInsurance/HouseInsurance";
 import Pricing from "./components/houseInsurance/Pricing";
+import Section from "./components/insuranceBlog/Section";
+import Blog from "./components/insuranceBlog/Blog";
 
 function App() {
   return (
@@ -33,8 +35,10 @@ function App() {
       {/* <Identifiction /> */}
       {/* <GDPRagreement /> */}
       {/* <HouseInsuranceHero /> */}
-      <HouseInsurance />
+      {/* <HouseInsurance /> */}
       {/* <Pricing /> */}
+      {/* <Section /> */}
+      <Blog />
     </>
   );
 }

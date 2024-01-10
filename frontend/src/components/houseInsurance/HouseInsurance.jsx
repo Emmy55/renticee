@@ -8,7 +8,7 @@ function HouseInsurance() {
   return (
     <div className="">
       <Header />
-      <HouseInsuranceHero />
+      <HouseInsuranceHero show="hidden" />
       {/* What our insurance Cover start */}
       <div className="h-[165px] bg-white lg:h-[426px]">
         <h1 className="text-base text-[#282D3A] font-bold font-Roboto text-center pt-5 lg:text-4xl lg:pt-16">
