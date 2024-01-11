@@ -16,6 +16,8 @@ export default {
         "hero-img2": "url('/src/assets/images/hero-bg-img-2.svg')",
         "insura-hero-img": "url('/src/components/houseInsurance/images/bg-hero.svg')",
         "insura-hero-img2": "url('/src/components/houseInsurance/images/bg-hero-2.svg')",
+        "insura-step-img": "url('/src/components/insuranceStep/images/insurance-step-img.svg')",
+        "insura-step-img2": "url('/src/components/insuranceStep/images/insurance-step-img-mob.svg')",
       },
       boxShadow: {
         "3xl": "0px 40px 100px 0px rgba(119, 122, 242, 0.10)",

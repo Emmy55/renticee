@@ -4,7 +4,7 @@ import React from "react";
 
 function DropdownMenu() {
   return (
-    <div className="z-30 flex flex-col uppercase text-xs bg-primary w-[180px] text-white px-5 pt-5 pb-6 gap-5 rounded font-bold ">
+    <div className="z-30 flex flex-col uppercase text-xs bg-primary w-[180px] text-white px-5 pt-5 pb-6 gap-5 rounded font-bold relative">
       <p className="cursor-pointer font-Roboto bg-secondary text-[#222] w-20 p-2 pl-2 rounded-full">
         Home
       </p>

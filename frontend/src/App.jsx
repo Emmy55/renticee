@@ -17,6 +17,10 @@ import HouseInsurance from "./components/houseInsurance/HouseInsurance";
 import Pricing from "./components/houseInsurance/Pricing";
 import Section from "./components/insuranceBlog/Section";
 import Blog from "./components/insuranceBlog/Blog";
+import InsuranceStepHero from "./components/insuranceStep/InsuranceStepHero";
+import FormSteps from "./components/insuranceStep/FormSteps";
+import Step1Form from "./components/insuranceStep/step1/Step1Form";
+import Step1 from "./components/insuranceStep/step1/Step1";
 
 function App() {
   return (
@@ -38,7 +42,11 @@ function App() {
       {/* <HouseInsurance /> */}
       {/* <Pricing /> */}
       {/* <Section /> */}
-      <Blog />
+      {/* <Blog /> */}
+      {/* <InsuranceStepHero /> */}
+      {/* <FormSteps /> */}
+      {/* <Step1Form /> */}
+      <Step1 />
     </>
   );
 }
