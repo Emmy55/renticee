@@ -2,9 +2,11 @@ import FinanceService from "./FinanceService.jsx";
 import Commercial from "./Media/commercial.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { useEffect } from 'react';
 
 
 import {
+ 
   faBell,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,7 +28,7 @@ const Notification = () => {
 
 
 
-  const myCustomColor = "#EAEAEA";
+  // const myCustomColor = "#EAEAEA";
   const myCustomColor1 = "#035FCE";
 
   return (
