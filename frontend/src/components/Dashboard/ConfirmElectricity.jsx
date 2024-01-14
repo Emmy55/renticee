@@ -7,7 +7,7 @@ function GloData() {
   return (
     <>
         <div>
-            <DashboardTemp  CurrentPath='Pay Electricity' SelectedText='Electricity'  boolean="true" Color3='#035FCE' tempColor3='white' ValueInText3={75} Amount="Airtime" NetworkLogo={Ikejaelectricity} SimType='MTN' LeftValue={-125}  showAdditionalDiv11={true}  />
+            <DashboardTemp  CurrentPath='Pay Electricity' MobileLeftValue={168} SelectedText='Electricity'  boolean="true" Color3='#035FCE' tempColor3='white' ValueInText3={75} Amount="Airtime" NetworkLogo={Ikejaelectricity} SimType='MTN' LeftValue={17}  showAdditionalDiv11={true}  />
       </div>
     </>
   )

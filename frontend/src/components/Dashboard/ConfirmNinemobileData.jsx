@@ -8,7 +8,7 @@ function GloData() {
   return (
     <>
         <div>
-            <DashboardTemp LeftValue={-120} CurrentPath="Buy Data"  SimType='9 Mobile' SelectedText='Data' boolean3={true} NetworkLogo={Ninemobile} Color='#035FCE' tempColor='white' ValueInText={75} Amount="1GB"  showAdditionalDiv9={true} />
+            <DashboardTemp LeftValue={-120} CurrentPath="Buy Data" SimType='9 Mobile' SelectedText='Data' boolean3={true} NetworkLogo={Ninemobile} Color='#035FCE' tempColor='white'  Amount="1GB" showAdditionalDiv9={true} />
       </div>
     </>
   )
