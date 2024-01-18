@@ -14,6 +14,8 @@ export default {
       height: {
         'screen-2': '200vh', // adjust as needed
         'screen-3': '130vh', // adjust as needed
+        'screen-4': '30vh', // adjust as needed
+        'screen-5': '220vh', // adjust as needed
       },
       width: {
         'screen-1': '100.7vw',
@@ -22,6 +24,10 @@ export default {
         'screen-4': '78.3vw',
         'screen-5': '128.3vw',
         'screen-6': '88.3vw',
+        'screen-7': '89vw',
+        'screen-8': '80vw',
+        'screen-9': '51.5vw',
+
       },
       top: {
         'full-1': '130vh',

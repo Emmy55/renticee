@@ -33,7 +33,14 @@ import ConfirmGotv from './components/Dashboard/ConfirmGotv'
 import ConfirmDstv from './components/Dashboard/ConfirmDstv'
 import ConfirmStartime from './components/Dashboard/ConfirmStartime'
 import ConfirmElectricity from './components/Dashboard/ConfirmElectricity'
-// import SelectDataPlan from './components/SelectDataPlan'
+import SettingsDashboard from './components/Dashboard/SettingsDashboard'
+import SaveChanges from './components/Dashboard/SaveChanges'
+import EditProfile from './components/Dashboard/EditProfile'
+import SettingsTemp from './components/Dashboard/SettingsTemp'
+import SettingsNotification from './components/Dashboard/SettingsNotification'
+import SettingsTransaction from './components/Dashboard/SettingsTransaction'
+import SettingsPost from './components/Dashboard/SettingsPost'
+import SettingsLogout from './components/Dashboard/SettingsLogout'
 
 
 import Header from "./components/Header";
@@ -92,6 +99,14 @@ function App() {
         <Route path='/ConfirmDstv' element={<ConfirmDstv />} />
         <Route path='/ConfirmStartime' element={<ConfirmStartime />} />
         <Route path='/ConfirmElectricity' element={<ConfirmElectricity />} />
+        <Route path='/SettingsDashboard' element={<SettingsDashboard />} />
+        <Route path='/SaveChanges' element={<SaveChanges />} />
+        <Route path='/EditProfile' element={<EditProfile />} />
+        <Route path='/SettingsTemp' element={<SettingsTemp />} />
+        <Route path='/SettingsNotification' element={<SettingsNotification />} />
+        <Route path='/SettingsTransaction' element={<SettingsTransaction />} />
+        <Route path='/SettingsPost' element={<SettingsPost />} />
+        <Route path='/SettingsLogout' element={<SettingsLogout />} />
       {/* <HouseLoan/> */}
       {/* <Residential/> */}
       {/* <Commercial/> */}
