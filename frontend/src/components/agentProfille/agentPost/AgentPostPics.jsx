@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import AgentPic from "../AgentPic";
+import PostImg from "../images/post-img.svg";
 import Camera from "../images/camera.svg";
 
 import LocationBlackIcon from "./images/location-black-icon.svg";
@@ -15,7 +17,7 @@ import Item8 from "./images/item8.svg";
 const Item = [
   {
     id: 1,
-    image: Item1,
+    image: PostImg,
   },
   {
     id: 2,
