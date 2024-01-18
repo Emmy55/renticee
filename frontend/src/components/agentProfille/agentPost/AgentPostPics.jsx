@@ -5,7 +5,7 @@ import Camera from "../images/camera.svg";
 
 import LocationBlackIcon from "./images/location-black-icon.svg";
 import ArrowRight from "./images/arrow-right.svg";
-import Item1 from "./images/item1.svg";
+// import Item1 from "./images/item1.svg";
 import Item2 from "./images/item2.svg";
 import Item3 from "./images/item3.svg";
 import Item4 from "./images/item4.svg";
