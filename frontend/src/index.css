@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+  
+  @layer utilities {
     .backdrop-blur {
       backdrop-filter: blur(15.9px);
     }
@@ -54,4 +55,14 @@
       background-size: cover;
       background-position: center;
     }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
   }
+  

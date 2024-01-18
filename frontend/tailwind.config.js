@@ -38,6 +38,8 @@ export default {
         "insura-hero-img2": "url('/src/components/houseInsurance/images/bg-hero-2.svg')",
         "insura-step-img": "url('/src/components/insuranceStep/images/insurance-step-img.svg')",
         "insura-step-img2": "url('/src/components/insuranceStep/images/insurance-step-img-mob.svg')",
+        "Logistics-hero1": "url('/src/components/logistics/images/Logistics-hero1.svg')",
+        "Logistics-hero2": "url('/src/components/logistics/images/Logistics-hero2.svg')",
       },
       boxShadow: {
         "3xl": "0px 40px 100px 0px rgba(119, 122, 242, 0.10)",
