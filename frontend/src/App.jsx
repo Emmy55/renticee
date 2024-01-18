@@ -96,9 +96,9 @@ function App() {
       {/* <Transaction /> */}
       {/* <Agent /> */}
       {/* <ContactMe /> */}
-      {/* <AgentProfile /> */}
+      <AgentProfile />
       {/* <Post /> */}
-      <AgentPostPics />
+      {/* <AgentPostPics /> */}
       {/* <AgentPic /> */}
       {/* <AgentPostProfile /> */}
     </>
