@@ -47,6 +47,7 @@ import AgentProfile from "./components/agentProfille/AgentProfile";
 import Post from "./components/agentProfille/Post";
 import AgentPostPics from "./components/agentProfille/agentPost/AgentPostPics";
 import AgentPic from "./components/agentProfille/AgentPic";
+import AgentPostProfile from "./components/agentProfille/agentPost/AgentPostProfile";
 
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
       {/* <Post /> */}
       {/* <AgentPostPics /> */}
       {/* <AgentPic /> */}
+      {/* <AgentPostProfile /> */}
     </>
   );
 }

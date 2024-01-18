@@ -3,7 +3,7 @@ import React from "react";
 import ProfilePic from "./images/profile-pic.svg";
 import Like from "./images/like-icon.svg";
 
-function AgentPic() {
+function AgentPic(props) {
   return (
     <div>
       <div className="flex items-center gap-5">
@@ -11,7 +11,7 @@ function AgentPic() {
           <img
             src={ProfilePic}
             alt=""
-            className="w-[88.25px] h-[88.25px] md:w-[160px] md:h-[160px] rounded-full object-cover"
+            className={`w-[88.25px] h-[88.25px] ${props.size} rounded-full object-cover`}
           />
         </div>
         <div>

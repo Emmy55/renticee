@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import AgentPic from "../AgentPic";
-import PostImg from "../images/post-img.svg";
+import React, { useState, useRef } from "react";
 import Camera from "../images/camera.svg";
 
 import LocationBlackIcon from "./images/location-black-icon.svg";
@@ -51,15 +49,27 @@ const Item = [
 
 function AgentPostPics() {
   const [selectedImage, setSelectedImage] = useState(Item[0].image);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const scrollContainerRef = useRef(null);
 
   const handleClick = (image) => {
     setSelectedImage(image);
   };
 
+  const handleScrollRight = () => {
+    if (scrollContainerRef.current) {
+      const newScrollPosition = scrollPosition + 100; // Adjust the scroll amount as needed
+      setScrollPosition(newScrollPosition);
+      scrollContainerRef.current.scrollTo({
+        left: newScrollPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="pb-20">
       <div>
-        <AgentPic />
         <div className="mt-10">
           <div className="flex items-center">
             <img src={LocationBlackIcon} alt="" />
@@ -85,20 +95,28 @@ function AgentPostPics() {
           </div>
           {/* Other pictures start */}
           <div className="mt-5 max-w-[712px] flex items-center">
-            <div className="flex gap-2 w-[712px] overflow-x-scroll">
+            <div
+              ref={scrollContainerRef}
+              className="no-scrollbar flex gap-2 w-[712px] overflow-x-scroll"
+            >
               {Item.map((item) => (
                 <img
                   key={item.id}
                   src={item.image}
                   alt=""
-                  className={`w-[100px] h-[60px] ${
+                  className={`w-[100px] h-[60px] cursor-pointer ${
                     selectedImage === item.image ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => handleClick(item.image)}
                 />
               ))}
             </div>
-            <img src={ArrowRight} alt="" className="" />
+            <img
+              src={ArrowRight}
+              alt=""
+              className="cursor-pointer w-5"
+              onClick={handleScrollRight}
+            />
           </div>
           {/* Other pictures end */}
         </div>

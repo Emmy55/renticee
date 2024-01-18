@@ -5,7 +5,7 @@ import AgentPic from "./AgentPic";
 function Agent() {
   return (
     <div className="pb-10">
-      <AgentPic />
+      <AgentPic size="md:w-[160px] md:h-[160px]" />
       {/* About start */}
       <div className="mt-5 md:w-[708px] lg:w-[500px] xl:w-[710px]">
         <p className="text-[1.1875rem] text-[#222325] font-bold font-Roboto">
