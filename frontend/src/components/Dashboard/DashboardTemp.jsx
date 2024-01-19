@@ -22,8 +22,8 @@ import SelectDataPlan from "./SelectDataPlan";
 import MeterType from "./MeterType";
 import SelectDisco from "./SelectDisco";
 import { Link } from "react-router-dom";
-import Navhome from "../Media/navhome.png";
-import { useState, useEffect } from "react";
+// import Navhome from "../Media/navhome.png";
+import { useState, useEffect, useRef } from "react";
 
 import { faChevronRight, faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
