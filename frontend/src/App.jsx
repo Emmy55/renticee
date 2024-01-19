@@ -48,6 +48,11 @@ import Post from "./components/agentProfille/Post";
 import AgentPostPics from "./components/agentProfille/agentPost/AgentPostPics";
 import AgentPic from "./components/agentProfille/AgentPic";
 import AgentPostProfile from "./components/agentProfille/agentPost/AgentPostProfile";
+import BlogHero from "./components/blog/BlogHero";
+import BlogPostCard from "./components/blog/BlogPostCard";
+import BlogHome from "./components/blog/BlogHome";
+import TransactionMain from "./components/buyerProfile/transaction/TransactionMain";
+import BlogPost from "./components/blog/blogPost/BlogPost";
 
 function App() {
   return (
@@ -94,13 +99,18 @@ function App() {
       {/* <Profile /> */}
       {/* <Notification /> */}
       {/* <Transaction /> */}
+      {/* <TransactionMain /> */}
       {/* <Agent /> */}
       {/* <ContactMe /> */}
-      <AgentProfile />
+      {/* <AgentProfile /> */}
       {/* <Post /> */}
       {/* <AgentPostPics /> */}
       {/* <AgentPic /> */}
       {/* <AgentPostProfile /> */}
+      {/* <BlogHero /> */}
+      {/* <BlogPostCard /> */}
+      {/* <BlogHome /> */}
+      <BlogPost />
     </>
   );
 }

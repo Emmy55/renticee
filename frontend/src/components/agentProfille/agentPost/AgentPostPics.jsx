@@ -70,7 +70,7 @@ function AgentPostPics() {
   };
 
   return (
-    <div className="pb-20">
+    <div className="pb-10">
       <div>
         <div className="mt-10">
           <div className="flex items-center">
@@ -79,14 +79,14 @@ function AgentPostPics() {
               Design District, Miami
             </p>
           </div>
-          <div className="w-[712px] h-[427px] overflow-hidden relative cursor-pointer mt-5">
-            <div className="absolute w-[712px] h-[427px] opacity-45 bg-gradient-to-t from-black to-transparent via-opacity-50"></div>
+          <div className="overflow-hidden relative cursor-pointer mt-5">
+            <div className="absolute w-[358px] sm:w-[550px] lg:w-[520px] lg:h-[350px] xl:w-[712px] xl:h-[427px] opacity-45 bg-gradient-to-t from-black to-transparent via-opacity-50"></div>
             <img
               src={selectedImage}
               alt="Post"
-              className="w-[712px] h-[427px] object-cover"
+              className="w-[358px] sm:w-[550px] lg:w-[520px] lg:h-[350px] xl:w-[712px] xl:h-[427px] object-cover"
             />
-            <div className="absolute bottom-0 pb-2 w-[712px] flex items-center justify-end px-3">
+            <div className="absolute bottom-0 pb-2 flex w-[358px] sm:w-[550px] lg:w-[520px] xl:w-[712px] items-center justify-end px-3">
               <div className="flex items-center gap-2">
                 <img src={Camera} alt="Camera" className="" />
                 <p className="text-[0.8125rem] text-white font-medium font-Roboto">
@@ -96,7 +96,7 @@ function AgentPostPics() {
             </div>
           </div>
           {/* Other pictures start */}
-          <div className="mt-5 max-w-[712px] flex items-center">
+          <div className="mt-5 max-w-[358px] sm:max-w-[550px] lg:max-w-[520px] xl:max-w-[712px] flex items-center">
             <div
               ref={scrollContainerRef}
               className="no-scrollbar flex gap-2 w-[712px] overflow-x-scroll"
@@ -107,7 +107,9 @@ function AgentPostPics() {
                   src={item.image}
                   alt=""
                   className={`w-[100px] h-[60px] cursor-pointer ${
-                    selectedImage === item.image ? "opacity-100" : "opacity-50"
+                    selectedImage === item.image
+                      ? "opacity-100"
+                      : "opacity-50 lg:hover:scale-105"
                   }`}
                   onClick={() => handleClick(item.image)}
                 />

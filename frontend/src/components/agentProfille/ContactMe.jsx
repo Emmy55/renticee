@@ -3,9 +3,9 @@ import React from "react";
 import ProfilePic from "./images/profile-pic.svg";
 import ContactMeIcon from "./images/contact-me-icon.svg";
 
-function ContactMe() {
+function ContactMe(props) {
   return (
-    <div className="sm:w-[568px] md:w-[708px] lg:w-[423px]">
+    <div className={`${props.size}`}>
       <div className="flex flex-col items-center justify-center px-2 h-[200px] lg:w-[423px] lg:h-[235.19px] border border-[#E4E5E7] shadow-sm md:shadow md-lg:shadow-lg">
         <div className="flex items-center gap-5 w-[321.09px] lg:w-[357px]">
           <div className="w-[47.21px] h-[47.21px] lg:w-[48px] lg:h-[48px] rounded-full object-cover">

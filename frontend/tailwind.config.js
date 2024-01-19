@@ -14,12 +14,20 @@ export default {
       backgroundImage: {
         "hero-img": "url('/src/assets/images/hero-bg2.svg')",
         "hero-img2": "url('/src/assets/images/hero-bg-img-2.svg')",
-        "insura-hero-img": "url('/src/components/houseInsurance/images/bg-hero.svg')",
-        "insura-hero-img2": "url('/src/components/houseInsurance/images/bg-hero-2.svg')",
-        "insura-step-img": "url('/src/components/insuranceStep/images/insurance-step-img.svg')",
-        "insura-step-img2": "url('/src/components/insuranceStep/images/insurance-step-img-mob.svg')",
-        "Logistics-hero1": "url('/src/components/logistics/images/Logistics-hero1.svg')",
-        "Logistics-hero2": "url('/src/components/logistics/images/Logistics-hero2.svg')",
+        "insura-hero-img":
+          "url('/src/components/houseInsurance/images/bg-hero.svg')",
+        "insura-hero-img2":
+          "url('/src/components/houseInsurance/images/bg-hero-2.svg')",
+        "insura-step-img":
+          "url('/src/components/insuranceStep/images/insurance-step-img.svg')",
+        "insura-step-img2":
+          "url('/src/components/insuranceStep/images/insurance-step-img-mob.svg')",
+        "Logistics-hero1":
+          "url('/src/components/logistics/images/Logistics-hero1.svg')",
+        "Logistics-hero2":
+          "url('/src/components/logistics/images/Logistics-hero2.svg')",
+        "blog-pic": "url('/src/components/blog/images/blog-pic.svg')",
+        "blog-pic-mob": "url('/src/components/blog/images/blog-pic-mob.svg')",
       },
       boxShadow: {
         "3xl": "0px 40px 100px 0px rgba(119, 122, 242, 0.10)",
@@ -27,6 +35,7 @@ export default {
     },
     fontFamily: {
       Roboto: ["Roboto", "sans-serif"],
+      OpenSans: ["Open Sans", "sans-serif"],
     },
   },
   plugins: [],
