@@ -11,6 +11,26 @@ export default {
         secondary: "#00FFFF",
         b: "#222222",
       },
+      height: {
+        "screen-2": "200vh", // adjust as needed
+        "screen-3": "130vh", // adjust as needed
+      },
+      width: {
+        "screen-2": "48vw",
+        "screen-3": "68.3vw",
+        "screen-4": "78.3vw",
+      },
+      top: {
+        "full-1": "130vh",
+      },
+      left: {
+        "full-2": "228px",
+        "full-3": "128vh",
+      },
+      right: {
+        "full-2": "54vw",
+      },
+
       backgroundImage: {
         "hero-img": "url('/src/assets/images/hero-bg2.svg')",
         "hero-img2": "url('/src/assets/images/hero-bg-img-2.svg')",
