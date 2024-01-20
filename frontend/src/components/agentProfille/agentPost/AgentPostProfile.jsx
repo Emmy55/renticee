@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AgentPostPics from "./AgentPostPics";
 import ContactMe from "../ContactMe";
 import AgentPic from "../AgentPic";
-import Header from "../../Header";
 import Description from "./Description";
 import Post from "../Post";
-import Footer from "../../Footer";
 
 function AgentPostProfile() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+
+    // Additional cleanup or side effect code if needed
+  }, []);
   return (
     <div className="">
-      <Header />
       <div className="px-5 sm:px-10 xl:px-16 pb-10">
         <div className="mt-10 flex flex-col lg:flex-row items-center sm:items-start lg:items-center justify-between">
           <div>
@@ -37,7 +40,6 @@ function AgentPostProfile() {
         </div>
         {/* Post end */}
       </div>
-      <Footer />
     </div>
   );
 }

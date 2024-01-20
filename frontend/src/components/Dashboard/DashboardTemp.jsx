@@ -25,7 +25,11 @@ import { Link } from "react-router-dom";
 // import Navhome from "../Media/navhome.png";
 import { useState, useEffect, useRef } from "react";
 
-import { faChevronRight, faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faBars,
+  faClose,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function DashboardTemp({
@@ -85,7 +89,6 @@ function DashboardTemp({
 }) {
   const myCustomColor = "#035FCE";
 
-
   const [openMenu, setOpenMenu] = useState(false);
   const [showCloseMenu, setShowCloseMenu] = useState(false);
 
@@ -113,7 +116,6 @@ function DashboardTemp({
     };
   }, []);
 
-
   return (
     <>
       <div className="flex overflow-hidden">
@@ -129,30 +131,29 @@ function DashboardTemp({
           </div>
 
           <div className="relative lg:hidden ">
-          {showCloseMenu ? (
-            <FontAwesomeIcon
-              className="text-[#fff] h-6 z-10"
-              icon={faClose}
-              onClick={toggleMenu}
-            />
-          ) : (
-            <FontAwesomeIcon
-              className="text-[#fff] h-6"
-              icon={faBars}
-              onClick={toggleMenu}
-            />
-          )}
-          {openMenu && (
-            <div
-              className="fixed top-0 left-0 w-[100%] h-[100%] bg-b opacity-70   via-transparent from-gray-100 to-gray-100"
-              onClick={toggleMenu}
-            />
-          )}
-          <div className="z-10 absolute right-0">
-            {openMenu && <DropdownMenu />}
+            {showCloseMenu ? (
+              <FontAwesomeIcon
+                className="text-[#fff] h-6 z-10"
+                icon={faClose}
+                onClick={toggleMenu}
+              />
+            ) : (
+              <FontAwesomeIcon
+                className="text-[#fff] h-6"
+                icon={faBars}
+                onClick={toggleMenu}
+              />
+            )}
+            {openMenu && (
+              <div
+                className="fixed top-0 left-0 w-[100%] h-[100%] bg-b opacity-70   via-transparent from-gray-100 to-gray-100"
+                onClick={toggleMenu}
+              />
+            )}
+            <div className="z-10 absolute right-0">
+              {openMenu && <DropdownMenu />}
+            </div>
           </div>
-        </div>
-
 
           <div
             className="flex space-x-6 relative left-7 w-60 pl-4 top-7 py-4"
@@ -172,7 +173,7 @@ function DashboardTemp({
           <div className="relative top-20 left-7">
             <p className="pb-4 font-bold text-sm">MAIN MENU</p>
 
-            <Link to="/.">
+            <Link to="/mtndata">
               <div
                 className="flex py-4 w-60 space-x-4  pl-4 "
                 style={{ backgroundColor: Color, color: tempColor }}
@@ -263,7 +264,9 @@ function DashboardTemp({
                 Fund Wallet
               </button>
             </Link>
-            <p className="text-white text-xl font-bold lg:right-0 relative right-4 ">{SelectedText}</p>
+            <p className="text-white text-xl font-bold lg:right-0 relative right-4 ">
+              {SelectedText}
+            </p>
             <div className="flex text-white mt-1 lg:right-0 relative right-4 space-x-2">
               <img
                 src={Dashhome}

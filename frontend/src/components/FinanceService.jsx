@@ -204,11 +204,12 @@ function FInanceService({
                     </p>
                   </div>
                   <hr className="border-1 border-gray-300 relative -left-6 w-96 my-4 -mt-6" />
-
-                  <div className="flex">
-                    <img src={Maria} className="w-8" />
-                    <h4 className="font-semibold mt-1 ml-4">Maria Barlow</h4>
-                  </div>
+                  <Link to="/agentprofile">
+                    <div className="flex">
+                      <img src={Maria} className="w-8" />
+                      <h4 className="font-semibold mt-1 ml-4">Bright Moses</h4>
+                    </div>
+                  </Link>
                 </div>
                 <img
                   src={HouseShadow}
@@ -256,11 +257,12 @@ function FInanceService({
                     </p>
                   </div>
                   <hr className="border-1 border-gray-300 relative -left-6 w-96 my-4 -mt-6" />
-
-                  <div className="flex">
-                    <img src={Maria} className="w-8 " />
-                    <h4 className="font-semibold mt-1 ml-4">Maria Barlow</h4>
-                  </div>
+                  <Link to="/agentprofile">
+                    <div className="flex">
+                      <img src={Maria} className="w-8 " />
+                      <h4 className="font-semibold mt-1 ml-4">Bright Moses</h4>
+                    </div>
+                  </Link>
                 </div>
                 <img
                   src={HouseShadow}

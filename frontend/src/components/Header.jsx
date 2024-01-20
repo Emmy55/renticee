@@ -7,10 +7,12 @@ import { Link, NavLink } from "react-router-dom";
 // Images import start
 import Logo from "../assets/images/logo.svg";
 import DropdownMenu from "./home/DropdownMenu";
+import Profile from "./home/profile/Profile";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   const [showCloseMenu, setShowCloseMenu] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -35,6 +37,19 @@ function Header() {
       document.removeEventListener("mousedown", clickOut);
     };
   }, []);
+
+  // Authentication start
+  const handleLogin = () => {
+    // Perform login logic (e.g., API call, authentication)
+    // If login is successful, set isAuthenticated to true
+    setIsAuthenticated(true);
+  };
+
+  const handleLogout = () => {
+    // Perform logout logic
+    // If logout is successful, set isAuthenticated to false
+    setIsAuthenticated(false);
+  };
   return (
     <div className="relative z-50">
       <nav className="px-5 bg-blue-rgba flex items-center justify-between lg:px-[5%] lg:h-[92px] lg:backdrop-blur w-[100%]">
@@ -58,7 +73,9 @@ function Header() {
             <p className="lg:link lg:linkHover font-Roboto">
               <NavLink to="/mtndata">Bill Payments</NavLink>
             </p>
-            <p className="lg:link lg:linkHover font-Roboto">House Loan</p>
+            <p className="lg:link lg:linkHover font-Roboto">
+              <NavLink to="/houseloan">House Loan</NavLink>
+            </p>
             <p className="lg:link lg:linkHover font-Roboto">
               <NavLink to="/houseinsurance">Insurance</NavLink>
             </p>
@@ -70,19 +87,26 @@ function Header() {
             </p>
           </div>
         </div>
-
+        {/* Registration start */}
         <div className="hidden lg:flex lg:gap-[18px]">
-          <NavLink to="signin">
-            <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] border-[0.84px] border-white lg:flex lg:items-center lg:justify-center text-white text-[0.8369rem] font-semibold">
-              Login
-            </p>
-          </NavLink>
-          <NavLink to="signup">
-            <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] lg:bg-white lg:flex lg:items-center lg:justify-center text-[#035FCE] text-[0.8369rem] font-semibold">
-              Sign up
-            </p>
-          </NavLink>
+          {!isAuthenticated ? (
+            <Profile />
+          ) : (
+            <div className="hidden lg:flex lg:gap-[18px]">
+              <NavLink to="signin">
+                <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] border-[0.84px] border-white lg:flex lg:items-center lg:justify-center text-white text-[0.8369rem] font-semibold">
+                  Login
+                </p>
+              </NavLink>
+              <NavLink to="signup">
+                <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] lg:bg-white lg:flex lg:items-center lg:justify-center text-[#035FCE] text-[0.8369rem] font-semibold">
+                  Sign up
+                </p>
+              </NavLink>
+            </div>
+          )}
         </div>
+        {/* Registration end */}
         {/* Toogle Menu start */}
         <div className="relative lg:hidden ">
           {showCloseMenu ? (

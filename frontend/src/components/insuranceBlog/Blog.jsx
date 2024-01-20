@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Section from "./Section";
 import HouseInsuranceHero from "../houseInsurance/HouseInsuranceHero";
+import { Link } from "react-router-dom";
 
 function Blog() {
   useEffect(() => {
@@ -50,11 +51,13 @@ function Blog() {
             unpredictable world.
           </p>
           <div className="flex justify-end pt-[20px] lg:pt-[10px] w-[366px] md:w-[726px] lg:w-[1000px] xl:w-[1270px]">
-            <button
-              className={`bg-[#035FCE] text-[#FFFFFF] text-[0.43713rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
-            >
-              Buy Now
-            </button>
+            <Link to="/step1">
+              <button
+                className={`bg-[#035FCE] text-[#FFFFFF] text-[0.43713rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
+              >
+                Buy Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

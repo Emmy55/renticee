@@ -2,6 +2,7 @@ import React from "react";
 
 import ProfilePic from "./images/profile-pic.svg";
 import Like from "./images/like-icon.svg";
+import { Link } from "react-router-dom";
 
 function AgentPic(props) {
   return (

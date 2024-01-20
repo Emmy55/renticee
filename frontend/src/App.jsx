@@ -56,6 +56,12 @@ import Step5 from "./components/insuranceStep/step5/Step5";
 import Logistics from "./components/logistics/Logistics";
 import BlogHome from "./components/blog/BlogHome";
 import BlogPost from "./components/blog/blogPost/BlogPost";
+import Profile from "./components/buyerProfile/profile/Profile";
+import Notification from "./components/buyerProfile/notification/Notification";
+import Transaction from "./components/buyerProfile/transaction/Transaction";
+import HouseLoan from "./components/HouseLoan";
+import AgentProfile from "./components/agentProfille/AgentProfile";
+import AgentPostProfile from "./components/agentProfille/agentPost/AgentPostProfile";
 
 function App() {
   function CustomHeader() {
@@ -93,7 +99,46 @@ function App() {
           <Route path="/residential" element={<Residential />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/industrial" element={<Industrial />} />
+
+          {/* Emmy start */}
           <Route path="/mtndata" element={<MtnData />} />
+          <Route path="/GloData" element={<GloData />} />
+          <Route path="/GloAirtime" element={<GloAirtime />} />
+          <Route path="/MtnAirtime" element={<MtnAirtime />} />
+          <Route path="/AirtelData" element={<AirtelData />} />
+          <Route path="/AirtelAirtime" element={<AirtelAirtime />} />
+          <Route path="/Ninemobile" element={<Ninemobile />} />
+          <Route path="/NinemobileAirtime" element={<NinemobileAirtime />} />
+          <Route path="/TvSub" element={<TvSub />} />
+          <Route path="/Dstv" element={<Dstv />} />
+          <Route path="/Startimes" element={<Startimes />} />
+          <Route path="/ElectricityBills" element={<ElectricityBills />} />
+          <Route path="/ChangePin" element={<ChangePin />} />
+          <Route path="/FundWallet" element={<FundWallet />} />
+          <Route path="/ConfirmMtnData" element={<ConfirmMtnData />} />
+          <Route path="/ConfirmGloData" element={<ConfirmGloData />} />
+          <Route path="/ConfirmAirtelData" element={<ConfirmAirtelData />} />
+          <Route path="/ConfirmGloAirtime" element={<ConfirmGloAirtime />} />
+          <Route
+            path="/ConfirmNinemobileData"
+            element={<ConfirmNinemobileData />}
+          />
+          <Route path="/ConfirmMtnAirtime" element={<ConfirmMtnAirtime />} />
+          <Route
+            path="/ConfirmNineMAirtime"
+            element={<ConfirmNineMAirtime />}
+          />
+          <Route
+            path="/ConfirmAirtelAirtime"
+            element={<ConfirmAirtelAirtime />}
+          />
+          <Route path="/ConfirmGotv" element={<ConfirmGotv />} />
+          <Route path="/ConfirmDstv" element={<ConfirmDstv />} />
+          <Route path="/ConfirmStartime" element={<ConfirmStartime />} />
+          <Route path="/ConfirmElectricity" element={<ConfirmElectricity />} />
+          <Route path="/houseloan" element={<HouseLoan />} />
+
+          {/* Emmy end */}
 
           <Route path="/houseinsurance" element={<HouseInsurance />} />
           <Route path="/insuranceblog" element={<Blog />} />
@@ -105,6 +150,11 @@ function App() {
           <Route path="/logistics" element={<Logistics />} />
           <Route path="/blog" element={<BlogHome />} />
           <Route path="/blogpost" element={<BlogPost />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/transaction" element={<Transaction />} />
+          <Route path="/agentprofile" element={<AgentProfile />} />
+          <Route path="/agentpostprofile" element={<AgentPostProfile />} />
         </Routes>
         <CustomFooter />
       </Router>
