@@ -50,12 +50,18 @@ function Header() {
     // If logout is successful, set isAuthenticated to false
     setIsAuthenticated(false);
   };
+
+  const activeLink = "border-b-2 border-white pb-[3px]";
+  const normalLink = "";
   return (
     <div className="z-50 fixed w-full top-0  ">
       <nav className="px-5 bg-blue-rgba flex items-center justify-between lg:px-[5%] lg:h-[92px] lg:backdrop-blur w-[100%]">
         <div className="lg:flex lg:items-center ">
           <div>
-            <Link to="/">
+            <Link
+              to="/"
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
               <img
                 src={Logo}
                 alt="Logo"
@@ -65,25 +71,74 @@ function Header() {
           </div>
           <div className="hidden lg:flex lg:pl-[30px] lg:gap-[35px]">
             <p className="lg:link lg:linkHover font-Roboto">
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                Home
+              </NavLink>
             </p>
             <p className="lg:link lg:linkHover font-Roboto">
-              <NavLink to="/residential">Real Estate</NavLink>
+              <NavLink
+                to="/residential"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                Real Estate
+              </NavLink>
             </p>
             <p className="lg:link lg:linkHover font-Roboto">
-              <NavLink to="/mtndata">Bill Payments</NavLink>
+              <NavLink
+                to="/mtndata"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                Bill Payments
+              </NavLink>
             </p>
             <p className="lg:link lg:linkHover font-Roboto">
-              <NavLink to="/houseloan">House Loan</NavLink>
+              <NavLink
+                to="/houseloan"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                House Loan
+              </NavLink>
             </p>
             <p className="lg:link lg:linkHover font-Roboto">
-              <NavLink to="/houseinsurance">Insurance</NavLink>
+              <NavLink
+                to="/houseinsurance"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                Insurance
+              </NavLink>
             </p>
             <p className="lg:link lg:linkHover font-Roboto">
-              <NavLink to="/logistics">Logistics</NavLink>
+              <NavLink
+                to="/logistics"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                Logistics
+              </NavLink>
             </p>
             <p className="lg:link lg:linkHover font-Roboto">
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                Blog
+              </NavLink>
             </p>
           </div>
         </div>
