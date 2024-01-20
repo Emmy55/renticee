@@ -51,7 +51,7 @@ function Header() {
     setIsAuthenticated(false);
   };
   return (
-    <div className="relative z-50">
+    <div className="z-50 fixed w-full top-0  ">
       <nav className="px-5 bg-blue-rgba flex items-center justify-between lg:px-[5%] lg:h-[92px] lg:backdrop-blur w-[100%]">
         <div className="lg:flex lg:items-center ">
           <div>

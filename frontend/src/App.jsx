@@ -89,7 +89,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <CustomHeader />
+        <div className="pb-[78px] lg:pb-[92px] ">
+          <CustomHeader />
+        </div>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/signin" element={<LogIn />} />
