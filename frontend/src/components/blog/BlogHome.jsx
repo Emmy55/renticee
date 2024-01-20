@@ -7,7 +7,6 @@ import Footer from "../Footer";
 function BlogHome() {
   return (
     <div>
-      <Header />
       <BlogHero />
       {/* Post start */}
       <div className="mt-14 px-5 sm:px-10 xl:px-20 pb-20">
@@ -47,9 +46,6 @@ function BlogHome() {
         </div>
         {/* Next page end */}
       </div>
-      {/* Footer start */}
-      <Footer />
-      {/* Footer end */}
     </div>
   );
 }

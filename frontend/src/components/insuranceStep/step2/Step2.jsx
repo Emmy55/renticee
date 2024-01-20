@@ -9,11 +9,9 @@ function Step2() {
   return (
     <div>
       <div>
-        <Header />
         <InsuranceStepHero />
         <FormSteps />
         <Step2Form />
-        <Footer />
       </div>
     </div>
   );

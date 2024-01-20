@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Pic from "./images/login-pic.svg";
 import Logo from "./images/login-logo.svg";
@@ -6,6 +7,10 @@ import Facebook from "./images/login-facebook.svg";
 import Google from "./images/login-google.svg";
 
 function LogIn() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className=" flex flex-col items-center lg:flex-row lg:justify-center lg:items-start">
@@ -17,7 +22,13 @@ function LogIn() {
           />
         </div>
         <div className=" flex flex-col items-center rounded-t-[48px] w-[390px] bg-white mt-[-195px] pt-[35px] pb-4 lg:rounded-t-[0px] lg:pt-[20px] lg:w-[500px] lg:h-[100%] lg:justify-center lg:mt-[0px] xl:w-[677px]">
-          <img src={Logo} alt="" className="lg:w-[120px] lg:h-[100px]" />
+          <Link to="/">
+            <img
+              src={Logo}
+              alt=""
+              className="lg:w-[120px] lg:h-[100px] cursor-pointer"
+            />
+          </Link>
           <h2 className="text-[1.1875rem] text-[#282D3A] font-bold font-Roboto lg:text-[1.7rem] xl:text-[2.0625rem]">
             Login to continue
           </h2>
@@ -72,11 +83,13 @@ function LogIn() {
 
           <div className="flex items-center gap-1 mt-6 lg:mt-5 xl:mt-7">
             <p className="text-base font-Roboto text-[#282D3A] text-opacity-50 lg:font-medium">
-              New to?{" "}
+              New to?
             </p>
-            <p className="text-base font-Roboto text-[#282D3A] text-opacity-50 hover:text-opacity-90 hover:scale-105 cursor-pointer lg:font-medium">
-              Create an account
-            </p>
+            <Link to="/signup">
+              <p className="text-base font-Roboto text-[#282D3A] text-opacity-50 hover:text-opacity-90 hover:scale-105 cursor-pointer lg:font-medium">
+                Create an account
+              </p>
+            </Link>
           </div>
           {/* Continue with end */}
         </div>

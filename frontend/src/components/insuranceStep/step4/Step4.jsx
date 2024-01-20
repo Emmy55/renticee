@@ -1,18 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Header from "../../Header";
 import InsuranceStepHero from "../InsuranceStepHero";
 import FormSteps from "../FormSteps";
 import Step1Edit from "./Step1Edit";
 import Step2Edit from "./Step2Edit";
 import Step3Edit from "./Step3Edit";
 import PremiumInsurance from "../PremiumInsurance";
-import Footer from "../../Footer";
+import { Link } from "react-router-dom";
 
 function Step4() {
   return (
     <div>
-      <Header />
       <InsuranceStepHero />
       <FormSteps />
       <div className="mt-3 pb-16 xl:ml-[-50px]">
@@ -74,13 +72,15 @@ function Step4() {
               </div>
             </div>
             <div className="flex justify-end pt-[10px] lg:pt-[10px]w-[353px]">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className={`bg-[#035FCE] text-[#FFFFFF] text-xs lg:text-sm font-Roboto py-2 px-10 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
-              >
-                CONFIRM AND SUBMIT
-              </motion.button>
+              <Link to="/step5">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className={`bg-[#035FCE] text-[#FFFFFF] text-xs lg:text-sm font-Roboto py-2 px-10 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
+                >
+                  CONFIRM AND SUBMIT
+                </motion.button>
+              </Link>
             </div>
             {/* Privacy and Security end */}
           </form>
@@ -93,7 +93,6 @@ function Step4() {
           {/* Premium Insurance end */}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

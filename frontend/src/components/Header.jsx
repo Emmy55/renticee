@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 // Images import start
 import Logo from "../assets/images/logo.svg";
@@ -39,30 +40,48 @@ function Header() {
       <nav className="px-5 bg-blue-rgba flex items-center justify-between lg:px-[5%] lg:h-[92px] lg:backdrop-blur w-[100%]">
         <div className="lg:flex lg:items-center ">
           <div>
-            <img
-              src={Logo}
-              alt="Logo"
-              className="py-3 lg:pt-0 lg:linkHover cursor-pointer"
-            />
+            <Link to="/">
+              <img
+                src={Logo}
+                alt="Logo"
+                className="py-3 lg:pt-0 lg:linkHover cursor-pointer"
+              />
+            </Link>
           </div>
           <div className="hidden lg:flex lg:pl-[30px] lg:gap-[35px]">
-            <p className="lg:link lg:linkHover font-Roboto">Home</p>
-            <p className="lg:link lg:linkHover font-Roboto">Real Estate</p>
-            <p className="lg:link lg:linkHover font-Roboto">Bill Payments</p>
+            <p className="lg:link lg:linkHover font-Roboto">
+              <NavLink to="/">Home</NavLink>
+            </p>
+            <p className="lg:link lg:linkHover font-Roboto">
+              <NavLink to="/residential">Real Estate</NavLink>
+            </p>
+            <p className="lg:link lg:linkHover font-Roboto">
+              <NavLink to="/mtndata">Bill Payments</NavLink>
+            </p>
             <p className="lg:link lg:linkHover font-Roboto">House Loan</p>
-            <p className="lg:link lg:linkHover font-Roboto">Insurance</p>
-            <p className="lg:link lg:linkHover font-Roboto">Logistics</p>
-            <p className="lg:link lg:linkHover font-Roboto">Blog</p>
+            <p className="lg:link lg:linkHover font-Roboto">
+              <NavLink to="/houseinsurance">Insurance</NavLink>
+            </p>
+            <p className="lg:link lg:linkHover font-Roboto">
+              <NavLink to="/logistics">Logistics</NavLink>
+            </p>
+            <p className="lg:link lg:linkHover font-Roboto">
+              <NavLink to="/blog">Blog</NavLink>
+            </p>
           </div>
         </div>
 
         <div className="hidden lg:flex lg:gap-[18px]">
-          <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] border-[0.84px] border-white lg:flex lg:items-center lg:justify-center text-white text-[0.8369rem] font-semibold">
-            Login
-          </p>
-          <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] lg:bg-white lg:flex lg:items-center lg:justify-center text-[#035FCE] text-[0.8369rem] font-semibold">
-            Sign up
-          </p>
+          <NavLink to="signin">
+            <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] border-[0.84px] border-white lg:flex lg:items-center lg:justify-center text-white text-[0.8369rem] font-semibold">
+              Login
+            </p>
+          </NavLink>
+          <NavLink to="signup">
+            <p className="lg:linkHover font-Roboto cursor-pointer lg:w-[105px] lg:h-[33px] lg:rounded-[33.5px] lg:bg-white lg:flex lg:items-center lg:justify-center text-[#035FCE] text-[0.8369rem] font-semibold">
+              Sign up
+            </p>
+          </NavLink>
         </div>
         {/* Toogle Menu start */}
         <div className="relative lg:hidden ">

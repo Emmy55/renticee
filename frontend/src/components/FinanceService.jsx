@@ -21,6 +21,7 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import Maria from "./Media/maria.png";
+import { Link } from "react-router-dom";
 
 function FInanceService({
   heroText,
@@ -52,24 +53,30 @@ function FInanceService({
         {showAdditionalDiv && (
           <div>
             <div className="flex ml-28 mt-10">
-              <p
-                className="px-4 rounded-2xl py-1 ml-4 bg-slate-200 cursor-pointer"
-                style={{ backgroundColor: Color, color: tempColor }}
-              >
-                Residential
-              </p>
-              <p
-                className="px-4 rounded-2xl py-1 ml-4 cursor-pointer bg-slate-200"
-                style={{ backgroundColor: Color1, color: tempColor1 }}
-              >
-                Commercial
-              </p>
-              <p
-                className="px-4 rounded-2xl py-1 ml-4 cursor-pointer bg-slate-200"
-                style={{ backgroundColor: Color2, color: tempColor2 }}
-              >
-                Industrial
-              </p>
+              <Link to="/residential">
+                <p
+                  className="px-4 rounded-2xl py-1 ml-4 bg-slate-200 cursor-pointer"
+                  style={{ backgroundColor: Color, color: tempColor }}
+                >
+                  Residential
+                </p>
+              </Link>
+              <Link to="/commercial">
+                <p
+                  className="px-4 rounded-2xl py-1 ml-4 cursor-pointer bg-slate-200"
+                  style={{ backgroundColor: Color1, color: tempColor1 }}
+                >
+                  Commercial
+                </p>
+              </Link>
+              <Link to="/industrial">
+                <p
+                  className="px-4 rounded-2xl py-1 ml-4 cursor-pointer bg-slate-200"
+                  style={{ backgroundColor: Color2, color: tempColor2 }}
+                >
+                  Industrial
+                </p>
+              </Link>
               <div className="flex ml-auto mr-9">
                 <p className="text-blue-500 mr-10">Post property</p>
                 <FontAwesomeIcon
@@ -315,7 +322,12 @@ function FInanceService({
               icon={faChevronLeft}
               className="p-4 px-5 border-2 border-gray-50 cursor-pointer"
             />
-            <p className="p-3 px-5 border-2 border-gray-50 cursor-pointer" style={{ backgroundColor: Color, color: tempColor }}>1</p>
+            <p
+              className="p-3 px-5 border-2 border-gray-50 cursor-pointer"
+              style={{ backgroundColor: Color, color: tempColor }}
+            >
+              1
+            </p>
             <p className="p-3 px-5 border-2 border-gray-50 cursor-pointer">2</p>
             <p className="p-3 px-5 border-2 border-gray-50 cursor-pointer">3</p>
             <FontAwesomeIcon

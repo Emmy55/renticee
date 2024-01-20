@@ -1,6 +1,7 @@
 import React from "react";
 
 import Check from "./images/check.svg";
+import { Link } from "react-router-dom";
 
 function Pricing() {
   return (
@@ -76,9 +77,11 @@ function Pricing() {
                   className="lg:w-[28.6px] lg:h-[28.6px] border-b border-[#97C7FF] border-opacity-20"
                 />
               </div>
-              <p className="text-[0.46919rem] text-white bg-[#2150B7] w-[49.54px] h-[23.06px] rounded-sm flex items-center justify-center cursor-pointer mt-0 lg:w-[105.71px] lg:h-[49.2px] lg:text-base lg:hover:scale-105 lg:mt-7">
-                Buy Now
-              </p>
+              <Link to="/step1">
+                <p className="text-[0.46919rem] text-white bg-[#2150B7] w-[49.54px] h-[23.06px] rounded-sm flex items-center justify-center cursor-pointer mt-0 lg:w-[105.71px] lg:h-[49.2px] lg:text-base lg:hover:scale-105 lg:mt-7">
+                  Buy Now
+                </p>
+              </Link>
             </div>
           </div>
         </div>

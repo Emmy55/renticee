@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import ArrowBack from "./images/arrow-back.svg";
 import LogoIcon from "./images/logo-icon.svg";
 import Share from "./Share";
 import PostPic from "./images/post-pic.svg";
-import Footer from "../../Footer";
-import Header from "../../Header";
+import { useNavigate } from "react-router-dom";
 
 function BlogPost() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+
+    // Additional cleanup or side effect code if needed
+  }, []);
   return (
     <div>
-      <Header />
       <div className="mt-10 flex flex-col items-center md:items-start px-5 sm:px-10 xl:px-20 pb-20">
-        <div className="flex items-center gap-1 cursor-pointer w-[359px] min-[500px]:w-[485px] md:w-[678px]">
+        <div
+          onClick={goBack}
+          className="flex items-center gap-1 cursor-pointer w-[359px] min-[500px]:w-[485px] md:w-[678px]"
+        >
           <img src={ArrowBack} alt="" className="w-[28px] lg:w-[32px]" />
           <p className="text-[1.1875rem] text-[#282D3A] font-Roboto lg:text-[1.4375rem]">
             Back
@@ -158,11 +170,6 @@ function BlogPost() {
         </div>
         {/* Related post end */}
       </div>
-      {/* Footer start */}
-      <div className="mt-10">
-        <Footer />
-      </div>
-      {/* Footer end */}
     </div>
   );
 }

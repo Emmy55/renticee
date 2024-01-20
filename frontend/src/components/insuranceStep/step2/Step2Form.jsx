@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import Arrow from "../images/arrow.svg";
 import Calendar from "../images/calendar.svg";
+import { Link } from "react-router-dom";
 
 function Step2Form() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -256,21 +257,25 @@ function Step2Form() {
           {/* Check end */}
           {/* next & prev btn start*/}
           <div className="flex justify-end mt-10 gap-5">
-            <motion.button
-              type="button"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className={`bg-[#55A2FF] text-[#FFFFFF] uppercase text-xs lg:text-sm font-Roboto py-2 px-5 lg:px-16 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold`}
-            >
-              Previous
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className={`bg-[#035FCE] text-[#FFFFFF] uppercase text-xs lg:text-sm font-Roboto py-2 px-10 lg:px-20 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold`}
-            >
-              Next
-            </motion.button>
+            <Link to="/step1">
+              <motion.button
+                type="button"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={`bg-[#55A2FF] text-[#FFFFFF] uppercase text-xs lg:text-sm font-Roboto py-2 px-5 lg:px-16 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold`}
+              >
+                Previous
+              </motion.button>
+            </Link>
+            <Link to="/step3">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={`bg-[#035FCE] text-[#FFFFFF] uppercase text-xs lg:text-sm font-Roboto py-2 px-10 lg:px-20 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold`}
+              >
+                Next
+              </motion.button>
+            </Link>
           </div>
           {/* next & prev btn end*/}
         </form>

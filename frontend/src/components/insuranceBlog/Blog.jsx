@@ -1,14 +1,15 @@
-import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+import React, { useEffect } from "react";
 import Section from "./Section";
 import HouseInsuranceHero from "../houseInsurance/HouseInsuranceHero";
 
 function Blog() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-      <div className="bg-[#EAEAEA]">
-        <Header />
+      <div className="bg-[#EAEAEA] pb-10">
         <HouseInsuranceHero />
         <div className=" py-3">
           <Section
@@ -55,9 +56,6 @@ function Blog() {
               Buy Now
             </button>
           </div>
-        </div>
-        <div className="mt-10">
-          <Footer />
         </div>
       </div>
     </div>

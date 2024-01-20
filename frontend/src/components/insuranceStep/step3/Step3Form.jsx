@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Step3Form() {
   //   File upload start
@@ -140,14 +141,16 @@ function Step3Form() {
             </div>
             {/*  */}
             <div className="flex justify-end mt-5 pt-[10px] lg:pt-[10px]w-[353px]">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                onClick={handleFileUpload}
-                whileTap={{ scale: 0.9 }}
-                className={`bg-[#035FCE] text-[#FFFFFF] text-[0.61138rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
-              >
-                SAVE AND PROCEED TO PAYMENT
-              </motion.button>
+              <Link to="/step4">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  onClick={handleFileUpload}
+                  whileTap={{ scale: 0.9 }}
+                  className={`bg-[#035FCE] text-[#FFFFFF] text-[0.61138rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
+                >
+                  SAVE AND PROCEED TO PAYMENT
+                </motion.button>
+              </Link>
             </div>
           </form>
         </div>
