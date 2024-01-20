@@ -27,6 +27,7 @@ export default {
         'screen-7': '89vw',
         'screen-8': '80vw',
         'screen-9': '51.5vw',
+        'screen-10': '66vw',
 
       },
       top: {

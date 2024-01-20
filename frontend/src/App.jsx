@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-// import FinanceService from "./components/FinanceService";
-// import HouseLoan from "./components/HouseLoan";
-// import Residential from './components/Residential'
-// import Commercial from './components/Commercial'
+import FinanceService from "./components/FinanceService";
+import HouseLoan from "./components/HouseLoan";
+import Residential from './components/Residential'
+import Commercial from './components/Commercial'
 import Industrial from './components/Industrial'
 import Notification from './components/Notification'
 import DashboardTemp from './components/Dashboard/DashboardTemp'
@@ -40,6 +40,7 @@ import SettingsTemp from './components/Dashboard/SettingsTemp'
 import SettingsNotification from './components/Dashboard/SettingsNotification'
 import SettingsTransaction from './components/Dashboard/SettingsTransaction'
 import SettingsPost from './components/Dashboard/SettingsPost'
+import PSettingsPost from './components/Dashboard/PSettingsPost'
 import SettingsLogout from './components/Dashboard/SettingsLogout'
 
 
@@ -106,7 +107,13 @@ function App() {
         <Route path='/SettingsNotification' element={<SettingsNotification />} />
         <Route path='/SettingsTransaction' element={<SettingsTransaction />} />
         <Route path='/SettingsPost' element={<SettingsPost />} />
+        <Route path='/PSettingsPost' element={<PSettingsPost />} />
         <Route path='/SettingsLogout' element={<SettingsLogout />} />
+        <Route path='/HouseLoan' element={<HouseLoan />} />
+        <Route path='/Residential' element={<Residential />} />
+        <Route path='/Commercial' element={<Commercial />} />
+        <Route path='/Industrial' element={<Industrial />} />
+        <Route path='/Notification' element={<Notification />} />
       {/* <HouseLoan/> */}
       {/* <Residential/> */}
       {/* <Commercial/> */}

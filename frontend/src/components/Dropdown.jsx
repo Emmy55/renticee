@@ -19,9 +19,9 @@ const myCustomColor = '#7F7F7F';
   return (
     <>
 
-    <div className="relative z-10">
+    <div className="relative lg:z-10">
       <button
-        className="flex bg-white py-2 px-4 rounded focus:outline-none " style={{ color: myCustomColor }}
+        className="flex bg-white py-2 lg:mt-0 mt-2 px-4 rounded focus:outline-none " style={{ color: myCustomColor }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -33,7 +33,7 @@ const myCustomColor = '#7F7F7F';
         <div
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="w-186 right-0 mt-2 bg-white border border-gray-300 rounded shadow-md"
+          className="w-186 right-0 mt-2 bg-white border border-gray-300 rounded shadow-md z-50 absolute"
         >
           {/* Dropdown Content */}
           <ul className="py-2">

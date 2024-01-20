@@ -16,10 +16,15 @@ import Settingsnotification from "../Media/settingsnotification.png";
 import Settingstransaction from "../Media/settingstransaction.png";
 import Settingsprofile from "../Media/bluesettingsprofile.png";
 
+function SettingsDashboard({
+  submitValue,
+  // myCustomColor,
+  myCustomColor1,
+  myCustomColor2,
+  myCustomColor3,
 
-
-function SettingsDashboard({ submitValue,  }) {
-  const myCustomColor = '#035FCE'
+}) {
+  const myCustomColor = "#035FCE";
   const [openMenu, setOpenMenu] = useState(false);
   const [showCloseMenu, setShowCloseMenu] = useState(false);
 
@@ -51,34 +56,62 @@ function SettingsDashboard({ submitValue,  }) {
     <>
       <div className="h-screen-5">
         <div className="">
-          <p className="text-2xl font-bold relative top-7 left-5 lg:left-16 lg:ml-3 lg:text-2xl lg:w-96 z-50 w-40 ">Setting</p>
+          <p className="text-2xl font-bold relative top-7 left-5 lg:left-16 lg:ml-3 lg:text-2xl lg:w-96 z-50 w-40 ">
+            Setting
+          </p>
           <div className="fixed  pt-24 lg:border-r lg:h-screen lg:top-24 lg:-mt-2 bg-white hidden lg:block">
+            <Link to="/SettingsTemp">
+              <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
+                <p
+                  className="float-right relative lg:right-36 lg:mt- lg:text-lg"
+                  style={{ color: myCustomColor }}
+                >
+                  Profile
+                </p>
+                <img src={Settingsprofile} className="w-7" />
+              </div>
+            </Link>
+            <Link to="/SettingsNotification">
+              <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
+                <p
+                  className="float-right relative lg:right-24 lg:mr-1 lg:text-lg"
+                  style={{ color: myCustomColor1 }}
+                >
+                  Notification
+                </p>
+                <img src={Settingsnotification} className="w-7" />
+              </div>
+            </Link>
+            <Link to="/SettingsTransaction">
+              <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
+                <p
+                  className="float-right relative lg:right-24 lg:mr-2 lg:text-lg"
+                  style={{ color: myCustomColor2 }}
+                >
+                  Transaction
+                </p>
+                <img src={Settingstransaction} className="w-7" />
+              </div>
+            </Link>
+            <Link to="/SettingsPost">
+              <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
+                <p
+                  className="float-right relative lg:right-40 lg:mt- lg:text-lg"
+                  style={{ color: myCustomColor3 }}
+                >
+                  Post
+                </p>
+                <img src={Settingspost} className="w-7" />
+              </div>
+            </Link>
             <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
-              <p className="float-right relative lg:right-36 lg:mt- lg:text-lg"
-              style={{ color: myCustomColor }}
-              >Profile</p>
-              <img src={Settingsprofile} className="w-7"
-                
-              />
+              <p className="float-right relative lg:right-36 lg:-mr-2 lg:text-lg">
+                Logout
+              </p>
+              <img src={Settingslogout} className="w-7" />
             </div>
-            <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
-              <p className="float-right relative lg:right-24 lg:mr-1 lg:text-lg">Notification</p>
-              <img src={Settingsnotification} className="w-7"/>
-            </div>
-            <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
-              <p className="float-right relative lg:right-24 lg:mr-2 lg:text-lg">Transaction</p>
-              <img src={Settingstransaction} className="w-7"/>
-            </div>
-            <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
-              <p className="float-right relative lg:right-40 lg:mt- lg:text-lg">Post</p>
-              <img src={Settingspost} className="w-7"/>
-            </div>
-            <div className="w-60 pb-10 relative lg:left-16 lg:ml-3 cursor-pointer">
-              <p className="float-right relative lg:right-36 lg:-mr-2 lg:text-lg">Logout</p>
-              <img src={Settingslogout} className="w-7"/>
-            </div>
-            </div>
-            
+          </div>
+
           <div className="lg:hidden ">
             {showCloseMenu ? (
               <FontAwesomeIcon
@@ -104,10 +137,10 @@ function SettingsDashboard({ submitValue,  }) {
             </div>
           </div>
 
-    
-
           <div className="relative top-12 left-5 lg:left-64 lg:ml-5 w-80 lg:top-0 lg:w-80">
-            <p className="text-[#035FCE] font-bold lg:text-lg">Profile Setting</p>
+            <p className="text-[#035FCE] font-bold lg:text-lg">
+              Profile Setting
+            </p>
             <hr className="mt-6 relative right-5 lg:w-screen-8" />
             <div className="rounded-full justify-center h-20 border mt-5 bg-green-400 w-20 overflow-hidden">
               <img src={Profile} className="w-20 overflow-hidden" />
@@ -156,7 +189,7 @@ function SettingsDashboard({ submitValue,  }) {
               />
               {/* <br/> */}
             </div>
-            
+
             <div className="mt-7">
               <label>About</label>
               <br />
