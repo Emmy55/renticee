@@ -163,8 +163,11 @@ function FInanceService({
           </div>
           <div className="flex">
             <div className="flex space-x-8 mt-7 w-2/3">
+              {/* Item 1 start */}
               <div className="shadow-lg h-4/6">
-                <img src={House} className="w-96 " />
+                <Link to="/agentpostprofile">
+                  <img src={House} className="w-96 " />
+                </Link>
                 <div className="z-50 w-96 pl-6 relative -top-7 text-white flex">
                   <p>
                     {" "}
@@ -185,9 +188,11 @@ function FInanceService({
                   <p className="relative left-28 ml-1 top-0">9</p>
                 </div>
                 <div className="z-50 w-96 pl-6 pt-6 mb-10">
-                  <h1 className="text-xl font-semibold">
-                    Villa On Washington Ave
-                  </h1>
+                  <Link to="/agentpostprofile">
+                    <h1 className="text-xl font-semibold">
+                      Villa On Washington Ave
+                    </h1>
+                  </Link>
                   <p className="text-blue-600 pt-2">$ 5,500,000</p>
                   <p className="text-zinc-600 pt-5">
                     Beautiful, updated, ground level Co-op apartment in the
@@ -211,13 +216,19 @@ function FInanceService({
                     </div>
                   </Link>
                 </div>
-                <img
-                  src={HouseShadow}
-                  className="w-96 relative -top-96 -mt-96"
-                />
+                <Link to="/agentpostprofile">
+                  <img
+                    src={HouseShadow}
+                    className="w-96 relative -top-96 -mt-96"
+                  />
+                </Link>
               </div>
+              {/* Item 1 end */}
+              {/* Item 2 start */}
               <div className="shadow-lg h-4/6  w-96">
-                <img src={House} className="w-96 " />
+                <Link to="/agentpostprofile">
+                  <img src={House} className="w-96 " />
+                </Link>
                 <div className="z-50 ml-6 w-96  relative -top-7 text-white flex">
                   <p>
                     {" "}
@@ -238,9 +249,11 @@ function FInanceService({
                   <p className="relative left-28 ml-1 top-0">9</p>
                 </div>
                 <div className="z-50 w-96 pl-6 pt-6 mb-10">
-                  <h1 className="text-xl font-semibold">
-                    Villa On Washington Ave
-                  </h1>
+                  <Link to="/agentpostprofile">
+                    <h1 className="text-xl font-semibold">
+                      Villa On Washington Ave
+                    </h1>
+                  </Link>
                   <p className="text-blue-600 pt-2">$ 5,500,000</p>
                   <p className="text-zinc-600 pt-5">
                     Beautiful, updated, ground level Co-op apartment in the
@@ -264,11 +277,14 @@ function FInanceService({
                     </div>
                   </Link>
                 </div>
-                <img
-                  src={HouseShadow}
-                  className="w-96 relative -top-96 -mt-96"
-                />
+                <Link to="/agentpostprofile">
+                  <img
+                    src={HouseShadow}
+                    className="w-96 relative -top-96 -mt-96"
+                  />
+                </Link>
               </div>
+              {/* Item 2 end */}
             </div>
             <div className="ml-10">
               <p className="font-semibold mb-7">States</p>
