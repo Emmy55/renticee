@@ -7,6 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 
+
 import GloData from "./components/Dashboard/GloData";
 // import MtnData from "./components/Dashboard/MtnData";
 import AirtelData from "./components/Dashboard/AirtelData";
@@ -34,6 +35,7 @@ import ConfirmDstv from "./components/Dashboard/ConfirmDstv";
 import ConfirmStartime from "./components/Dashboard/ConfirmStartime";
 import ConfirmElectricity from "./components/Dashboard/ConfirmElectricity";
 // import SelectDataPlan from './components/SelectDataPlan'
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/home/Home";
@@ -102,6 +104,7 @@ function App() {
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/industrial" element={<Industrial />} />
 
+
           {/* Emmy start */}
           <Route path="/mtndata" element={<MtnData />} />
           <Route path="/GloData" element={<GloData />} />
@@ -139,6 +142,7 @@ function App() {
           <Route path="/ConfirmStartime" element={<ConfirmStartime />} />
           <Route path="/ConfirmElectricity" element={<ConfirmElectricity />} />
           <Route path="/houseloan" element={<HouseLoan />} />
+
 
           {/* Emmy end */}
 
