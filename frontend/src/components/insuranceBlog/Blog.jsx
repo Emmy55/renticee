@@ -1,14 +1,16 @@
-import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+import React, { useEffect } from "react";
 import Section from "./Section";
 import HouseInsuranceHero from "../houseInsurance/HouseInsuranceHero";
+import { Link } from "react-router-dom";
 
 function Blog() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-      <div className="bg-[#EAEAEA]">
-        <Header />
+      <div className="bg-[#EAEAEA] pb-10">
         <HouseInsuranceHero />
         <div className=" py-3">
           <Section
@@ -49,15 +51,14 @@ function Blog() {
             unpredictable world.
           </p>
           <div className="flex justify-end pt-[20px] lg:pt-[10px] w-[366px] md:w-[726px] lg:w-[1000px] xl:w-[1270px]">
-            <button
-              className={`bg-[#035FCE] text-[#FFFFFF] text-[0.43713rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
-            >
-              Buy Now
-            </button>
+            <Link to="/step1">
+              <button
+                className={`bg-[#035FCE] text-[#FFFFFF] text-[0.43713rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
+              >
+                Buy Now
+              </button>
+            </Link>
           </div>
-        </div>
-        <div className="mt-10">
-          <Footer />
         </div>
       </div>
     </div>

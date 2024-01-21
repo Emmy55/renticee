@@ -1,13 +1,15 @@
-import React from "react";
-import Header from "../Header";
+import React, { useEffect } from "react";
 import HouseInsuranceHero from "./HouseInsuranceHero";
 import Pricing from "./Pricing";
-import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 function HouseInsurance() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="">
-      <Header />
       <HouseInsuranceHero show="hidden" />
       {/* What our insurance Cover start */}
       <div className="h-[165px] bg-white lg:h-[426px]">
@@ -47,18 +49,17 @@ function HouseInsurance() {
           Here are a few things you should know
         </p>
         <div className="flex justify-center mt-8 cursor-pointer">
-          <p className="text-base font-bold font-Roboto text-white w-[198.03px] h-[48px] rounded border-2 border-white flex items-center justify-center hover:scale-105 hover:shadow-lg">
-            READ OUR BLOG
-          </p>
+          <Link to="/insuranceblog">
+            <p className="text-base font-bold font-Roboto text-white w-[198.03px] h-[48px] rounded border-2 border-white flex items-center justify-center hover:scale-105 hover:shadow-lg">
+              READ OUR BLOG
+            </p>
+          </Link>
         </div>
       </div>
       {/* New to purchasing home insurance? end */}
       {/* Pricing start */}
       <Pricing />
       {/* Pricing end */}
-      {/* Footer start */}
-      <Footer />
-      {/* Footer end */}
     </div>
   );
 }

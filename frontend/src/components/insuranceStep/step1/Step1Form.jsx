@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import Arrow from "../images/arrow.svg";
 import Calendar from "../images/calendar.svg";
+import { Link } from "react-router-dom";
 
 function Step1Form() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -183,11 +184,13 @@ function Step1Form() {
             <input type="text" name="code" id="code" />
           </div>
           <div className="flex justify-end pt-[10px] lg:pt-[10px]w-[353px]">
-            <button
-              className={`bg-[#035FCE] text-[#FFFFFF] text-xs lg:text-sm font-Roboto py-2 px-10 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
-            >
-              NEXT
-            </button>
+            <Link to="/step2">
+              <button
+                className={`bg-[#035FCE] text-[#FFFFFF] text-xs lg:text-sm font-Roboto py-2 px-10 rounded-[5px] mt-[0px] lg:mt-[10px] text-center font-semibold hover:scale-110`}
+              >
+                NEXT
+              </button>
+            </Link>
           </div>
         </form>
       </div>

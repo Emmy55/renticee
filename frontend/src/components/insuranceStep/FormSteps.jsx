@@ -3,7 +3,7 @@ import React from "react";
 function FormSteps() {
   return (
     <div>
-      <div className="flex justify-center gap-6 min-[390px]:gap-7 min-[420px]:gap-8 min-[445px]:gap-10 sm:gap-16 md:gap-28 lg:gap-[167px] xl:gap-[187px] py-6">
+      <div className="flex justify-center gap-8 min-[445px]:gap-10 sm:gap-16 md:gap-28 lg:gap-[167px] xl:gap-[187px] py-6">
         <div className="flex flex-col items-center">
           <p className="w-[32px] h-[32px] rounded-full bg-[#035FCE] flex justify-center items-center text-white text-[1.1875rem] font-Roboto">
             1

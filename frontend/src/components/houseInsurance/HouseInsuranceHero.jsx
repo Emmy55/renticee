@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function HouseInsuranceHero(props) {
   return (
@@ -18,11 +19,13 @@ function HouseInsuranceHero(props) {
           <br /> your family feel really calm and safe
         </motion.h1>
         <div className="flex justify-center pt-[20px] lg:pt-[10px]">
-          <button
-            className={`bg-[#035FCE] text-[#FFFFFF] text-[0.43713rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[40px] text-center font-semibold hover:scale-110 ${props.show}`}
-          >
-            Buy Now
-          </button>
+          <Link to="/step1">
+            <button
+              className={`bg-[#035FCE] text-[#FFFFFF] text-[0.43713rem] lg:text-sm font-Roboto py-2 px-5 rounded-[5px] mt-[0px] lg:mt-[40px] text-center font-semibold hover:scale-110 ${props.show}`}
+            >
+              Buy Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

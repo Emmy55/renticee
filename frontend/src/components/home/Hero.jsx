@@ -13,40 +13,40 @@ function Hero() {
       <div className="bg-hero-img2 md:bg-hero-img h-[296px] lg:h-[876px] object-center bg-cover bg-no-repeat">
         <div className="flex flex-col items-center pt-[50px] lg:pt-[200px]">
           <div className="flex gap-5 ">
-            <p className="heroTop text-[0.33544rem] w-[36px] h-[18px] bg-white text-[#0073E6] lg:text-[0.8125rem] font-Roboto lg:w-[84.8px] lg:h-[42px]">
+            <p className="heroTop text-[0.63544rem] w-[45px] h-[22px] bg-white text-[#0073E6] lg:text-[0.8125rem] font-Roboto lg:w-[84.8px] lg:h-[42px]">
               Sales
             </p>
-            <p className="heroTop text-[0.33544rem] w-[36px] h-[18px] text-white bg-white bg-opacity-15 lg:text-[0.8125rem] font-Roboto lg:w-[100.44px] lg:h-[42px]">
+            <p className="heroTop text-[0.63544rem] w-[55px] h-[22px] text-white bg-white bg-opacity-15 lg:text-[0.8125rem] font-Roboto lg:w-[100.44px] lg:h-[42px]">
               Rentals
             </p>
           </div>
-          <div className="h-[29px] w-[358px] lg:h-[70px] lg:w-[867.17px] bg-white flex flex-col items-center justify-center rounded-[50px] mt-5">
+          <div className="h-[45px] w-[365px] lg:h-[70px] lg:w-[867.17px] bg-white flex flex-col items-center justify-center rounded-[50px] mt-5">
             <form className="flex gap-2 items-center">
               <div className="flex flex-col">
-                <p className="ml-1 text-[0.33544rem] lg:text-[0.8125rem] text-[#222222] font-Roboto">
+                <p className="ml-1 text-[0.50544rem] lg:text-[0.8125rem] text-[#222222] font-Roboto">
                   CATEGORY
                 </p>
-                <select className="w-[81.24px] h-[8.26px] lg:w-[196.78px] lg:h-[20px] bg-white text-[#7A7A7A] text-[0.33544rem] lg:text-[0.8125rem] font-Roboto cursor-pointer">
+                <select className="w-[81.24px] h-[8.26px] lg:w-[196.78px] lg:h-[20px] bg-white text-[#7A7A7A] text-[0.45544rem] lg:text-[0.8125rem] font-Roboto cursor-pointer">
                   <option value="">Property Category</option>
                   <option value="land">Land</option>
                   <option value="house">House</option>
                 </select>
               </div>
               <div className="flex flex-col">
-                <p className="ml-1 text-[0.33544rem] lg:text-[0.8125rem] text-[#222222] font-Roboto">
+                <p className="ml-1 text-[0.50544rem] lg:text-[0.8125rem] text-[#222222] font-Roboto">
                   CITY
                 </p>
-                <select className="w-[81.24px] h-[8.26px] lg:w-[196.78px] lg:h-[20px] bg-white text-[#7A7A7A] text-[0.33544rem] lg:text-[0.8125rem] font-Roboto cursor-pointer">
+                <select className="w-[81.24px] h-[8.26px] lg:w-[196.78px] lg:h-[20px] bg-white text-[#7A7A7A] text-[0.45544rem] lg:text-[0.8125rem] font-Roboto cursor-pointer">
                   <option value="">Property City</option>
                   <option value="land">Land</option>
                   <option value="house">House</option>
                 </select>
               </div>
               <div className="flex flex-col">
-                <p className="ml-1 text-[0.33544rem] lg:text-[0.8125rem] text-[#222222] font-Roboto">
+                <p className="ml-1 text-[0.50544rem] lg:text-[0.8125rem] text-[#222222] font-Roboto">
                   BEDROOMS
                 </p>
-                <select className="w-[81.24px] h-[8.26px] lg:w-[196.78px] lg:h-[20px] bg-white text-[#7A7A7A] text-[0.33544rem] lg:text-[0.8125rem] font-Roboto cursor-pointer">
+                <select className="w-[83.24px] h-[8.26px] lg:w-[196.78px] lg:h-[20px] bg-white text-[#7A7A7A] text-[0.45544rem] lg:text-[0.8125rem] font-Roboto cursor-pointer">
                   <option className="font-Roboto" value="">
                     Bedrooms Number
                   </option>
@@ -56,11 +56,11 @@ function Hero() {
                   <option value="house">House</option>
                 </select>
               </div>
-              <button className="w-[81.24px] h-[18.16px] lg:w-[196.78px] lg:h-[44px] bg-[#035FCE] rounded-[50px] border border-[#0073E1] text-white text-[0.38706rem] lg:text-[0.9375rem] font-Roboto font-medium flex items-center justify-center gap-1">
+              <button className="w-[85.24px] h-[25.16px] lg:w-[196.78px] lg:h-[44px] bg-[#035FCE] rounded-[50px] border border-[#0073E1] text-white text-[0.60706rem] lg:text-[0.9375rem] font-Roboto font-medium flex items-center justify-center gap-1">
                 <img
                   src={Search}
                   alt=""
-                  className="w-[7px] h-[7px] lg:w-[16px] lg:h-[16px]"
+                  className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px]"
                 />{" "}
                 Search
               </button>
@@ -71,9 +71,9 @@ function Hero() {
               <img
                 src={Houses}
                 alt=""
-                className="w-[42.84px] h-[42.84px] lg:w-[100px] lg:h-[100px]"
+                className="w-[50.84px] h-[50.84px] lg:w-[100px] lg:h-[100px]"
               />
-              <p className="heroBottom text-[0.33544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
+              <p className="heroBottom text-[0.53544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
                 houses
               </p>
             </div>
@@ -81,9 +81,9 @@ function Hero() {
               <img
                 src={Apartments}
                 alt=""
-                className="w-[42.84px] h-[42.84px] lg:w-[100px] lg:h-[100px]"
+                className="w-[50.84px] h-[50.84px] lg:w-[100px] lg:h-[100px]"
               />
-              <p className="heroBottom text-[0.33544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
+              <p className="heroBottom text-[0.53544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
                 apartments
               </p>
             </div>
@@ -91,9 +91,9 @@ function Hero() {
               <img
                 src={Offices}
                 alt=""
-                className="w-[42.84px] h-[42.84px] lg:w-[100px] lg:h-[100px]"
+                className="w-[50.84px] h-[50.84px] lg:w-[100px] lg:h-[100px]"
               />
-              <p className="heroBottom text-[0.33544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
+              <p className="heroBottom text-[0.53544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
                 offices
               </p>
             </div>
@@ -101,9 +101,9 @@ function Hero() {
               <img
                 src={Villas}
                 alt=""
-                className="w-[42.84px] h-[42.84px] lg:w-[100px] lg:h-[100px]"
+                className="w-[50.84px] h-[50.84px] lg:w-[100px] lg:h-[100px]"
               />
-              <p className="heroBottom text-[0.33544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
+              <p className="heroBottom text-[0.53544rem] lg:text-[0.8125rem] pt-[3px] lg:pt-[10px]">
                 villas
               </p>
             </div>

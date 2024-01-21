@@ -21,6 +21,7 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import Maria from "./Media/maria.png";
+import { Link } from "react-router-dom";
 
 function FInanceService({
   heroText,
@@ -74,6 +75,7 @@ function FInanceService({
                 <p className="text-blue-500 text-sm relative -top-7 lg:top-3 left-64 lg:left-0 ml-2 lg:ml-0 lg:text-base mr-10 whitespace-nowrap">
                   Post property
                 </p>
+
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="-mr-7 mt-2 relative left-6 z-10 lg:top-2 text-gray-500"
@@ -163,10 +165,12 @@ function FInanceService({
             <Sort />
           </div>
           <div className="flex">
+
             <div className="lg:flex flex lg:ml-0 ml-6 lg:flex-wrap flex-wrap lg:mb-40 mt-7 w-2/3 lg:w-[130pc] min-h-screen">
               <div className="shadow-lg lg:h-[35pc] pb-6 lg:pb-0 ml-1 lg:mr-3 w-80 lg:w-96 relative mt-8 lg:right-3">
                 <img src={House} className="w-96 " />
                 <div className="z-50 ml-6 lg:w-96 w-80 right-4 lg:text-base text-xs relative -top-7 text-white flex">
+
                   <p>
                     {" "}
                     <FontAwesomeIcon
@@ -185,10 +189,12 @@ function FInanceService({
                   />
                   <p className="relative left-28 ml-1 top-0">9</p>
                 </div>
+
                 <div className="z-50 lg:w-96 w-80 pl-2 p-3 lg:ml-1 pt-6">
                   <h1 className="text-xl font-semibold">
                     Villa On Washington Ave
                   </h1>
+
                   <p className="text-blue-600 pt-2">$ 5,500,000</p>
                   <p className="text-zinc-600 pt-5 text-sm w-80">
                     Beautiful, updated, ground level Co-op apartment in the
@@ -204,6 +210,7 @@ function FInanceService({
                       250ft<sup>2</sup>
                     </p>
                   </div>
+
                   <hr className="border-1 border-gray-300 relative lg:-left-3 w-72 left-1 lg:w-96 my-4 -mt-6" />
 
                   <div className="flex">
@@ -219,6 +226,7 @@ function FInanceService({
               <div className="shadow-lg lg:h-[35pc] pb-6 lg:pb-0 ml-1 lg:mr-3 w-80 lg:w-96 relative mt-8 lg:right-3">
                 <img src={House} className="w-96 " />
                 <div className="z-50 ml-6 lg:w-96 w-80 right-4 lg:text-base text-xs relative -top-7 text-white flex">
+
                   <p>
                     {" "}
                     <FontAwesomeIcon
@@ -237,10 +245,12 @@ function FInanceService({
                   />
                   <p className="relative left-28 ml-1 top-0">9</p>
                 </div>
+
                 <div className="z-50 lg:w-96 w-80 pl-2 p-3 lg:ml-1 pt-6">
                   <h1 className="text-xl font-semibold">
                     Villa On Washington Ave
                   </h1>
+
                   <p className="text-blue-600 pt-2">$ 5,500,000</p>
                   <p className="text-zinc-600 pt-5 text-sm w-80">
                     Beautiful, updated, ground level Co-op apartment in the
@@ -256,6 +266,7 @@ function FInanceService({
                       250ft<sup>2</sup>
                     </p>
                   </div>
+
                   <hr className="border-1 border-gray-300 relative lg:-left-3 w-72 left-1 lg:w-96 my-4 -mt-6" />
 
                   <div className="flex">
@@ -529,6 +540,7 @@ function FInanceService({
                 />
               </div>
               
+
             </div>
             <div className="relative top-[89pc] lg:top-0 lg:right-3 right-64 lg:block lg:ml-10">
               <p className="font-semibold mb-7">States</p>

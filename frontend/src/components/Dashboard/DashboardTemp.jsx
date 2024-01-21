@@ -23,7 +23,9 @@ import DropdownMenuDashboard from "./DropdownMenuDashboard";
 import MeterType from "./MeterType";
 import SelectDisco from "./SelectDisco";
 import { Link } from "react-router-dom";
+
 import Navhome from "../Media/navhome.png";
+
 import { useState, useEffect, useRef } from "react";
 
 import {
@@ -139,12 +141,15 @@ function DashboardTemp({
             {showCloseMenu ? (
               <FontAwesomeIcon
                 className="text-black h-6 relative left-80 -ml-3 lg:-ml-0 lg:left-0 "
+
                 icon={faClose}
                 onClick={toggleMenu}
               />
             ) : (
               <FontAwesomeIcon
+
                 className="text-black h-6 relative float-right right-[31%] -ml-3 lg:-ml-0 lg:left-0"
+
                 icon={faBars}
                 onClick={toggleMenu}
               />
@@ -155,6 +160,7 @@ function DashboardTemp({
                 onClick={toggleMenu}
               />
             )}
+
             <div className="z-10 absolute right-40">
               {openMenu && <DropdownMenuDashboard />}
             </div>
@@ -174,6 +180,7 @@ function DashboardTemp({
               />
               <p>Dashboard</p>
             </div>
+
 
             <hr className="text-black relative -left-6 top-14 w-76" />
             <div className="relative top-20 left-14">
@@ -206,6 +213,7 @@ function DashboardTemp({
                       filter: `saturate(1.25) brightness(${ValueInText1})`,
                     }}
                   />
+
 
                   <p className="whitespace-nowrap">Buy Airtime</p>
                 </div>
@@ -259,6 +267,7 @@ function DashboardTemp({
                 </div>
               </Link>
             </div>
+
           </div>
         </div>
 

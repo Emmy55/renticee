@@ -13,7 +13,7 @@ import Thread from "../assets/images/thread.svg";
 function Footer() {
   return (
     <div>
-      <footer className="pl-5 py-4 lg:h-[357px] bg-[#001733] lg:flex lg:pl-[10.3%] lg:pr-[5%] lg:gap-[7.4%] lg:pt-8">
+      <footer className="pl-5 py-4 lg:h-[357px] bg-[#001733] lg:flex lg:pl-[6%] lg:pr-[2%] lg:gap-[7.4%] lg:pt-8">
         <div>
           <h3 className="footerTop cursor-pointer">Rentice</h3>
           <p className="w-[339px] md:w-[539px] lg:w-[502px] footerText lg:mt-3">
