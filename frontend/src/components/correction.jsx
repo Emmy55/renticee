@@ -6,7 +6,6 @@ import Sort from "./Sort.jsx";
 import House from "./Media/house.png";
 import HouseShadow from "./Media/houseshadow.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Bedroom from "./Media/bedroom.png";
 
 import {
   faLocationDot,
@@ -108,7 +107,7 @@ function FInanceService({
                 houses for sale . Refine your property search by price, number
                 of beds and type of property.
               </p>
-              <div className="relative top-[740%] lg:relative lg:bottom-0  lg:block shadow-xl border border-solid border-gray-50 text-xl ml-2  lg:ml-24 p-4">
+              <div className="absolute bottom-[-130pc] lg:relative lg:bottom-0  lg:block shadow-xl border border-solid border-gray-50 text-xl ml-2  lg:ml-24 p-4">
                 <h3 className=" pb -2">
                   Currently Available Property For Rent
                 </h3>
@@ -167,7 +166,7 @@ function FInanceService({
             <Sort />
           </div>
           <div className="flex">
-            <div className="lg:flex flex lg:ml-0 ml-6 lg:flex-wrap flex-wrap lg:mb-32 mt-7 w-2/3 lg:w-[130pc] min-h-screen">
+            <div className="lg:flex flex lg:ml-0 ml-6 lg:flex-wrap flex-wrap mb-8 lg:mb-32 mt-7 w-2/3 lg:w-[130pc] min-h-screen">
               <div className="shadow-lg lg:h-[35pc] pb-6 lg:pb-0 ml-1 lg:mr-3 w-80 lg:w-96 relative mt-8 lg:right-3">
                 <img src={House} className="w-96 " />
                 <div className="z-50 ml-6 lg:w-96 w-80 right-4 lg:text-base text-xs relative -top-7 text-white flex">
@@ -198,8 +197,8 @@ function FInanceService({
                     Beautiful, updated, ground level Co-op apartment in the
                     desirable Bay Terrace neighborhood ...
                   </p>
-                  <div className="flex space-x-6 mt-4 text-sm lg:text-lg text-zinc-400 mb-12 ">
-                    <img src={Bedroom} className="w-6 -mt- h-5"/>
+                  <div className="flex space-x-6 mt-4 text-sm text-zinc-400 mb-12 ">
+                    <FontAwesomeIcon icon={faCar} />{" "}
                     <p className="relative right-4 -top-1">5</p>
                     <FontAwesomeIcon icon={faBath} />{" "}
                     <p className="relative right-4 -top-1">3</p>
@@ -250,8 +249,8 @@ function FInanceService({
                     Beautiful, updated, ground level Co-op apartment in the
                     desirable Bay Terrace neighborhood ...
                   </p>
-                  <div className="flex space-x-6 mt-4 text-sm lg:text-lg text-zinc-400 mb-12 ">
-                    <img src={Bedroom} className="w-6 -mt- h-5"/>
+                  <div className="flex space-x-6 mt-4 text-sm text-zinc-400 mb-12 ">
+                    <FontAwesomeIcon icon={faCar} />{" "}
                     <p className="relative right-4 -top-1">5</p>
                     <FontAwesomeIcon icon={faBath} />{" "}
                     <p className="relative right-4 -top-1">3</p>
@@ -302,8 +301,8 @@ function FInanceService({
                     Beautiful, updated, ground level Co-op apartment in the
                     desirable Bay Terrace neighborhood ...
                   </p>
-                  <div className="flex space-x-6 mt-4 text-sm lg:text-lg text-zinc-400 mb-12 ">
-                    <img src={Bedroom} className="w-6 -mt- h-5"/>
+                  <div className="flex space-x-6 mt-4 text-sm text-zinc-400 mb-12 ">
+                    <FontAwesomeIcon icon={faCar} />{" "}
                     <p className="relative right-4 -top-1">5</p>
                     <FontAwesomeIcon icon={faBath} />{" "}
                     <p className="relative right-4 -top-1">3</p>
@@ -354,8 +353,8 @@ function FInanceService({
                     Beautiful, updated, ground level Co-op apartment in the
                     desirable Bay Terrace neighborhood ...
                   </p>
-                  <div className="flex space-x-6 mt-4 text-sm lg:text-lg text-zinc-400 mb-12 ">
-                    <img src={Bedroom} className="w-6 -mt- h-5"/>
+                  <div className="flex space-x-6 mt-4 text-sm text-zinc-400 mb-12 ">
+                    <FontAwesomeIcon icon={faCar} />{" "}
                     <p className="relative right-4 -top-1">5</p>
                     <FontAwesomeIcon icon={faBath} />{" "}
                     <p className="relative right-4 -top-1">3</p>
@@ -406,8 +405,8 @@ function FInanceService({
                     Beautiful, updated, ground level Co-op apartment in the
                     desirable Bay Terrace neighborhood ...
                   </p>
-                  <div className="flex space-x-6 mt-4 text-sm lg:text-lg text-zinc-400 mb-12 ">
-                    <img src={Bedroom} className="w-6 -mt- h-5"/>
+                  <div className="flex space-x-6 mt-4 text-sm text-zinc-400 mb-12 ">
+                    <FontAwesomeIcon icon={faCar} />{" "}
                     <p className="relative right-4 -top-1">5</p>
                     <FontAwesomeIcon icon={faBath} />{" "}
                     <p className="relative right-4 -top-1">3</p>
@@ -429,7 +428,62 @@ function FInanceService({
                 />
               </div>
             </div>
-            <div className="relative top-[89pc] lg:top-0 lg:right-3 right-64 lg:block lg:ml-10">
+            <div className="hidden lg:block">
+              <div className="relative top-[89pc] lg:top-0 lg:right-3 right-64 lg:block lg:ml-10">
+                <p className="font-semibold mb-7">States</p>
+                <p className="mb-0">Abuja</p>
+                <p className="mb-0">Oyo</p>
+                <p className="mb-0">Ogun</p>
+                <p className="mb-0">Rivers</p>
+                <p className="mb-0">Enugu</p>
+                <p className="mb-0">Edo</p>
+                <p className="mb-0">Akwa Ibom</p>
+                <p className="mb-0">Kaduna</p>
+                <p className="mb-0">Imo</p>
+                <p className="mb-0">Osun</p>
+                <p className="mb-0">Cross River</p>
+                <p className="mb-0">Anambra</p>
+                <p className="mb-0">Kwara</p>
+                <p className="mb-0">Abia</p>
+                <p className="mb-0">Katsina</p>
+                <p className="mb-0">Ondo</p>
+                <p className="mb-0">Adamawa</p>
+                <p className="mb-0">Bauchi</p>
+                <p className="mb-0">Ebonyi</p>
+              </div>
+              <div className="relative top-[113pc] right-[22pc] lg:right-5 h-320 h-64 lg:-ml-16 mb-96 lg:top-96 mt-52 lg:w-2/3 p-5 ring-slate-500 shadow-xl border border-solid border-gray-50">
+                <div
+                  className="flex text-2xl "
+                  style={{ color: myCustomColor1 }}
+                >
+                  <FontAwesomeIcon icon={faEnvelopeOpenText} />
+                  <h1 className="ml-3 -mt-1">Get Latest Properties</h1>
+                </div>
+                <p>Get notified when neew properties become available</p>
+                <input
+                  type="type"
+                  placeholder="Enter your Name"
+                  className="border-gray-200 border-2 focus:outline-none pl-3 text-sm p-2 mb-6 mt-6 "
+                />{" "}
+                <br />
+                <div className="flex">
+                  <input
+                    type="type"
+                    placeholder="Enter your email Address"
+                    className="border-gray-200 border-2 text-sm pl-3 p-2 z-10 focus:outline-none"
+                  />
+                  <input
+                    type="submit"
+                    value="Subscribe Now"
+                    style={{ backgroundColor: myCustomColor1 }}
+                    className="px-7 cursor-pointer text-white focus rounded-sm relative left-3 focus:outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" block lg:hidden relative left-80 ml-10">
+            <div className="relative top-[102pc] lg:top-0 lg:right-3 right-80 -ml-3 lg:block lg:ml-10">
               <p className="font-semibold mb-7">States</p>
               <p className="mb-0">Abuja</p>
               <p className="mb-0">Oyo</p>
@@ -451,7 +505,7 @@ function FInanceService({
               <p className="mb-0">Bauchi</p>
               <p className="mb-0">Ebonyi</p>
             </div>
-            <div className="relative top-[113pc] right-[22pc] lg:right-5 h-320 h-64 lg:-ml-16 mb-96 lg:top-96 mt-52 lg:w-2/3 p-5 ring-slate-500 shadow-xl border border-solid border-gray-50">
+            <div className="relative w-96 top-[90pc] right-[22pc] lg:right-5 h-320 h-64 lg:-ml-16 mb-96 lg:top-96 mt-52 lg:w-2/3 p-5 ring-slate-500 shadow-xl border border-solid border-gray-50">
               <div className="flex text-2xl " style={{ color: myCustomColor1 }}>
                 <FontAwesomeIcon icon={faEnvelopeOpenText} />
                 <h1 className="ml-3 -mt-1">Get Latest Properties</h1>
@@ -460,20 +514,20 @@ function FInanceService({
               <input
                 type="type"
                 placeholder="Enter your Name"
-                className="border-gray-200 border-2 focus:outline-none pl-3 text-sm p-2 mb-6 mt-6 "
+                className="border-gray-200 border-2 focus:outline-none pl-3 w-40 text-sm p-2 mb-6 mt-6 "
               />{" "}
               <br />
               <div className="flex">
                 <input
                   type="type"
                   placeholder="Enter your email Address"
-                  className="border-gray-200 border-2 text-sm pl-3 p-2 z-10 focus:outline-none"
+                  className="border-gray-200 border-2 text-sm pl-3 p-2 w-40 z-10 focus:outline-none"
                 />
                 <input
                   type="submit"
                   value="Subscribe Now"
                   style={{ backgroundColor: myCustomColor1 }}
-                  className="px-7 cursor-pointer text-white focus rounded-sm relative left-3 focus:outline-none"
+                  className="px-7 cursor-pointer text-white focus rounded-sm w-40 relative left-3 focus:outline-none"
                 />
               </div>
             </div>

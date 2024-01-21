@@ -248,13 +248,13 @@ function SettingsNotification({
         )}
 
         {showAdditionalDiv1 && (
-          <div>
-          <div className="relative mb-60 top-12 left-5 lg:left-64 lg:ml-5 w-96 lg:top-0 lg:w-screen-4">
+          <div className="overflow-hidden">
+          <div className=" relative mb-60 top-12 left-5 lg:left-64 lg:ml-5 w-96 lg:top-0 lg:w-screen-4">
               <p className="text-[#035FCE] font-bold lg:text-lg">Property</p>
               <p className="text-[#035FCE] font-semibold float-right relative bottom-5 right-12 lg:right-20 ">
                 Post property
               </p>
-              <hr className="mt-6 relative right-5 lg:w-screen-8" />
+              <hr className="mt-6 relative right-5  lg:w-screen-8" />
 
               <div className="lg:flex lg:flex-wrap lg:space-x-4">
               <div className="shadow-lg h-4/6 ml-1 w-80 relative mt-8  ">

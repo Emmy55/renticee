@@ -42,6 +42,7 @@ import SettingsTransaction from './components/Dashboard/SettingsTransaction'
 import SettingsPost from './components/Dashboard/SettingsPost'
 import PSettingsPost from './components/Dashboard/PSettingsPost'
 import SettingsLogout from './components/Dashboard/SettingsLogout'
+import SettingsTransac from './components/Dashboard/SettingsTransac'
 
 
 import Header from "./components/Header";
@@ -114,6 +115,7 @@ function App() {
         <Route path='/Commercial' element={<Commercial />} />
         <Route path='/Industrial' element={<Industrial />} />
         <Route path='/Notification' element={<Notification />} />
+        <Route path='/SettingsTransac' element={<SettingsTransac />} />
       {/* <HouseLoan/> */}
       {/* <Residential/> */}
       {/* <Commercial/> */}
