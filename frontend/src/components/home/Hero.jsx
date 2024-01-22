@@ -10,7 +10,7 @@ import Villas from "../../assets/images/villas.svg";
 function Hero() {
   return (
     <div className="">
-      <div className="bg-hero-img2 md:bg-hero-img h-[296px] lg:h-[876px] object-center bg-cover bg-no-repeat animate-image-change amin">
+      <div className=" h-[296px] lg:h-[876px] object-center bg-cover bg-no-repeat animate-image-change amin">
         <div className="flex flex-col items-center pt-[50px] lg:pt-[200px]">
           <div className="flex gap-5 ">
             <p className="heroTop text-[0.63544rem] w-[45px] h-[22px] bg-white text-[#0073E6] lg:text-[0.8125rem] font-Roboto lg:w-[84.8px] lg:h-[42px]">
