@@ -23,17 +23,9 @@ import DropdownMenuDashboard from "./DropdownMenuDashboard";
 import MeterType from "./MeterType";
 import SelectDisco from "./SelectDisco";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-<<<<<<< HEAD
-// import Navhome from "../Media/navhome.png";
-=======
-import Navhome from "../Media/navhome.png";
->>>>>>> Emmy_Push
-=======
 
 import Navhome from "../Media/navhome.png";
 
->>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
 import { useState, useEffect, useRef } from "react";
 
 import {
