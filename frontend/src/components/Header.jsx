@@ -172,7 +172,7 @@ function Header() {
             />
           ) : (
             <FontAwesomeIcon
-              className="text-[#fff] h-6"
+              className="text-[#fff] h-6 "
               icon={faBars}
               onClick={toggleMenu}
             />
