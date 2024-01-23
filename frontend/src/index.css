@@ -126,32 +126,32 @@
   @keyframes backgroundImageAnimation {
     0%, 100% {
       background-image: url('/src/assets/images/hero-bg2.svg');
-      transform: width(70%);
+      transform: width(130%);
     }
   
     16.66% {
       background-image: url('/src/assets/images/anima-1-2.svg');
-      transform: width(130%);
+      transform: width(70%);
     }
   
     33.33% {
       background-image: url('/src/assets/images/anima-2-1.svg');
-      transform: width(70%);
+      transform: width(130%);
     }
   
     50% {
       background-image: url('/src/assets/images/anima-2-2.svg');
-      transform: width(130%);
+      transform: width(70%);
     }
   
     66.66% {
       background-image: url('/src/assets/images/anima-3-1.svg');
-      transform: width(70%);
+      transform: width(130%);
     }
   
     83.33% {
       background-image: url('/src/assets/images/anima-3-2.svg');
-      transform: width(130%);
+      transform: width(70%);
     }
   }
   
