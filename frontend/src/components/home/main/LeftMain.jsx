@@ -17,7 +17,7 @@ function LeftMain(props) {
         <div className="w-[179px] h-[145.45px] lg:w-[450px] lg:h-[353.17px] xl:w-[570px] xl:h-[463.17px]">
           <img
             src={props.img}
-            alt=""
+            alt=""`
             className="w-[179px] h-[145.45px] lg:w-[450px] lg:h-[353.17px] xl:w-[570px] xl:h-[463.17px]"
           />
         </div>

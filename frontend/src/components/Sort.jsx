@@ -18,7 +18,7 @@ const myCustomColor1 = '#EAEAEA';
   };
 
   return (
-    <div className="relative ml-96 left-40 z-10 ">
+    <div className="relative lg:ml-96 lg:left-40 left-20 text-sm lg:text-base z-10 ">
       <button
         className="w-36 flex bg-white py-2 px-4 rounded focus:outline-none " style={{ backgroundColor: myCustomColor1 }}
         onMouseEnter={handleMouseEnter}

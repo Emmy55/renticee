@@ -23,7 +23,7 @@ const GenderSelector = () => {
             {/* <FontAwesomeIcon className='absolute left-96 ml-20' icon={faChevronDown} /> */}
 
       <select
-        className="border border-gray-300 rounded p-6  py-3 w-screen-2 focus:outline-none "
+        className="border border-gray-300 rounded p-6  py-3 w-screen-6 lg:w-screen-2 focus:outline-none"
         value={selectedGender}
         onChange={handleGenderChange}
         style={{ backgroundColor: myCustomColor }}
