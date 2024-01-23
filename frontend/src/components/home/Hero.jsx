@@ -20,7 +20,7 @@ function Hero() {
               Rentals
             </p>
           </div>
-          <div className="h-[45px] w-[365px] lg:h-[70px] lg:w-[867.17px] bg-white flex flex-col items-center justify-center rounded-[50px] mt-5">
+          <div className="h-[45px] w-[361px] lg:h-[70px] lg:w-[867.17px] bg-white flex flex-col items-center justify-center rounded-[50px] mt-5">
             <form className="flex gap-2 items-center">
               <div className="flex flex-col">
                 <p className="ml-1 text-[0.50544rem] lg:text-[0.8125rem] text-[#222222] font-Roboto">

@@ -78,7 +78,7 @@ function FInanceService({
                   </p>
                 </div>
                 <div className="flex items-center ">
-                  <p className="text-blue-500 text-sm lg:text-base font-Roboto">
+                  <p className="text-blue-500 text-[0.70494rem] min-[380px]:text-sm lg:text-base font-Roboto">
                     Post property
                   </p>
                   <div className="absolute  left-0 mt-[100px] md:mt-0 md:relative">
@@ -89,7 +89,7 @@ function FInanceService({
                     <input
                       type="text"
                       placeholder="Search"
-                      className="h-12 w-[340px] min-[390px]:w-[370px] ml-1 border-gray-200 rounded focus:outline-none border-2 text-sm text-black lg:w-72 pl-9 font-Roboto"
+                      className="h-12 w-[335px] min-[390px]:w-[370px] ml-1 border-gray-200 rounded focus:outline-none border-2 text-sm text-black lg:w-72 pl-9 font-Roboto"
                       style={{ backgroundColor: myCustomColor }}
                     />
                   </div>

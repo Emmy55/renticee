@@ -50,7 +50,7 @@ function Aside() {
           <input
             type="submit"
             value="Subscribe Now"
-            className="px-3 md:px-7 rounded bg-[#035FCE] cursor-pointer text-white focus relative left-3 focus:outline-none font-Roboto"
+            className="px-1 sm:px-3 md:px-7 rounded bg-[#035FCE] cursor-pointer text-white focus relative left-3 focus:outline-none font-Roboto"
           />
         </div>
       </div>
