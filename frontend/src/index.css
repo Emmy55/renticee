@@ -66,59 +66,8 @@
     }
   }
   
-  @keyframes moveForward {
-    0% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
-  
-  /* @keyframes moveBackward {
-    0% {
-      transform: translateX(100%);
-    }
-    50% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  @keyframes changeImage {
-    0%, 33.33% {
-      background-image: url('/src/assets/images/hero-bg2.svg');
-    }
-    33.34%, 66.66% {
-      background-image: url('/src/assets/images/anima-1-2.svg');
-    }
-    66.67%, 100% {
-      background-image: url('/src/components/insuranceStep/images/insurance-step-img.svg');
-    }
-  }
-  
-  .animate-image-change {
-    animation: changeImage 9s infinite;
-  }
-  
-  .animate-moveForward {
-    animation: moveForward 10s forwards  ease-out infinite; 
-  }
-  
-  .animate-moveBackward {
-    animation: moveBackward 10s forwards ease-in infinite; 
-  }
-   */
-  
-  /* index.css */
-
   .amin {
-    background-size: 110%;
+    /* background-size: 110%; */
     animation: backgroundImageAnimation 15s infinite;
     background-size: cover;
   }
