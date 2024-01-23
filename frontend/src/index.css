@@ -74,7 +74,7 @@
   
   @keyframes backgroundImageAnimation {
     0%, 100% {
-      background-image: url('/src/assets/images/hero-bg2.svg');
+      background-image: url('/src/assets/images/anima-1-1.svg');
       transform: width(130%);
     }
   
