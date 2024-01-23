@@ -3,26 +3,23 @@ import Button2 from "./Button2.jsx";
 import Button3 from "./Button3.jsx";
 import Button4 from "./Button4.jsx";
 import Sort from "./Sort.jsx";
-import House from "./Media/house.png";
-import HouseShadow from "./Media/houseshadow.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+<<<<<<< HEAD
 import Bedroom from "./Media/bedroom.png";
+=======
+import { motion } from "framer-motion";
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
 
 import {
-  faLocationDot,
-  faVideo,
-  faCamera,
-  faCar,
-  faBath,
-  faMaximize,
-  faEnvelopeOpenText,
   faChevronLeft,
   faChevronRight,
   faAnglesRight,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-import Maria from "./Media/maria.png";
 import { Link } from "react-router-dom";
+import Item from "./Item.jsx";
+import Aside from "./Aside.jsx";
+import CurrentlyAvailableProperty from "./CurrentlyAvailableProperty.jsx";
 
 function FInanceService({
   heroText,
@@ -41,6 +38,7 @@ function FInanceService({
 
   return (
     <>
+<<<<<<< HEAD
       <div className={`min-h-screen lg:mb-24 mb-[240vh] ${COLOR}`}>
         <div className="h-full w-full place-items-center justify-center flex overflowx-x-hiddenx">
           <div className="absolute text-white justify-center text-center -mt-8">
@@ -118,39 +116,104 @@ function FInanceService({
                   <p className="text-xs p-2 pl-4">3 bed</p>
                   <p className="text-xs p-2 pl-4">4 bed</p>
                   <p className="text-xs p-2 pl-4">5 bed</p>
+=======
+      <div className="">
+        <div className={` lg:mb-24 mb-[50px] ${COLOR}`}>
+          <div className="h-full w-full place-items-center justify-center flex overflowx-x-hiddenx">
+            <div className="absolute text-white justify-center text-center -mt-8">
+              <p className="p-4 font-Roboto">Rentice Nigeria House Loan</p>
+              <motion.h1
+                className="ml-2/5 text-lg lg:text-4xl relative lg:left-72 lg:w-3/5 text-center place-items-center flex font-Roboto"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                {heroText}
+              </motion.h1>
+            </div>
+            <img
+              src={heroImg}
+              className="w-full object-cover lg:object-fill  h-96 "
+            />
+          </div>
+          {showAdditionalDiv && (
+            <div>
+              {/* Residential, Commercial & Industrial start */}
+              <div className="flex justify-between relative px-2 sm:px-5 lg:px-20 mt-7 lg:mt-10">
+                <div className="flex items-center">
+                  <p
+                    className="lg:px-4 w-20 lg:w-28 lg:py-3 px-2 py-2 rounded-3xl text-xs lg:text-base lg:rounded-full  ml-3 lg:ml-4 bg-slate-200 cursor-pointer font-Roboto"
+                    style={{ backgroundColor: Color, color: tempColor }}
+                  >
+                    Residential
+                  </p>
+                  <p
+                    className="lg:px-4 w-20 lg:w-28 lg:py-3 px-2 py-2 rounded-3xl text-xs lg:text-base lg:rounded-full ml-3 lg:ml-4 cursor-pointer bg-slate-200 font-Roboto"
+                    style={{ backgroundColor: Color1, color: tempColor1 }}
+                  >
+                    Commercial
+                  </p>
+                  <p
+                    className="lg:px-5 lg:w-28 lg:py-3 w-16 px-2 py-2 rounded-3xl text-xs lg:text-base lg:rounded-full ml-3 lg:ml-4 cursor-pointer bg-slate-200 font-Roboto"
+                    style={{ backgroundColor: Color2, color: tempColor2 }}
+                  >
+                    Industrial
+                  </p>
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
                 </div>
-                <div className="flex">
-                  <h2 className="text-sm mt-1">Flats</h2>
-                  <p className="text-xs p-2 pl-6 ml-3 relative left-1">2256</p>
-                  <p className="text-xs p-2 pl-6">2835</p>
-                  <p className="text-xs p-2 pl-6">2420</p>
-                  <p className="text-xs p-2 pl-6">351</p>
-                  <p className="text-xs p-2 pl-7">47</p>
-                </div>
-                <div className="flex">
-                  <h2 className="text-sm mt-1">Houses</h2>
-                  <p className="text-xs p-2 pl-5 ml-5 relative -left-3">81</p>
-                  <p className="text-xs p-2 pl-5 relative left-0">902</p>
-                  <p className="text-xs p-2 pl-5 relative left-1">1268</p>
-                  <p className="text-xs p-2 pl-7">3234</p>
-                  <p className="text-xs p-2 pl-5">849</p>
+                <div className="flex items-center ">
+                  <p className="text-blue-500 text-[0.70494rem] min-[380px]:text-sm lg:text-base font-Roboto">
+                    Post property
+                  </p>
+                  <div className="absolute  left-0 mt-[100px] md:mt-0 md:relative">
+                    <FontAwesomeIcon
+                      icon={faMagnifyingGlass}
+                      className="mt-1 relative left-8 text-gray-500"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Search"
+                      className="h-12 w-[335px] min-[390px]:w-[370px] ml-1 border-gray-200 rounded focus:outline-none border-2 text-sm text-black lg:w-72 pl-9 font-Roboto"
+                      style={{ backgroundColor: myCustomColor }}
+                    />
+                  </div>
                 </div>
               </div>
+              {/* Residential, Commercial & Industrial end */}
+
+              <div className="flex items-start mt-[50px] md:mt-0 lg:items-center justify-between gap-10 px-5 lg:px-20 lg:relative">
+                <div>
+                  <h3 className=" ml-3 pt-9 mb-2 font-Roboto">
+                    Available property to rent in Nigeria
+                  </h3>
+                  <p
+                    className=" p-3 py-5 font-semibold font-Roboto"
+                    style={{ backgroundColor: myCustomColor }}
+                  >
+                    The average price of houses for rent is ₦2,500,000 The most
+                    expensive house costs ₦50,000,000. while the cheapest costs
+                    ₦20,000. We have a total of 21,891 Property for rent in
+                    Nigeria updated on 29 Nov 2023. Among these properties are
+                    houses, lands, shops, apartments, flats and commercial
+                    spaces . Every Real Estate in Nigeria posted on this site is
+                    verified by real estate agents . We also have cheap houses
+                    for rent and cheap houses for sale . Refine your property
+                    search by price, number of beds and type of property.
+                  </p>
+                </div>
+                {/* Currently Available Property start */}
+                <div className="hidden lg:block">
+                  <CurrentlyAvailableProperty />
+                </div>
+                {/* Currently Available Property end */}
+              </div>
             </div>
-          </div>
-        )}
-        <div
-          className="lg:flex flex flex-wrap h-40 lg:h-14 bg-slate-300 mt-10 mb-10 p-2 space-x-1 text-xs lg:text-base lg:space-x-5 lg:pl-28"
-          style={{ backgroundColor: myCustomColor }}
-        >
-          <Button />
-          <Button2 />
-          <Button3 />
-          <Button4 />
-          <button
-            className="h-10 px-32 rounded focus:outline-none relative top-2 lg:top-0 lg:left-1/4 text-white"
-            style={{ backgroundColor: myCustomColor1 }}
+          )}
+          <div
+            className="md:flex items-center justify-between px-5 lg:px-20 md:h-14 bg-slate-300 mt-10 mb-10 p-2 space-x-1 text-xs lg:text-base lg:space-x-2"
+            style={{ backgroundColor: myCustomColor }}
           >
+<<<<<<< HEAD
             Refine
           </button>
         </div>
@@ -272,79 +335,98 @@ function FInanceService({
                 />
               </div>
               {/* Item 2 end */}
+=======
+            <div className="flex items-center flex-wrap gap-2">
+              <Button />
+              <Button2 />
+              <Button3 />
+              <Button4 />
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
             </div>
-            <div className="relative top-[89pc] lg:top-0 lg:right-3 right-64 lg:block lg:ml-10">
-              <p className="font-semibold mb-7">States</p>
-              <p className="mb-0">Abuja</p>
-              <p className="mb-0">Oyo</p>
-              <p className="mb-0">Ogun</p>
-              <p className="mb-0">Rivers</p>
-              <p className="mb-0">Enugu</p>
-              <p className="mb-0">Edo</p>
-              <p className="mb-0">Akwa Ibom</p>
-              <p className="mb-0">Kaduna</p>
-              <p className="mb-0">Imo</p>
-              <p className="mb-0">Osun</p>
-              <p className="mb-0">Cross River</p>
-              <p className="mb-0">Anambra</p>
-              <p className="mb-0">Kwara</p>
-              <p className="mb-0">Abia</p>
-              <p className="mb-0">Katsina</p>
-              <p className="mb-0">Ondo</p>
-              <p className="mb-0">Adamawa</p>
-              <p className="mb-0">Bauchi</p>
-              <p className="mb-0">Ebonyi</p>
-            </div>
-            <div className="relative top-[113pc] right-[22pc] lg:right-5 h-320 h-64 lg:-ml-16 mb-96 lg:top-96 mt-52 lg:w-2/3 p-5 ring-slate-500 shadow-xl border border-solid border-gray-50">
-              <div className="flex text-2xl " style={{ color: myCustomColor1 }}>
-                <FontAwesomeIcon icon={faEnvelopeOpenText} />
-                <h1 className="ml-3 -mt-1">Get Latest Properties</h1>
-              </div>
-              <p>Get notified when neew properties become available</p>
-              <input
-                type="type"
-                placeholder="Enter your Name"
-                className="border-gray-200 border-2 focus:outline-none pl-3 text-sm p-2 mb-6 mt-6 "
-              />{" "}
-              <br />
-              <div className="flex">
-                <input
-                  type="type"
-                  placeholder="Enter your email Address"
-                  className="border-gray-200 border-2 text-sm pl-3 p-2 z-10 focus:outline-none"
-                />
-                <input
-                  type="submit"
-                  value="Subscribe Now"
-                  style={{ backgroundColor: myCustomColor1 }}
-                  className="px-7 cursor-pointer text-white focus rounded-sm relative left-3 focus:outline-none"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="relative top-5 left-1 lg:left-0 lg:-top-24 flex">
-            <FontAwesomeIcon
-              icon={faChevronLeft}
-              className="p-4 px-5 border-2 border-gray-50 cursor-pointer"
-            />
-            <p
-              className="p-3 px-5 border-2 border-gray-50 cursor-pointer"
-              style={{ backgroundColor: Color, color: tempColor }}
+            <button
+              className="h-10 px-28 lg:px-32 mt-3 md:mt-0 rounded focus:outline-none text-white"
+              style={{ backgroundColor: myCustomColor1 }}
             >
-              1
-            </p>
-            <p className="p-3 px-5 border-2 border-gray-50 cursor-pointer">2</p>
-            <p className="p-3 px-5 border-2 border-gray-50 cursor-pointer">3</p>
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              className="p-4 px-5 border-2 border-gray-50 cursor-pointer"
-            />
-            <FontAwesomeIcon
-              icon={faAnglesRight}
-              className="p-4 px-5 border-2 border-gray-50 cursor-pointer"
-            />
+              Refine
+            </button>
+          </div>
+          <FontAwesomeIcon icon="fa-duotone fa-chevron-down" />
+
+          {/* Item section start */}
+          <div className="flex px-5 lg:px-20 gap-7 lg:gap-20">
+            <div>
+              <h4 className=" -pt-8 hidden lg:block">
+                Available house to loan in Nigeria
+              </h4>
+              <div className="flex items-center justify-between pl-2 border-2 mb-2">
+                <p className="text-sm  font-semibold font-Roboto">
+                  Result 1 - 50 of 100
+                </p>
+                <Sort />
+              </div>
+
+              {/* Items start */}
+              <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-5">
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+
+                {/* next item start */}
+                <div className="flex mt-16">
+                  <FontAwesomeIcon
+                    icon={faChevronLeft}
+                    className="p-4 px-5 border-2 border-gray-50 cursor-pointer"
+                  />
+                  <p
+                    className="p-3 px-5 border-2 border-gray-50 cursor-pointer rounded hover:border hover:border-[#0073E1]"
+                    style={{ backgroundColor: Color, color: tempColor }}
+                  >
+                    1
+                  </p>
+                  <p className="p-3 px-5 border-2 border-gray-50 cursor-pointer rounded hover:border hover:border-[#0073E1]">
+                    2
+                  </p>
+                  <p className="p-3 px-5 border-2 border-gray-50 cursor-pointer rounded hover:border hover:border-[#0073E1]">
+                    3
+                  </p>
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="p-4 px-5 border-2 border-gray-50 cursor-pointer"
+                  />
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="p-4 px-5 border-2 border-gray-50 cursor-pointer"
+                  />
+                </div>
+                {/* next item end */}
+              </div>
+              {/* Items end */}
+            </div>
+            {/* Aside start */}
+            <div className="hidden md:block">
+              <Aside />
+            </div>
+            {/* Aside end */}
+          </div>
+          {/* Item section end */}
+        </div>
+        {/* Mobile only start */}
+        <div className="px-5">
+          <div className="lg:hidden">
+            <CurrentlyAvailableProperty />
+          </div>
+          <div className="md:hidden">
+            <Aside />
           </div>
         </div>
+        {/* Mobile only end */}
       </div>
     </>
   );

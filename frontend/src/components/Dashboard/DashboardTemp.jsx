@@ -24,10 +24,16 @@ import MeterType from "./MeterType";
 import SelectDisco from "./SelectDisco";
 import { Link } from "react-router-dom";
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import Navhome from "../Media/navhome.png";
 =======
 import Navhome from "../Media/navhome.png";
 >>>>>>> Emmy_Push
+=======
+
+import Navhome from "../Media/navhome.png";
+
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
 import { useState, useEffect, useRef } from "react";
 
 import {
@@ -140,26 +146,39 @@ function DashboardTemp({
           </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="relative lg:hidden ">
             {showCloseMenu ? (
               <FontAwesomeIcon
                 className="text-[#fff] h-6 z-10"
 =======
+=======
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
           <div className="lg:hidden ">
             {showCloseMenu ? (
               <FontAwesomeIcon
                 className="text-black h-6 relative left-80 -ml-3 lg:-ml-0 lg:left-0 "
+<<<<<<< HEAD
 >>>>>>> Emmy_Push
+=======
+
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
                 icon={faClose}
                 onClick={toggleMenu}
               />
             ) : (
               <FontAwesomeIcon
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="text-[#fff] h-6"
 =======
                 className="text-black h-6 relative float-right right-[31%] -ml-3 lg:-ml-0 lg:left-0"
 >>>>>>> Emmy_Push
+=======
+
+                className="text-black h-6 relative float-right right-[31%] -ml-3 lg:-ml-0 lg:left-0"
+
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
                 icon={faBars}
                 onClick={toggleMenu}
               />
@@ -170,6 +189,7 @@ function DashboardTemp({
                 onClick={toggleMenu}
               />
             )}
+<<<<<<< HEAD
 <<<<<<< HEAD
             <div className="z-10 absolute right-0">
               {openMenu && <DropdownMenu />}
@@ -276,6 +296,9 @@ function DashboardTemp({
           </div>
         </div>
 =======
+=======
+
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
             <div className="z-10 absolute right-40">
               {openMenu && <DropdownMenuDashboard />}
             </div>
@@ -295,6 +318,7 @@ function DashboardTemp({
               />
               <p>Dashboard</p>
             </div>
+
 
             <hr className="text-black relative -left-6 top-14 w-76" />
             <div className="relative top-20 left-14">
@@ -327,6 +351,7 @@ function DashboardTemp({
                       filter: `saturate(1.25) brightness(${ValueInText1})`,
                     }}
                   />
+
 
                   <p className="whitespace-nowrap">Buy Airtime</p>
                 </div>
@@ -380,10 +405,14 @@ function DashboardTemp({
                 </div>
               </Link>
             </div>
+
           </div>
         </div>
 
+<<<<<<< HEAD
 >>>>>>> Emmy_Push
+=======
+>>>>>>> 9b36b4a431557ab2d2395e3018f4efa8524aa7d6
         <div className="w-4/5 ">
           <div
             className="h-20 relative pt-3 pl-9 lg:right-0 right-[76vh] -ml-24 lg:-ml-0 lg:w-screen-4 w-[142%]"

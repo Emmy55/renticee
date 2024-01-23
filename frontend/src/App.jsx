@@ -1,9 +1,45 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+  useLocation,
+} from "react-router-dom";
 
-// import FinanceService from "./components/FinanceService";
-// import HouseLoan from "./components/HouseLoan";
-// import Residential from './components/Residential'
-// import Commercial from './components/Commercial'
+<<<<<<<<< Temporary merge branch 1
+import GloData from "./components/Dashboard/GloData";
+// import MtnData from "./components/Dashboard/MtnData";
+import AirtelData from "./components/Dashboard/AirtelData";
+import Ninemobile from "./components/Dashboard/Ninemobile";
+import GloAirtime from "./components/Dashboard/GloAirtime";
+import MtnAirtime from "./components/Dashboard/MtnAirtime";
+import AirtelAirtime from "./components/Dashboard/AirtelAirtime";
+import NinemobileAirtime from "./components/Dashboard/NinemobileAirtime";
+import TvSub from "./components/Dashboard/TvSub";
+import Dstv from "./components/Dashboard/Dstv";
+import Startimes from "./components/Dashboard/Startimes";
+import ElectricityBills from "./components/Dashboard/ElectricityBills";
+import ChangePin from "./components/Dashboard/ChangePin";
+import FundWallet from "./components/Dashboard/FundWallet";
+import ConfirmMtnData from "./components/Dashboard/ConfirmMtnData";
+import ConfirmGloData from "./components/Dashboard/ConfirmGloData";
+import ConfirmAirtelData from "./components/Dashboard/ConfirmAirtelData";
+import ConfirmNinemobileData from "./components/Dashboard/ConfirmNinemobileData";
+import ConfirmGloAirtime from "./components/Dashboard/ConfirmGloAirtime";
+import ConfirmMtnAirtime from "./components/Dashboard/ConfirmMtnAirtime";
+import ConfirmNineMAirtime from "./components/Dashboard/ConfirmNineMAirtime";
+import ConfirmAirtelAirtime from "./components/Dashboard/ConfirmAirtelAirtime";
+import ConfirmGotv from "./components/Dashboard/ConfirmGotv";
+import ConfirmDstv from "./components/Dashboard/ConfirmDstv";
+import ConfirmStartime from "./components/Dashboard/ConfirmStartime";
+import ConfirmElectricity from "./components/Dashboard/ConfirmElectricity";
+// import SelectDataPlan from './components/SelectDataPlan'
+=========
+import FinanceService from "./components/FinanceService";
+import HouseLoan from "./components/HouseLoan";
+import Residential from './components/Residential'
+import Commercial from './components/Commercial'
 import Industrial from './components/Industrial'
 import Notification from './components/Notification'
 import DashboardTemp from './components/Dashboard/DashboardTemp'
@@ -33,9 +69,18 @@ import ConfirmGotv from './components/Dashboard/ConfirmGotv'
 import ConfirmDstv from './components/Dashboard/ConfirmDstv'
 import ConfirmStartime from './components/Dashboard/ConfirmStartime'
 import ConfirmElectricity from './components/Dashboard/ConfirmElectricity'
-// import SelectDataPlan from './components/SelectDataPlan'
+import SettingsDashboard from './components/Dashboard/SettingsDashboard'
+import SaveChanges from './components/Dashboard/SaveChanges'
+import EditProfile from './components/Dashboard/EditProfile'
+import SettingsTemp from './components/Dashboard/SettingsTemp'
+import SettingsNotification from './components/Dashboard/SettingsNotification'
+import SettingsTransaction from './components/Dashboard/SettingsTransaction'
+import SettingsPost from './components/Dashboard/SettingsPost'
+import PSettingsPost from './components/Dashboard/PSettingsPost'
+import SettingsLogout from './components/Dashboard/SettingsLogout'
 
 
+>>>>>>>>> Temporary merge branch 2
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/home/Home";
@@ -89,8 +134,60 @@ function App() {
   }
 
   return (
-    <>
+    <div className="App">
+      <Router>
+        <div className="pb-[78px] lg:pb-[92px] ">
+          <CustomHeader />
+        </div>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/signin" element={<LogIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/verifycode" element={<VerifyCode />} />
+          <Route path="/choosecategory" element={<ChooseCategory />} />
+          <Route path="/residential" element={<Residential />} />
+          <Route path="/commercial" element={<Commercial />} />
+          <Route path="/industrial" element={<Industrial />} />
 
+<<<<<<<<< Temporary merge branch 1
+          {/* Emmy start */}
+          <Route path="/mtndata" element={<MtnData />} />
+          <Route path="/GloData" element={<GloData />} />
+          <Route path="/GloAirtime" element={<GloAirtime />} />
+          <Route path="/MtnAirtime" element={<MtnAirtime />} />
+          <Route path="/AirtelData" element={<AirtelData />} />
+          <Route path="/AirtelAirtime" element={<AirtelAirtime />} />
+          <Route path="/Ninemobile" element={<Ninemobile />} />
+          <Route path="/NinemobileAirtime" element={<NinemobileAirtime />} />
+          <Route path="/TvSub" element={<TvSub />} />
+          <Route path="/Dstv" element={<Dstv />} />
+          <Route path="/Startimes" element={<Startimes />} />
+          <Route path="/ElectricityBills" element={<ElectricityBills />} />
+          <Route path="/ChangePin" element={<ChangePin />} />
+          <Route path="/FundWallet" element={<FundWallet />} />
+          <Route path="/ConfirmMtnData" element={<ConfirmMtnData />} />
+          <Route path="/ConfirmGloData" element={<ConfirmGloData />} />
+          <Route path="/ConfirmAirtelData" element={<ConfirmAirtelData />} />
+          <Route path="/ConfirmGloAirtime" element={<ConfirmGloAirtime />} />
+          <Route
+            path="/ConfirmNinemobileData"
+            element={<ConfirmNinemobileData />}
+          />
+          <Route path="/ConfirmMtnAirtime" element={<ConfirmMtnAirtime />} />
+          <Route
+            path="/ConfirmNineMAirtime"
+            element={<ConfirmNineMAirtime />}
+          />
+          <Route
+            path="/ConfirmAirtelAirtime"
+            element={<ConfirmAirtelAirtime />}
+          />
+          <Route path="/ConfirmGotv" element={<ConfirmGotv />} />
+          <Route path="/ConfirmDstv" element={<ConfirmDstv />} />
+          <Route path="/ConfirmStartime" element={<ConfirmStartime />} />
+          <Route path="/ConfirmElectricity" element={<ConfirmElectricity />} />
+          <Route path="/houseloan" element={<HouseLoan />} />
+=========
       <Header />
     <BrowserRouter>
       <Routes>
@@ -120,6 +217,20 @@ function App() {
         <Route path='/ConfirmDstv' element={<ConfirmDstv />} />
         <Route path='/ConfirmStartime' element={<ConfirmStartime />} />
         <Route path='/ConfirmElectricity' element={<ConfirmElectricity />} />
+        <Route path='/SettingsDashboard' element={<SettingsDashboard />} />
+        <Route path='/SaveChanges' element={<SaveChanges />} />
+        <Route path='/EditProfile' element={<EditProfile />} />
+        <Route path='/SettingsTemp' element={<SettingsTemp />} />
+        <Route path='/SettingsNotification' element={<SettingsNotification />} />
+        <Route path='/SettingsTransaction' element={<SettingsTransaction />} />
+        <Route path='/SettingsPost' element={<SettingsPost />} />
+        <Route path='/PSettingsPost' element={<PSettingsPost />} />
+        <Route path='/SettingsLogout' element={<SettingsLogout />} />
+        <Route path='/HouseLoan' element={<HouseLoan />} />
+        <Route path='/Residential' element={<Residential />} />
+        <Route path='/Commercial' element={<Commercial />} />
+        <Route path='/Industrial' element={<Industrial />} />
+        <Route path='/Notification' element={<Notification />} />
       {/* <HouseLoan/> */}
       {/* <Residential/> */}
       {/* <Commercial/> */}
@@ -130,31 +241,29 @@ function App() {
       </Routes>
       </BrowserRouter>
       <Footer />
+>>>>>>>>> Temporary merge branch 2
 
-      {/* <Header /> */}
-      {/* <Footer /> */}
-      {/* <Hero /> */}
-      {/* <Home /> */}
-      {/* <Main /> */}
-      {/* <FindProperty /> */}
-      {/* <SendMessage /> */}
-      {/* <LogIn /> */}
-      {/* <SignUp /> */}
-      {/* <VerifyCode /> */}
-      {/* <ChooseCategory /> */}
-      {/* <Identifiction /> */}
-      {/* <GDPRagreement /> */}
-      {/* <HouseInsuranceHero /> */}
-      {/* <HouseInsurance /> */}
-      {/* <Pricing /> */}
-      {/* <Section /> */}
-      {/* <Blog /> */}
-      {/* <InsuranceStepHero /> */}
-      {/* <FormSteps /> */}
-      {/* <Step1Form /> */}
-      {/* <Step1 /> */}
+          {/* Emmy end */}
 
-    </>
+          <Route path="/houseinsurance" element={<HouseInsurance />} />
+          <Route path="/insuranceblog" element={<Blog />} />
+          <Route path="/step1" element={<Step1 />} />
+          <Route path="/step2" element={<Step2 />} />
+          <Route path="/step3" element={<Step3 />} />
+          <Route path="/step4" element={<Step4 />} />
+          <Route path="/step5" element={<Step5 />} />
+          <Route path="/logistics" element={<Logistics />} />
+          <Route path="/blog" element={<BlogHome />} />
+          <Route path="/blogpost" element={<BlogPost />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/transaction" element={<Transaction />} />
+          <Route path="/agentprofile" element={<AgentProfile />} />
+          <Route path="/agentpostprofile" element={<AgentPostProfile />} />
+        </Routes>
+        <CustomFooter />
+      </Router>
+    </div>
   );
 }
 

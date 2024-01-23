@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import DropdownIcon from './Media/dropdown.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import React, { useState } from "react";
+import DropdownIcon from "./Media/dropdown.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-
-const Dropdown = ({ buttonText, }) => {
-const myCustomColor = '#7F7F7F';
-const myCustomColor1 = '#EAEAEA';
+const Dropdown = ({ buttonText }) => {
+  const myCustomColor = "#7F7F7F";
+  const myCustomColor1 = "#EAEAEA";
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -18,15 +17,15 @@ const myCustomColor1 = '#EAEAEA';
   };
 
   return (
-    <div className="relative lg:ml-96 lg:left-40 left-20 text-sm lg:text-base z-10 ">
+    <div className="text-sm lg:text-base ">
       <button
-        className="w-36 flex bg-white py-2 px-4 rounded focus:outline-none " style={{ backgroundColor: myCustomColor1 }}
+        className="w-36 flex bg-white py-2 px-4 rounded focus:outline-none "
+        style={{ backgroundColor: myCustomColor1 }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        Sort by <FontAwesomeIcon icon={faChevronDown} className='mt-1 ml-10' />
+        Sort by <FontAwesomeIcon icon={faChevronDown} className="mt-1 ml-10" />
       </button>
-      
 
       {isHovered && (
         <div

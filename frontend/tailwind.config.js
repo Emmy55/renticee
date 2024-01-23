@@ -12,20 +12,22 @@ export default {
         b: "#222222",
       },
       height: {
-
+// <<<<<<<<< Temporary merge branch 1
         "screen-2": "200vh", // adjust as needed
         "screen-3": "130vh", // adjust as needed
+        "screen-4": "30vh", // adjust as needed
+        "screen-5": "220vh", // adjust as needed
       },
-      // width: {
-      //   "screen-2": "48vw",
-      //   "screen-3": "68.3vw",
-      //   "screen-4": "78.3vw",
-
-      //   'screen-2': '200vh', // adjust as needed
-      //   'screen-3': '130vh', // adjust as needed
-      //   'screen-4': '30vh', // adjust as needed
-      //   'screen-5': '220vh', // adjust as needed
-      // },
+      width: {
+        "screen-2": "48vw",
+        "screen-3": "68.3vw",
+        "screen-4": "78.3vw",
+// =========
+        'screen-2': '200vh', // adjust as needed
+        'screen-3': '130vh', // adjust as needed
+        'screen-4': '30vh', // adjust as needed
+        'screen-5': '220vh', // adjust as needed
+      },
       width: {
         'screen-1': '100.7vw',
         'screen-2': '48vw',
@@ -38,7 +40,7 @@ export default {
         'screen-9': '51.5vw',
         'screen-10': '66vw',
 
-
+// >>>>>>>>> Temporary merge branch 2
       },
       top: {
         "full-1": "130vh",
