@@ -7,7 +7,6 @@ import {
   useLocation,
 } from "react-router-dom";
 
-
 import GloData from "./components/Dashboard/GloData";
 // import MtnData from "./components/Dashboard/MtnData";
 import AirtelData from "./components/Dashboard/AirtelData";
@@ -104,7 +103,6 @@ function App() {
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/industrial" element={<Industrial />} />
 
-
           {/* Emmy start */}
           <Route path="/mtndata" element={<MtnData />} />
           <Route path="/GloData" element={<GloData />} />
@@ -142,7 +140,6 @@ function App() {
           <Route path="/ConfirmStartime" element={<ConfirmStartime />} />
           <Route path="/ConfirmElectricity" element={<ConfirmElectricity />} />
           <Route path="/houseloan" element={<HouseLoan />} />
-
 
           {/* Emmy end */}
 

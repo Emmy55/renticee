@@ -30,13 +30,24 @@ function DropdownMenu() {
       >
         <p className="cursor-pointer font-Roboto">Home</p>
       </NavLink>
-
-      <p className="cursor-pointer font-Roboto">Real Estate</p>
-
-      <p className="cursor-pointer font-Roboto">Bill Payments</p>
-
-      <p className="cursor-pointer font-Roboto">House Loan</p>
-
+      <NavLink
+        to="/residential"
+        className={({ isActive }) => (isActive ? activeLink : normalLink)}
+      >
+        <p className="cursor-pointer font-Roboto">Real Estate</p>
+      </NavLink>
+      <NavLink
+        to="/mtndata"
+        className={({ isActive }) => (isActive ? activeLink : normalLink)}
+      >
+        <p className="cursor-pointer font-Roboto">Bill Payments</p>
+      </NavLink>
+      <NavLink
+        to="/houseloan"
+        className={({ isActive }) => (isActive ? activeLink : normalLink)}
+      >
+        <p className="cursor-pointer font-Roboto">House Loan</p>
+      </NavLink>
       <NavLink
         to="/houseinsurance"
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
