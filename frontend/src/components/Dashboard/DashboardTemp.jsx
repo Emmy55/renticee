@@ -26,6 +26,10 @@ import { Link } from "react-router-dom";
 import WalletTop from "./WalletTop";
 import Navhome from "../Media/navhome.png";
 import Bar from "../Media/top-menu.svg";
+import Buydatalogo from '../Media/buydatalogo.png'
+import Tvsublogo from '../Media/tvsublogo.png'
+import Buyairtimelogo from '../Media/buyairtimelogo.png'
+import Electricitybillslogo from '../Media/electricitybillslogo.png'
 
 import { useState, useEffect, useRef } from "react";
 
@@ -56,6 +60,7 @@ function DashboardTemp({
   showAdditionalDiv10,
   showAdditionalDiv11,
   showAdditionalDiv12,
+  showAdditionalDiv13,
   LeftValue,
   Linking,
   Link1,
@@ -124,7 +129,7 @@ function DashboardTemp({
   return (
     <>
       <div className="z-40">
-        <WalletTop selectedText={SelectedText} currentPath={CurrentPath} />
+        
         <div className="flex lg:overflow-visible overflow-hidden">
           <div className="h-screen lg:w-80 relative  left-6 z-40 top-6 lg:-top-16">
             <div className="flex space-x-3 w-screen-5 lg:w-20 lg:top-0 top-1 relative lg:left-7">
@@ -140,10 +145,10 @@ function DashboardTemp({
               </div>
             </div>
 
-            <div className="lg:hidden  relative -top-[74px]">
+            <div className="lg:hidden relative -top-[74px] min-[425px]:right-[-1%]">
               {showCloseMenu ? (
                 <FontAwesomeIcon
-                  className="text-black h-6 relative left-80 top-0 z-40  -ml-3 lg:-ml-0 lg:left-0 "
+                  className="text-black h-6 relative left-[67.5%] top-1 z-40 -ml-3 lg:-ml-0 lg:left-0 "
                   icon={faClose}
                   onClick={toggleMenu}
                 />
@@ -161,7 +166,7 @@ function DashboardTemp({
                 />
               )}
 
-              <div className="z-40 absolute right-40">
+              <div className="z-40 absolute top-9 right-40 min-[425px]:right-[33%]">
                 {openMenu && <DropdownMenuDashboard />}
               </div>
             </div>
@@ -269,10 +274,10 @@ function DashboardTemp({
           </div>
 
           <div className="w-4/5 ">
-            <div className="relative top-20 h-screen-2 lg:h-full right-[24.5pc] md:right-[55.5pc] lg:w-[98%] overflow-hidden lg:pr-3 pr-3 w-96 -ml-28 lg:-ml-0 lg:right-0 lg:top-0">
+            <div className="relative top-20 h-screen-2 lg:h-full min-[425px]:right-[28.5pc] right-[24.5pc] md:right-[55.5pc] lg:w-[98%] overflow-hidden lg:pr-3 pr-3 w-96 -ml-28 lg:-ml-0 lg:right-0 lg:top-0">
               {showAdditionalDiv && (
                 <div className="pt-4 flex">
-                  <Link to="/.">
+                  <Link to="/MtnData">
                     <div className="flex ml-10">
                       <input type="radio" checked={boolean} />
                       <img src={Mtn} className="w-14 lg:w-20" />
@@ -700,6 +705,53 @@ function DashboardTemp({
                     Proceed
                   </button>
                   <img src={Paystack} className="w-60 mt-5" />
+                </div>
+              )}
+              {showAdditionalDiv13 && (
+                <div className="relative left-11 w-96 h-screen-3 lg:overflow-visible">
+                 
+                  <div className="flex space-x-2 mt-10  w-screen-2 lg:w-[240%] relative right-4 lg:right-0">
+                    <div className="w-80 lg:w-72 lg:h-40  h-28 border shadow-lg p-2">
+                      <img
+                        src={Buydatalogo}
+                        className="w-16 relative lg:top-2 left-0 lg:left-[38%] mb-2"
+                      />
+                      {/* <hr /> */}
+                      <p className="ml-2 mt-1 lg:left-14 lg:top-2 relative">Buy Data</p>
+                    </div>
+                    <div className="w-80 lg:w-72 lg:h-40 border h-28 shadow-lg p-2">
+                      <img
+                        src={Buyairtimelogo}
+                        className="w-36 relative left-0 lg:left-6 mb-2"
+                      />
+                      {/* <hr /> */}
+                      <p className="ml-2 mt-1 lg:left-14 relative">Buy Airtime</p>
+                    </div>
+                    <div className="lg:w-72 lg:h-40 border h-28 shadow-lg p-2">
+                      <img
+                        src={Tvsublogo}
+                        className="w-36 relative lg:left-8 lg:-top-3 lg:mb-10 mb-7 mt-5"
+                      />
+                      {/* <hr /> */}
+                      <p className="ml-2 mt-1 lg:-top-11 lg:left-8 relative">TV Subscription</p>
+                    </div>
+                    <div className="w-80 lg:w-72 lg:h-40 border h-28 shadow-lg p-2">
+                      <img
+                        src={Electricitybillslogo}
+                        className="w-16 relative lg:left-16 lg:mb-10 mb-8 mt-4"
+                      />
+                      {/* <hr /> */}
+                      <p className="lg:-top-5 lg:left-14 relative">Electricity Bills</p>
+                    </div>
+                  </div>
+                  
+                  {/* <button
+                    className="text-white px-10 py-3 mt-12 rounded-sm"
+                    style={{ backgroundColor: myCustomColor }}
+                  >
+                    Proceed
+                  </button> */}
+                  {/* <img src={Paystack} className="w-60 mt-5" /> */}
                 </div>
               )}
 

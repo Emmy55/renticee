@@ -1,11 +1,13 @@
 // import React from 'react'
 import DashboardTemp from "./DashboardTemp";
 // import Bigmtn from "../Media/bigmtn.png";
+import WalletTop from "./WalletTop";
 
-function GloData({ SelectedText, CurrentPath }) {
+function GloData() {
   return (
     <>
       <div>
+      <WalletTop SelectedText="Wallet" CurrentPath="Fund Wallet" />
         <DashboardTemp
           CurrentPath="Fund Wallet"
           SelectedText="Wallet"
