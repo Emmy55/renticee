@@ -45,6 +45,7 @@ import ChooseCategory from "./components/chooseCategory/ChooseCategory";
 import Residential from "./components/Residential";
 import Commercial from "./components/Commercial";
 import Industrial from "./components/Industrial";
+import BillPayment from "./components/Dashboard/BillPayment";
 import DashboardTemp from "./components/Dashboard/DashboardTemp";
 import MtnData from "./components/Dashboard/MtnData";
 import HouseInsurance from "./components/houseInsurance/HouseInsurance";
@@ -158,6 +159,7 @@ function App() {
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/agentprofile" element={<AgentProfile />} />
           <Route path="/agentpostprofile" element={<AgentPostProfile />} />
+          <Route path="/BillPayment" element={<BillPayment />} />
         </Routes>
         <CustomFooter />
       </Router>
