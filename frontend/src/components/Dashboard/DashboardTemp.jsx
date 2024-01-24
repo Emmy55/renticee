@@ -33,11 +33,7 @@ import Electricitybillslogo from "../Media/electricitybillslogo.png";
 
 import { useState, useEffect, useRef } from "react";
 
-import {
-  faChevronRight,
-  faBars,
-  faClose,
-} from "@fortawesome/free-solid-svg-icons";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function DashboardTemp({
@@ -171,19 +167,21 @@ function DashboardTemp({
             </div>
 
             <div className="hidden lg:block ">
-              <div
-                className="flex space-x-6 relative left-12 w-60 pl-4 top-7 py-4"
-                style={{ backgroundColor: Color5, color: tempColor5 }}
-              >
-                <img
-                  src={Dashhome}
-                  className="w-5 mt- h-5 filter brightness-0 saturate-125"
-                  style={{
-                    filter: `saturate(1.25) brightness(${ValueInText5})`,
-                  }}
-                />
-                <p>Dashboard</p>
-              </div>
+              <Link to="/billpayment">
+                <div
+                  className="flex space-x-6 relative left-12 w-60 pl-4 top-7 py-4"
+                  style={{ backgroundColor: Color5, color: tempColor5 }}
+                >
+                  <img
+                    src={Dashhome}
+                    className="w-5 mt- h-5 filter brightness-0 saturate-125"
+                    style={{
+                      filter: `saturate(1.25) brightness(${ValueInText5})`,
+                    }}
+                  />
+                  <p>Dashboard</p>
+                </div>
+              </Link>
 
               <hr className="text-black relative -left-6 top-14 w-76" />
               <div className="relative top-20 left-14">
@@ -706,48 +704,60 @@ function DashboardTemp({
                   <img src={Paystack} className="w-60 mt-5" />
                 </div>
               )}
+              {/* Dashboard Temp start */}
               {showAdditionalDiv13 && (
                 <div className="relative left-11 w-96 h-screen-3 lg:overflow-visible">
                   <div className=" flex-wrap flex lg:flex-nowrap space-x-2 mt-10 left-0  w-screen lg:w-[240%] relative right-4 lg:right-0">
                     <div className="w-40 lg:w-72 lg:h-40  h-40 border shadow-lg p-2">
-                      <img
-                        src={Buydatalogo}
-                        className="w-14  lg:w-16 relative lg:top-2 left-12 top-3 lg:left-[38%] mb-2"
-                      />
-                      {/* <hr /> */}
-                      <p className="ml-2 mt-1 lg:left-14 left-7 top-5 lg:top-3 relative">
-                        Buy Data
-                      </p>
+                      <Link to="/MtnData">
+                        <img
+                          src={Buydatalogo}
+                          className="w-14  lg:w-16 relative lg:top-2 left-12 top-3 lg:left-[38%] mb-2"
+                        />
+                        {/* <hr /> */}
+                        <p className="ml-2 mt-1 lg:left-14 left-7 top-5 lg:top-3 relative">
+                          Buy Data
+                        </p>
+                      </Link>
                     </div>
+
                     <div className="w-40 lg:w-72 relative left-1 lg:left-0 lg:h-40 border h-40 shadow-lg p-2">
-                      <img
-                        src={Buyairtimelogo}
-                        className="w-28 lg:w-36 relative left-4 lg:top-0 top-4 lg:left-6 mb-2"
-                      />
-                      {/* <hr /> */}
-                      <p className="ml-2 mt-1 lg:left-12 left-6 lg:top-0 top-5 relative">
-                        Buy Airtime
-                      </p>
+                      <Link to="/MtnAirtime">
+                        <img
+                          src={Buyairtimelogo}
+                          className="w-28 lg:w-36 relative left-4 lg:top-0 top-4 lg:left-6 mb-2"
+                        />
+                        {/* <hr /> */}
+                        <p className="ml-2 mt-1 lg:left-12 left-6 lg:top-0 top-5 relative">
+                          Buy Airtime
+                        </p>
+                      </Link>
                     </div>
+
                     <div className="lg:w-72 w-40 lg:h-40 border h-40 shadow-lg lg:-left-0 p-2 mt-4 lg:mt-0 relative -left-2">
-                      <img
-                        src={Tvsublogo}
-                        className="w-36 relative lg:left-8 lg:-top-3 -top-5 lg:mb-10 mb-7 mt-5"
-                      />
-                      {/* <hr /> */}
-                      <p className="ml-2 mt-1 lg:-top-12 -top-10 lg:left-8 left-2 relative">
-                        TV Subscription
-                      </p>
+                      <Link to="/TvSub">
+                        <img
+                          src={Tvsublogo}
+                          className="w-36 relative lg:left-8 lg:-top-3 -top-5 lg:mb-10 mb-7 mt-5"
+                        />
+                        {/* <hr /> */}
+                        <p className="ml-2 mt-1 lg:-top-12 -top-10 lg:left-8 left-2 relative">
+                          TV Subscription
+                        </p>
+                      </Link>
                     </div>
+
                     <div className="w-40 lg:w-72 lg:h-40 border h-40 mt-4 lg:mt-0 relative lg:-left-0 -left-1 shadow-lg p-2">
-                      <img
-                        src={Electricitybillslogo}
-                        className="w-16 relative lg:left-16 lg:mb-10 left-9 mb-8 mt-4"
-                      />
-                      {/* <hr /> */}
-                      <p className="lg:-top-5 lg:left-14 left-5 -top-5 relative">
-                        Electricity Bills
-                      </p>
+                      <Link to="/ElectricityBills">
+                        <img
+                          src={Electricitybillslogo}
+                          className="w-16 relative lg:left-16 lg:mb-10 left-9 mb-8 mt-4"
+                        />
+                        {/* <hr /> */}
+                        <p className="lg:-top-5 lg:left-14 left-5 -top-5 relative">
+                          Electricity Bills
+                        </p>
+                      </Link>
                     </div>
                   </div>
 
@@ -760,6 +770,7 @@ function DashboardTemp({
                   {/* <img src={Paystack} className="w-60 mt-5" /> */}
                 </div>
               )}
+              {/* Dashboard Temp end */}
 
               {showAdditionalDiv9 && (
                 <div className="relative left-11 w-screen-2 h-screen">
@@ -865,6 +876,7 @@ function DashboardTemp({
                 </div>
               )}
 
+              {/*  */}
               {showAdditionalDiv11 && (
                 <div className="relative left-11 w-screen-2 h-screen-3">
                   <p className="font-semibold relative top-1 mt-4 whitespace-nowrap ">
@@ -940,6 +952,7 @@ function DashboardTemp({
                   </button>
                 </div>
               )}
+              {/*  */}
             </div>
           </div>
         </div>

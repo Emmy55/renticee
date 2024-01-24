@@ -33,6 +33,7 @@ import ConfirmGotv from "./components/Dashboard/ConfirmGotv";
 import ConfirmDstv from "./components/Dashboard/ConfirmDstv";
 import ConfirmStartime from "./components/Dashboard/ConfirmStartime";
 import ConfirmElectricity from "./components/Dashboard/ConfirmElectricity";
+import BillPayment from "./components/Dashboard/BillPayment";
 // import SelectDataPlan from './components/SelectDataPlan'
 
 import Header from "./components/Header";
@@ -45,8 +46,6 @@ import ChooseCategory from "./components/chooseCategory/ChooseCategory";
 import Residential from "./components/Residential";
 import Commercial from "./components/Commercial";
 import Industrial from "./components/Industrial";
-import BillPayment from "./components/Dashboard/BillPayment";
-import DashboardTemp from "./components/Dashboard/DashboardTemp";
 import MtnData from "./components/Dashboard/MtnData";
 import HouseInsurance from "./components/houseInsurance/HouseInsurance";
 import Blog from "./components/insuranceBlog/Blog";
@@ -105,6 +104,8 @@ function App() {
           <Route path="/industrial" element={<Industrial />} />
 
           {/* Emmy start */}
+
+          <Route path="/billpayment" element={<BillPayment />} />
           <Route path="/mtndata" element={<MtnData />} />
           <Route path="/GloData" element={<GloData />} />
           <Route path="/GloAirtime" element={<GloAirtime />} />

@@ -92,7 +92,7 @@ function Header() {
             </p>
             <p className="lg:link lg:linkHover font-Roboto">
               <NavLink
-                to="/mtndata"
+                to="/billpayment"
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }

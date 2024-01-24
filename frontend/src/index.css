@@ -68,37 +68,37 @@
   
   .amin {
     animation: backgroundImageAnimation 15s infinite;
-    background-size: cover;
+    /* background-size: contain; */
   }
   
   @keyframes backgroundImageAnimation {
     0% {
-      background-image: url('/src/assets/images/anima-1-1.svg');
-    }
-  
-    16.66% {
-      background-image: url('/src/assets/images/anima-1-1.svg');
+      background-image: url('/src/assets/images/anima-1-1.png');
     }
   
     33.33% {
-      background-image: url('/src/assets/images/anima-1-2.svg');
+      background-image: url('/src/assets/images/anima-1-2.png');
     }
   
     50% {
-      background-image: url('/src/assets/images/anima-2-1.svg');
+      background-image: url('/src/assets/images/anima-2-1.png');
     }
   
     66.66% {
-      background-image: url('/src/assets/images/anima-2-2.svg');
+      background-image: url('/src/assets/images/anima-2-2.png');
     }
   
     83.33% {
-      background-image: url('/src/assets/images/anima-3-1.svg');
+      background-image: url('/src/assets/images/anima-3-1.png');
     }
   
     100% {
-      background-image: url('/src/assets/images/anima-3-2.svg');
+      background-image: url('/src/assets/images/anima-3-2.png');
     }
+  
+    /* 100% {
+      background-image: url('/src/assets/images/anima-3-2.svg');
+    } */
   }
   
   
