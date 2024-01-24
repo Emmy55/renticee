@@ -26,10 +26,10 @@ import { Link } from "react-router-dom";
 import WalletTop from "./WalletTop";
 import Navhome from "../Media/navhome.png";
 import Bar from "../Media/top-menu.svg";
-import Buydatalogo from '../Media/buydatalogo.png'
-import Tvsublogo from '../Media/tvsublogo.png'
-import Buyairtimelogo from '../Media/buyairtimelogo.png'
-import Electricitybillslogo from '../Media/electricitybillslogo.png'
+import Buydatalogo from "../Media/buydatalogo.png";
+import Tvsublogo from "../Media/tvsublogo.png";
+import Buyairtimelogo from "../Media/buyairtimelogo.png";
+import Electricitybillslogo from "../Media/electricitybillslogo.png";
 
 import { useState, useEffect, useRef } from "react";
 
@@ -129,7 +129,6 @@ function DashboardTemp({
   return (
     <>
       <div className="z-40">
-        
         <div className="flex lg:overflow-visible overflow-hidden">
           <div className="h-screen lg:w-80 relative  left-6 z-40 top-6 lg:-top-16">
             <div className="flex space-x-3 w-screen-5 lg:w-20 lg:top-0 top-1 relative lg:left-7">
@@ -709,42 +708,49 @@ function DashboardTemp({
               )}
               {showAdditionalDiv13 && (
                 <div className="relative left-11 w-96 h-screen-3 lg:overflow-visible">
-                 
-                  <div className="flex space-x-2 mt-10  w-screen-2 lg:w-[240%] relative right-4 lg:right-0">
-                    <div className="w-80 lg:w-72 lg:h-40  h-28 border shadow-lg p-2">
+                  <div className=" flex-wrap flex lg:flex-nowrap space-x-2 mt-10 left-0  w-screen lg:w-[240%] relative right-4 lg:right-0">
+                    <div className="w-40 lg:w-72 lg:h-40  h-40 border shadow-lg p-2">
                       <img
                         src={Buydatalogo}
-                        className="w-16 relative lg:top-2 left-0 lg:left-[38%] mb-2"
+                        className="w-14  lg:w-16 relative lg:top-2 left-12 top-3 lg:left-[38%] mb-2"
                       />
                       {/* <hr /> */}
-                      <p className="ml-2 mt-1 lg:left-14 lg:top-2 relative">Buy Data</p>
+                      <p className="ml-2 mt-1 lg:left-14 left-7 top-5 lg:top-3 relative">
+                        Buy Data
+                      </p>
                     </div>
-                    <div className="w-80 lg:w-72 lg:h-40 border h-28 shadow-lg p-2">
+                    <div className="w-40 lg:w-72 relative left-1 lg:left-0 lg:h-40 border h-40 shadow-lg p-2">
                       <img
                         src={Buyairtimelogo}
-                        className="w-36 relative left-0 lg:left-6 mb-2"
+                        className="w-28 lg:w-36 relative left-4 lg:top-0 top-4 lg:left-6 mb-2"
                       />
                       {/* <hr /> */}
-                      <p className="ml-2 mt-1 lg:left-14 relative">Buy Airtime</p>
+                      <p className="ml-2 mt-1 lg:left-12 left-6 lg:top-0 top-5 relative">
+                        Buy Airtime
+                      </p>
                     </div>
-                    <div className="lg:w-72 lg:h-40 border h-28 shadow-lg p-2">
+                    <div className="lg:w-72 w-40 lg:h-40 border h-40 shadow-lg lg:-left-0 p-2 mt-4 lg:mt-0 relative -left-2">
                       <img
                         src={Tvsublogo}
-                        className="w-36 relative lg:left-8 lg:-top-3 lg:mb-10 mb-7 mt-5"
+                        className="w-36 relative lg:left-8 lg:-top-3 -top-5 lg:mb-10 mb-7 mt-5"
                       />
                       {/* <hr /> */}
-                      <p className="ml-2 mt-1 lg:-top-11 lg:left-8 relative">TV Subscription</p>
+                      <p className="ml-2 mt-1 lg:-top-12 -top-10 lg:left-8 left-2 relative">
+                        TV Subscription
+                      </p>
                     </div>
-                    <div className="w-80 lg:w-72 lg:h-40 border h-28 shadow-lg p-2">
+                    <div className="w-40 lg:w-72 lg:h-40 border h-40 mt-4 lg:mt-0 relative lg:-left-0 -left-1 shadow-lg p-2">
                       <img
                         src={Electricitybillslogo}
-                        className="w-16 relative lg:left-16 lg:mb-10 mb-8 mt-4"
+                        className="w-16 relative lg:left-16 lg:mb-10 left-9 mb-8 mt-4"
                       />
                       {/* <hr /> */}
-                      <p className="lg:-top-5 lg:left-14 relative">Electricity Bills</p>
+                      <p className="lg:-top-5 lg:left-14 left-5 -top-5 relative">
+                        Electricity Bills
+                      </p>
                     </div>
                   </div>
-                  
+
                   {/* <button
                     className="text-white px-10 py-3 mt-12 rounded-sm"
                     style={{ backgroundColor: myCustomColor }}
