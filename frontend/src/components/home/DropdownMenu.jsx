@@ -5,6 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 
 function DropdownMenu() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   const activeLink =
     "cursor-pointer bg-secondary text-[#222] p-2 pl-2 rounded-full";
@@ -12,25 +17,27 @@ function DropdownMenu() {
 
   // Authentication start
   const handleLogin = () => {
-    // Perform login logic (e.g., API call, authentication)
-    // If login is successful, set isAuthenticated to true
     setIsAuthenticated(true);
   };
 
   const handleLogout = () => {
-    // Perform logout logic
-    // If logout is successful, set isAuthenticated to false
     setIsAuthenticated(false);
   };
+  // Authentication end
+
   return (
     <div className="z-30 flex flex-col uppercase text-xs bg-primary w-[180px] text-white px-5 pt-5 pb-6 gap-5 rounded font-bold relative">
       <NavLink
+        onClick={handleLinkClick}
         to="/"
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
       >
-        <p className="cursor-pointer font-Roboto">Home</p>
+        <p onClick={handleLinkClick} className="cursor-pointer font-Roboto">
+          Home
+        </p>
       </NavLink>
       <NavLink
+        onClick={handleLinkClick}
         to="/residential"
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
       >
