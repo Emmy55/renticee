@@ -124,7 +124,7 @@ function DashboardTemp({
 
   return (
     <>
-      <div className="">
+      <div className="pl-5">
         <div className="flex lg:overflow-visible overflow-hidden">
           <div className="h-screen lg:w-80 relative  top-6 lg:-top-16">
             <div className="flex space-x-3 w-screen-5 lg:w-20 lg:top-0 top-1 relative left-5 lg:left-7">
@@ -601,7 +601,7 @@ function DashboardTemp({
               {/* TV Subscription end */}
               {/* Change pin start */}
               {showAdditionalDiv7 && (
-                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[87%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
+                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[89%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
                   <img src={NetworkLogo} className="w-36 mt-7" />
                   <p className="font-bold text-xl relative ml-1">Change Pin</p>
                   {/* <SelectData />
