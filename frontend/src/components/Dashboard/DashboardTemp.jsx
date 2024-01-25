@@ -140,7 +140,7 @@ function DashboardTemp({
               </div>
             </div>
 
-            <div className="lg:hidden relative -top-[74px] min-[425px]:right-[-5%] min-[765px]:right-[-1%]">
+            <div className="lg:hidden relative -top-[74px] right-[-6%] min-[765px]:right-[-1%]">
               {showCloseMenu ? (
                 <FontAwesomeIcon
                   className="text-black h-6 relative left-[67.5%] top-1 z-40 -ml-3 lg:-ml-0 lg:left-0 "

@@ -73,7 +73,7 @@ function DropdownMenu({
       {/* <div className="hidden "> */}
       <Link to="/billpayment">
         <div
-          className="flex space-x-6 relative right-7 w-60 pl-4 top-7 py-4"
+          className="flex space-x-6 relative right-7 w-60 pl-4 py-4"
           style={{ backgroundColor: Color5, color: tempColor5 }}
         >
           <img
@@ -87,8 +87,8 @@ function DropdownMenu({
         </div>
       </Link>
 
-      <hr className="text-black relative -left- top-14 w-76" />
-      <div className="relative top-20 right-6">
+      <hr className="text-black relative top-[-20px] w-76" />
+      <div className="relative top-[-10px] right-6">
         <p className="pb-4 font-bold text-sm relative left-5">MAIN MENU</p>
 
         <Link to="/MtnData">
@@ -124,7 +124,7 @@ function DropdownMenu({
         </Link>
         <Link to="/TvSub">
           <div
-            className="flex py-4 w-60 space-x-4  pl-4 "
+            className="flex py-4 w-60 space-x-4 mt-[-10px] pl-4 "
             style={{ backgroundColor: Color2, color: tempColor2 }}
           >
             <img
@@ -140,7 +140,7 @@ function DropdownMenu({
         </Link>
         <Link to="/ElectricityBills">
           <div
-            className="flex py-4 w-60 space-x-2  pl-4 "
+            className="flex py-4 w-60 space-x-2 mt-[-10px] pl-4 "
             style={{ backgroundColor: Color3, color: tempColor3 }}
           >
             <img
@@ -156,7 +156,7 @@ function DropdownMenu({
         </Link>
         <Link to="/ChangePin">
           <div
-            className="flex py-4 w-60 space-x-4  pl-4 "
+            className="flex py-4 w-60 space-x-4 mt-[-15px] pl-4 "
             style={{ backgroundColor: Color4, color: tempColor4 }}
           >
             <img
@@ -172,7 +172,6 @@ function DropdownMenu({
         </Link>
         {/* </div> */}
       </div>
-      <div className="mt-3 h-10"></div>
     </div>
   );
 }
