@@ -124,7 +124,7 @@ function DashboardTemp({
 
   return (
     <>
-      <div className="pl-5">
+      <div className="">
         <div className="flex lg:overflow-visible overflow-hidden">
           <div className="h-screen lg:w-80 relative  top-6 lg:-top-16">
             <div className="flex space-x-3 w-screen-5 lg:w-20 lg:top-0 top-1 relative left-5 lg:left-7">
@@ -366,7 +366,7 @@ function DashboardTemp({
 
               {/* Buy data start */}
               {showAdditionalDiv1 && (
-                <div className="relative w-[360px] lg:w-[760px] min-[350px]:translate-x-[87%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden h-screen">
+                <div className="relative w-[360px] lg:w-[760px] min-[350px]:translate-x-[88.5%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden h-screen">
                   <img src={NetworkLogo} className="w-24 lg:w-36 mt-7" />
                   <p className="font-bold relative bottom-7 left-6 lg:left-12 ml-1">
                     DATA
@@ -426,7 +426,7 @@ function DashboardTemp({
               {/* Buy data end */}
               {/* Electricity bill start */}
               {showAdditionalDiv6 && (
-                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[87%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
+                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[88%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
                   {/* <img src={NetworkLogo} className="w-36 mt-7" /> */}
                   <p className="font-semibold text-lg mb-5">
                     Electricity Token
@@ -463,7 +463,7 @@ function DashboardTemp({
               {/* Electricity bill start */}
               {/* Buy airtem start */}
               {showAdditionalDiv2 && (
-                <div className="relative w-[340px] min-[350px]:translate-x-[79%] min-[400px]:translate-x-[72%] min-[430px]:translate-x-[70%] min-[450px]:translate-x-[65%] min-[500px]:translate-x-[55%] min-[600px]:translate-x-[40%] min-[700px]:translate-x-[30%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[50px] lg:w-[500px] left-11">
+                <div className="relative w-[340px] min-[350px]:translate-x-[80%] min-[400px]:translate-x-[72%] min-[430px]:translate-x-[70%] min-[450px]:translate-x-[65%] min-[500px]:translate-x-[55%] min-[600px]:translate-x-[40%] min-[700px]:translate-x-[30%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[50px] lg:w-[500px] left-11">
                   <img src={NetworkLogo} className="w-24 lg:w-36 mt-7" />
                   <div className="mt-7">
                     <label className="">Amount</label>
@@ -531,7 +531,7 @@ function DashboardTemp({
 
               {/* TV Subscription start */}
               {showAdditionalDiv4 && (
-                <div className="relative w-[340px] min-[350px]:translate-x-[89%] min-[400px]:translate-x-[84%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[50px] lg:w-[500px] h-screen">
+                <div className="relative w-[340px] min-[350px]:translate-x-[90.5%] min-[400px]:translate-x-[84%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[50px] lg:w-[500px] h-screen">
                   <img
                     src={NetworkLogo}
                     className="w-36 ml-[-20px] mt-[-20px] mb-[-20px]"
@@ -601,7 +601,7 @@ function DashboardTemp({
               {/* TV Subscription end */}
               {/* Change pin start */}
               {showAdditionalDiv7 && (
-                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[89%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
+                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[88%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
                   <img src={NetworkLogo} className="w-36 mt-7" />
                   <p className="font-bold text-xl relative ml-1">Change Pin</p>
                   {/* <SelectData />
@@ -718,7 +718,7 @@ function DashboardTemp({
               )}
               {/* Dashboard Temp start */}
               {showAdditionalDiv13 && (
-                <div className="flex absolute mt-20 lg:mt-0 min-[350px]:translate-x-[-11%] min-[400px]:translate-x-[-18%] min-[500px]:translate-x-[-30%] min-[600px]:translate-x-[-45%] min-[800px]:translate-x-[-90%] lg:translate-x-[2%] lg:relative lg:ml-14 overflow-hidden">
+                <div className="flex absolute mt-20 lg:mt-0 min-[350px]:translate-x-[-10%] min-[400px]:translate-x-[-18%] min-[500px]:translate-x-[-30%] min-[600px]:translate-x-[-45%] min-[800px]:translate-x-[-90%] lg:translate-x-[2%] lg:relative lg:ml-14 overflow-hidden">
                   <div className="flex gap-5 flex-wrap mt-10 w-[340px] lg:w-[1000px]">
                     <Link to="/MtnData">
                       <div className="flex flex-col items-center justify-center w-40 lg:w-[217px] lg:h-40  h-40 border shadow-lg lg:hover:scale-105">
