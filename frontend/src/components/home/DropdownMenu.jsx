@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 // import Profile from "../buyerProfile/profile/Profile";
 
-function DropdownMenu() {
+function DropdownMenu(props) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,7 +26,10 @@ function DropdownMenu() {
   // Authentication end
 
   return (
-    <div className="z-30 flex flex-col uppercase text-xs bg-primary w-[180px] text-white px-5 pt-5 pb-6 gap-5 rounded font-bold relative">
+    <div
+      onClick={props.close}
+      className="z-30 flex flex-col uppercase text-xs bg-primary w-[180px] text-white px-5 pt-5 pb-6 gap-5 rounded font-bold relative"
+    >
       <NavLink
         onClick={handleLinkClick}
         to="/"

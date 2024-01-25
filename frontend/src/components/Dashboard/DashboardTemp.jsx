@@ -124,10 +124,10 @@ function DashboardTemp({
 
   return (
     <>
-      <div className="z-40">
+      <div className="">
         <div className="flex lg:overflow-visible overflow-hidden">
-          <div className="h-screen lg:w-80 relative  left-6 z-40 top-6 lg:-top-16">
-            <div className="flex space-x-3 w-screen-5 lg:w-20 lg:top-0 top-1 relative lg:left-7">
+          <div className="h-screen lg:w-80 relative  top-6 lg:-top-16">
+            <div className="flex space-x-3 w-screen-5 lg:w-20 lg:top-0 top-1 relative left-5 lg:left-7">
               <img
                 src={Profile}
                 className="w-10 z-10 lg:-top-0 -top-2 lg:-right-7 right-1 relative mt-1 h-10"
@@ -140,7 +140,7 @@ function DashboardTemp({
               </div>
             </div>
 
-            <div className="lg:hidden relative -top-[74px] min-[425px]:right-[-1%]">
+            <div className="lg:hidden relative -top-[74px] min-[425px]:right-[-5%] min-[765px]:right-[-1%]">
               {showCloseMenu ? (
                 <FontAwesomeIcon
                   className="text-black h-6 relative left-[67.5%] top-1 z-40 -ml-3 lg:-ml-0 lg:left-0 "
@@ -269,39 +269,43 @@ function DashboardTemp({
               </div>
             </div>
           </div>
-
-          <div className="w-4/5 ">
-            <div className="relative top-20 h-screen-2 lg:h-full min-[425px]:right-[28.5pc] right-[24.5pc] md:right-[55.5pc] lg:w-[98%] overflow-hidden lg:pr-3 pr-3 w-96 -ml-28 lg:-ml-0 lg:right-0 lg:top-0">
+          {/* Side bar end */}
+          {/* Temp start */}
+          <div className="lg:relative overflow-hidden">
+            <div className="absolute right-[20pc] lg:left-0 lg:translate-x-0  lg:relative lg:top-0 ">
+              {/* Data top start */}
               {showAdditionalDiv && (
-                <div className="pt-4 flex">
+                <div className="pt-4 mt-20 lg:mt-0 min-[350px]:translate-x-[78%] min-[400px]:translate-x-[75%] min-[430px]:translate-x-[72%] min-[450px]:translate-x-[67%] min-[500px]:translate-x-[51%] min-[600px]:translate-x-[41%] min-[700px]:translate-x-[31%] min-[800px]:translate-x-[15%] min-[900px]:translate-x-[0%] lg:translate-x-[20px] flex w-[360px] overflow-hidden">
                   <Link to="/MtnData">
                     <div className="flex ml-10">
                       <input type="radio" checked={boolean} />
-                      <img src={Mtn} className="w-14 lg:w-20" />
+                      <img src={Mtn} className="w-28 lg:w-36" />
                     </div>
                   </Link>
                   <Link to="/GloData">
                     <div className="flex ml-10">
                       <input type="radio" checked={boolean1} />
-                      <img src={Glo} className="w-14 lg:w-20" />
+                      <img src={Glo} className="w-28 lg:w-36" />
                     </div>
                   </Link>
                   <Link to="/AirtelData">
                     <div className="flex ml-10">
                       <input type="radio" checked={boolean2} />
-                      <img src={Airtel} className="w-14 lg:w-20" />
+                      <img src={Airtel} className="w-28 lg:w-36" />
                     </div>
                   </Link>
                   <Link to="/Ninemobile">
                     <div className="flex ml-10">
                       <input type="radio" checked={boolean3} />
-                      <img src={ninemobile} className="w-14 lg:w-20" />
+                      <img src={ninemobile} className="w-28 lg:w-36" />
                     </div>
                   </Link>
                 </div>
               )}
+              {/* Data top end */}
+              {/* Airtime top start */}
               {showAdditionalDiv3 && (
-                <div className="pt-4 flex">
+                <div className="pt-4 mt-20 lg:mt-0 min-[350px]:translate-x-[79%] min-[400px]:translate-x-[72%] min-[430px]:translate-x-[70%] min-[450px]:translate-x-[65%] min-[500px]:translate-x-[55%] min-[600px]:translate-x-[40%] min-[700px]:translate-x-[30%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[50px] w-[350px] flex">
                   <Link to="/MtnAirtime">
                     <div className="flex ml-10">
                       <input type="radio" checked={boolean} />
@@ -328,8 +332,10 @@ function DashboardTemp({
                   </Link>
                 </div>
               )}
+              {/* Airtime top end */}
+              {/* Tv sub top start */}
               {showAdditionalDiv5 && (
-                <div className="pt-4 flex">
+                <div className="pt-4 mt-20 lg:mt-0 min-[350px]:translate-x-[80%] min-[400px]:translate-x-[75%] min-[430px]:translate-x-[70%] min-[450px]:translate-x-[65%] min-[500px]:translate-x-[50%] min-[600px]:translate-x-[40%] min-[700px]:translate-x-[29%] min-[800px]:translate-x-[15%] min-[900px]:translate-x-[-5%] lg:translate-x-[20px] w-[350px] flex">
                   <Link to="/TvSub">
                     <div className="flex ml-10">
                       <input type="radio" checked={boolean} />
@@ -356,11 +362,13 @@ function DashboardTemp({
             </Link> */}
                 </div>
               )}
+              {/* Tv sub top end */}
 
+              {/* Buy data start */}
               {showAdditionalDiv1 && (
-                <div className="relative left-11 w-96 h-screen">
-                  <img src={NetworkLogo} className="w-36 mt-7" />
-                  <p className="font-bold relative bottom-7 left-12 ml-1">
+                <div className="relative w-[360px] lg:w-[760px] min-[350px]:translate-x-[87%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden h-screen">
+                  <img src={NetworkLogo} className="w-24 lg:w-36 mt-7" />
+                  <p className="font-bold relative bottom-7 left-6 lg:left-12 ml-1">
                     DATA
                   </p>
                   <SelectData />
@@ -370,7 +378,7 @@ function DashboardTemp({
                     <br />
                     <input
                       type="text"
-                      className="border-2 h-12 w-screen-6 lg:w-screen-2 mt-3 focus:outline-none pl-10"
+                      className="border-2 h-12 w-[360px] lg:w-screen-2 mt-3 focus:outline-none pl-10"
                     />
                   </div>
                   {Linking && (
@@ -415,11 +423,12 @@ function DashboardTemp({
                   )}
                 </div>
               )}
-
+              {/* Buy data end */}
+              {/* Electricity bill start */}
               {showAdditionalDiv6 && (
-                <div className="relative left-11 w-96 h-screen mt-20">
+                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[87%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
                   {/* <img src={NetworkLogo} className="w-36 mt-7" /> */}
-                  <p className="font-semibold relative bottom-7 text-lg">
+                  <p className="font-semibold text-lg mb-5">
                     Electricity Token
                   </p>
 
@@ -430,7 +439,7 @@ function DashboardTemp({
                     <br />
                     <input
                       type="text"
-                      className="border-2 h-12 w-screen-6 lg:w-screen-2 mt-3 focus:outline-none pl-10"
+                      className="border-2 h-12 w-[357px] lg:w-[357px] mt-3 focus:outline-none pl-10"
                     />
                   </div>
                   <div className="mt-7">
@@ -438,7 +447,7 @@ function DashboardTemp({
                     <br />
                     <input
                       type="text"
-                      className="border-2 h-12 w-screen-6 lg:w-screen-2 mt-3 focus:outline-none pl-10"
+                      className="border-2 h-12 w-[357px] lg:w-[357px] mt-3 focus:outline-none pl-10"
                     />
                   </div>
                   <Link to="/ConfirmElectricity">
@@ -451,33 +460,29 @@ function DashboardTemp({
                   </Link>
                 </div>
               )}
-
+              {/* Electricity bill start */}
+              {/* Buy airtem start */}
               {showAdditionalDiv2 && (
-                <div className="relative left-11 w-96 h-screen">
-                  <img src={NetworkLogo} className="w-36 mt-7" />
-                  {/* <p className="font-bold relative bottom-7 left-12 ml-1">AIRTIME</p> */}
-                  {/* <SelectData />
-            <SelectDataPlan /> */}
+                <div className="relative w-[340px] min-[350px]:translate-x-[79%] min-[400px]:translate-x-[72%] min-[430px]:translate-x-[70%] min-[450px]:translate-x-[65%] min-[500px]:translate-x-[55%] min-[600px]:translate-x-[40%] min-[700px]:translate-x-[30%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[50px] lg:w-[500px] left-11">
+                  <img src={NetworkLogo} className="w-24 lg:w-36 mt-7" />
                   <div className="mt-7">
-                    <label className="top-5 relative">Amount</label>
+                    <label className="">Amount</label>
                     <br />
-                    <span className="border-2 px-3 py-3 top-12 relative">
-                      &#x20A6;
-                    </span>
-                    <span className="border-2 px-2 py-3 top-12 relative left-12 lg:left-[19.2pc] lg:ml-[70%] ml-48 ">
-                      .00
-                    </span>
-                    <input
-                      type="text"
-                      className="border-2 h-12 pl-10 lg:w-screen-2 w-80 mt-3 focus:outline-none"
-                    />
+                    <div className="flex items-center mt-2">
+                      <span className="border-2 px-3 py-3">&#x20A6;</span>
+                      <input
+                        type="text"
+                        className="border-2 h-[52px] pl-10 w-[264px] focus:outline-none"
+                      />
+                      <span className="border-2 px-2 py-3">.00</span>
+                    </div>
                   </div>
                   <div className="mt-7">
                     <label>Phone Number</label>
                     <br />
                     <input
                       type="text"
-                      className="border-2 pl-10 h-12 lg:w-screen-2 w-80 mt-3 focus:outline-none"
+                      className="border-2 pl-10 h-12  w-[340px] mt-3 focus:outline-none"
                     />
                   </div>
                   {AirLinking && (
@@ -522,20 +527,25 @@ function DashboardTemp({
                   )}
                 </div>
               )}
+              {/* Buy airtem end */}
 
+              {/* TV Subscription start */}
               {showAdditionalDiv4 && (
-                <div className="relative left-11 w-96 h-screen">
-                  <img src={NetworkLogo} className="w-36 mt-7" />
+                <div className="relative w-[340px] min-[350px]:translate-x-[89%] min-[400px]:translate-x-[84%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[50px] lg:w-[500px] h-screen">
+                  <img
+                    src={NetworkLogo}
+                    className="w-36 ml-[-20px] mt-[-20px] mb-[-20px]"
+                  />
                   {/* <p className="font-bold relative bottom-7 left-12 ml-1">DATA</p> */}
                   {/* <SelectData />
             <SelectDataPlan /> */}
-                  <div className="mt-7">
+                  <div className="">
                     <label className="top-5 relative">Select Plan</label>
                     <br />
 
                     <input
                       type="text"
-                      className="border-2 h-12 pl-10 w-screen-6 lg:w-screen-2 mt-9 focus:outline-none"
+                      className="border-2 h-12 pl-10 w-[357px] lg:w-[357px] mt-9 focus:outline-none"
                     />
                   </div>
                   <div className="mt-7">
@@ -543,7 +553,7 @@ function DashboardTemp({
                     <br />
                     <input
                       type="text"
-                      className="border-2 pl-10 h-12 w-screen-6 lg:w-screen-2 mt-3 focus:outline-none"
+                      className="border-2 pl-10 h-12 w-[357px] lg:w-[357px] mt-3 focus:outline-none"
                     />
                   </div>
                   {SubLinking && (
@@ -588,9 +598,10 @@ function DashboardTemp({
               )} */}
                 </div>
               )}
-
+              {/* TV Subscription end */}
+              {/* Change pin start */}
               {showAdditionalDiv7 && (
-                <div className="relative left-11 w-96 h-screen">
+                <div className="relative mt-24 lg:mt-5 w-[360px] lg:w-[760px] min-[350px]:translate-x-[87%] min-[400px]:translate-x-[83%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[25%] min-[900px]:translate-x-[10%] lg:translate-x-[50px] overflow-hidden">
                   <img src={NetworkLogo} className="w-36 mt-7" />
                   <p className="font-bold text-xl relative ml-1">Change Pin</p>
                   {/* <SelectData />
@@ -601,7 +612,7 @@ function DashboardTemp({
 
                     <input
                       type="text"
-                      className="border-2 h-12 pl-10 w-screen-6 lg:w-screen-2 mt-9 focus:outline-none"
+                      className="border-2 h-12 pl-10 w-[357px] lg:w-[357px] mt-9 focus:outline-none"
                     />
                   </div>
                   <div className="mt-7">
@@ -609,7 +620,7 @@ function DashboardTemp({
                     <br />
                     <input
                       type="text"
-                      className="border-2 pl-10 h-12 w-screen-6 lg:w-screen-2 mt-3 focus:outline-none"
+                      className="border-2 pl-10 h-12 w-[357px] lg:w-[357px] mt-3 focus:outline-none"
                     />
                   </div>
                   <button
@@ -620,9 +631,10 @@ function DashboardTemp({
                   </button>
                 </div>
               )}
+              {/* Change pin end */}
 
               {showAdditionalDiv8 && (
-                <div className="relative left-11 w-96 h-screen-3 lg:overflow-visible">
+                <div className="relative left-11  h-screen-3 lg:overflow-visible">
                   <img src={NetworkLogo} className="w-36 mt-7" />
                   <p className="font-bold text-xl relative -ml-3 lg:-ml-1">
                     Instant Wallet Funding
@@ -706,59 +718,39 @@ function DashboardTemp({
               )}
               {/* Dashboard Temp start */}
               {showAdditionalDiv13 && (
-                <div className="relative left-11 w-96 h-screen-3 lg:overflow-visible">
-                  <div className=" flex-wrap flex lg:flex-nowrap space-x-2 mt-10 left-0  w-screen lg:w-[240%] relative right-4 lg:right-0">
-                    <div className="w-40 lg:w-72 lg:h-40  h-40 border shadow-lg p-2">
-                      <Link to="/MtnData">
-                        <img
-                          src={Buydatalogo}
-                          className="w-14  lg:w-16 relative lg:top-2 left-12 top-3 lg:left-[38%] mb-2"
-                        />
+                <div className="flex absolute mt-20 lg:mt-0 min-[350px]:translate-x-[-11%] min-[400px]:translate-x-[-18%] min-[500px]:translate-x-[-30%] min-[600px]:translate-x-[-45%] min-[800px]:translate-x-[-90%] lg:translate-x-[2%] lg:relative lg:ml-14 overflow-hidden">
+                  <div className="flex gap-5 flex-wrap mt-10 w-[340px] lg:w-[1000px]">
+                    <Link to="/MtnData">
+                      <div className="flex flex-col items-center justify-center w-40 lg:w-[217px] lg:h-40  h-40 border shadow-lg lg:hover:scale-105">
+                        <img src={Buydatalogo} className="w-14 lg:w-16 mb-2" />
                         {/* <hr /> */}
-                        <p className="ml-2 mt-1 lg:left-14 left-7 top-5 lg:top-3 relative">
-                          Buy Data
-                        </p>
-                      </Link>
-                    </div>
-
-                    <div className="w-40 lg:w-72 relative left-1 lg:left-0 lg:h-40 border h-40 shadow-lg p-2">
-                      <Link to="/MtnAirtime">
+                        <p className="mt-1 font-Roboto">Buy Data</p>
+                      </div>
+                    </Link>
+                    <Link to="/MtnAirtime">
+                      <div className="flex flex-col items-center justify-center w-40 lg:w-[217px] lg:h-40  h-40 border shadow-lg lg:hover:scale-105">
                         <img
                           src={Buyairtimelogo}
-                          className="w-28 lg:w-36 relative left-4 lg:top-0 top-4 lg:left-6 mb-2"
+                          className="w-28 lg:w-32 mb-2"
                         />
                         {/* <hr /> */}
-                        <p className="ml-2 mt-1 lg:left-12 left-6 lg:top-0 top-5 relative">
-                          Buy Airtime
-                        </p>
-                      </Link>
-                    </div>
-
-                    <div className="lg:w-72 w-40 lg:h-40 border h-40 shadow-lg lg:-left-0 p-2 mt-4 lg:mt-0 relative -left-2">
-                      <Link to="/TvSub">
-                        <img
-                          src={Tvsublogo}
-                          className="w-36 relative lg:left-8 lg:-top-3 -top-5 lg:mb-10 mb-7 mt-5"
-                        />
+                        <p className="mt-1 ml-7 font-Roboto">Buy Airtime</p>
+                      </div>
+                    </Link>
+                    <Link to="/TvSub">
+                      <div className="flex flex-col items-center justify-center w-40 lg:w-[217px] lg:h-40  h-40 border shadow-lg lg:hover:scale-105">
+                        <img src={Tvsublogo} className="w-28 lg:w-36 mb-2" />
                         {/* <hr /> */}
-                        <p className="ml-2 mt-1 lg:-top-12 -top-10 lg:left-8 left-2 relative">
-                          TV Subscription
-                        </p>
-                      </Link>
-                    </div>
-
-                    <div className="w-40 lg:w-72 lg:h-40 border h-40 mt-4 lg:mt-0 relative lg:-left-0 -left-1 shadow-lg p-2">
-                      <Link to="/ElectricityBills">
-                        <img
-                          src={Electricitybillslogo}
-                          className="w-16 relative lg:left-16 lg:mb-10 left-9 mb-8 mt-4"
-                        />
+                        <p className="mt-1 ml-3 font-Roboto">TV Subscription</p>
+                      </div>
+                    </Link>
+                    <Link to="/ElectricityBills">
+                      <div className="flex flex-col items-center justify-center w-40 lg:w-[217px] lg:h-40 h-40 border shadow-lg lg:hover:scale-105">
+                        <img src={Electricitybillslogo} className="w-16 ml-4" />
                         {/* <hr /> */}
-                        <p className="lg:-top-5 lg:left-14 left-5 -top-5 relative">
-                          Electricity Bills
-                        </p>
-                      </Link>
-                    </div>
+                        <p className="mt-1 font-Roboto">Electricity Bills</p>
+                      </div>
+                    </Link>
                   </div>
 
                   {/* <button

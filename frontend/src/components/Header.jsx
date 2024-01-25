@@ -14,6 +14,11 @@ function Header() {
   const [showCloseMenu, setShowCloseMenu] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  const closeNav = () => {
+    setOpenMenu(false);
+    setShowCloseMenu(false);
+  };
+
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
     setShowCloseMenu(!showCloseMenu);
@@ -184,7 +189,7 @@ function Header() {
             />
           )}
           <div className="z-10 absolute right-0">
-            {openMenu && <DropdownMenu />}
+            {openMenu && <DropdownMenu close={closeNav} />}
           </div>
         </div>
         {/* Toogle Menu end */}
