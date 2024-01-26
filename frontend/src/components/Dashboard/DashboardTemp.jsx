@@ -124,8 +124,8 @@ function DashboardTemp({
 
   return (
     <>
-      <div className="">
-        <div className="flex lg:overflow-visible overflow-hidden">
+      <div className="pb-32 lg:pb-0">
+        <div className="mb-20 lg:mb-0 flex lg:overflow-visible overflow-hidden">
           <div className="h-screen lg:w-80 relative  top-6 lg:-top-16">
             <div className="flex space-x-3 w-screen-5 lg:w-20 lg:top-0 top-1 relative left-5 lg:left-7">
               <img
@@ -354,12 +354,6 @@ function DashboardTemp({
                       <img src={Startime} className="w-20" />
                     </div>
                   </Link>
-                  {/* <Link to="/NinemobileAirtime">
-              <div className="flex ml-10">
-                <input type="radio" checked={boolean3} />
-                <img src={ninemobile} className="w-14" />
-              </div>
-            </Link> */}
                 </div>
               )}
               {/* Tv sub top end */}
@@ -586,16 +580,6 @@ function DashboardTemp({
                       </button>
                     </Link>
                   )}
-                  {/* {SubLink3 && (
-                <Link to="/ConfirmNineMAirtime">
-              <button
-                className="text-white px-10 py-3 mt-12 rounded-sm"
-                style={{ backgroundColor: myCustomColor }}
-              >
-                Proceed
-              </button>
-              </Link>
-              )} */}
                 </div>
               )}
               {/* TV Subscription end */}
@@ -633,62 +617,66 @@ function DashboardTemp({
               )}
               {/* Change pin end */}
 
+              {/* Fund wallet start */}
               {showAdditionalDiv8 && (
-                <div className="relative left-11  h-screen-3 lg:overflow-visible">
-                  <img src={NetworkLogo} className="w-36 mt-7" />
-                  <p className="font-bold text-xl relative -ml-3 lg:-ml-1">
+                <div className="relative mt-24 lg:mt-10 h-screen-3 min-[350px]:translate-x-[87.7%] min-[380px]:translate-x-[85.7%] min-[390px]:translate-x-[82.7%] min-[400px]:translate-x-[81%] min-[430px]:translate-x-[78%] min-[450px]:translate-x-[75%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[30%] lg:translate-x-[20px]">
+                  <p className="font-bold text-base lg:text-xl ml-2 lg:-ml-1">
                     Instant Wallet Funding
                   </p>
-                  <div className="lg:w-screen-3 relative lg:right-0 right-8 z-0 pr-10 lg:pr-0 text-sm bg-blue-200 py-3 pl-5 font-semibold mt-6">
-                    <p>
+                  <div className="lg:w-screen-3 relative lg:right-0 z-0 pr-2 lg:pr-5 bg-blue-200 py-3 pl-5 font-semibold mt-6">
+                    <p className="pr-1 text-xs lg:text-[0.8125rem]">
                       Make transfer into any of the account number below and
                       your wallet will be credited instantly. PS: ₦50 bank
                       charges applies.
                     </p>
-                    <p className="text-red-500">
+                    <p className="text-red-500 pr-1 text-xs lg:text-[0.8125rem]">
                       Minimum (₦500) and Maximum(₦500,000). Payment above
                       ₦500,000 should be made into our corporate bank account. .
                     </p>
                   </div>
-                  <div className="flex space-x-2 mt-5 w-screen-2 relative right-4 lg:right-0">
-                    <div className="w-80 lg:h-36 h-28 shadow-lg p-2">
+                  <div className="flex gap-3 mt-5 ">
+                    <div className="flex flex-col items-center w-[111.16px] h-[76.33px] lg:w-[217px] lg:h-[149px] shadow-lg lg:p-2">
                       <img
                         src={WemaLogo}
-                        className="w-36 relative left-0 lg:left-3 mb-2"
+                        className="w-[60px] lg:w-[118px] mt-1 lg:mt-3 mb-2"
                       />
-                      <hr />
-                      <p className="ml-2 mt-1">9264991749</p>
+                      <hr className="w-full" />
+                      <p className="ml-[-40px] lg:ml-[-100px] mt-1 text-[0.60831rem] lg:text-base">
+                        9264991749
+                      </p>
                     </div>
-                    <div className="lg:w-80 lg:h-36 h-28 shadow-lg p-2">
+                    <div className="flex flex-col items-center w-[111.16px] h-[76.33px] lg:w-[217px] lg:h-[149px] shadow-lg lg:p-2">
                       <img
                         src={SterlingLogo}
-                        className="w-36 relative lg:left-3 lg:mb-10 mb-7 mt-5"
+                        className="w-[80px] lg:w-[190px] mt-5 mb-2"
                       />
-                      <hr />
-                      <p className="ml-2 mt-1">9264991749</p>
+                      <hr className="w-full mt-1 lg:mt-5" />
+                      <p className="ml-[-40px] lg:ml-[-100px] mt-1 text-[0.60831rem] lg:text-base">
+                        9264991749
+                      </p>
                     </div>
-                    <div className="w-80 lg:h-36 h-28 shadow-lg p-2">
+                    <div className="flex flex-col items-center w-[111.16px] h-[76.33px] lg:w-[217px] lg:h-[149px] shadow-lg lg:p-2">
                       <img
                         src={MoniepointLogo}
-                        className="w-36 relative lg:left-3 lg:mb-10 mb-8 mt-4"
+                        className="w-[85px] lg:w-[190px] mt-5 mb-1"
                       />
-                      <hr />
-                      <p>9264991749</p>
+                      <hr className="w-full mt-1 lg:mt-5" />
+                      <p className="ml-[-40px] lg:ml-[-100px] mt-1 text-[0.60831rem] lg:text-base">
+                        9264991749
+                      </p>
                     </div>
                   </div>
                   <div className="mt-7 -z-10">
-                    <label className="top-5 relative">Amount</label>
+                    <label className="">Amount</label>
                     <br />
-                    <span className="border-2 px-3 py-3 top-16 mt-4 relative">
-                      &#x20A6;
-                    </span>
-                    <span className="border-2 px-2 py-3 top-16 relative left-[60px] lg:left-[21.6pc] lg:ml-[60%] ml-48 ">
-                      .00
-                    </span>
-                    <input
-                      type="text"
-                      className="border-2 h-12  pl-10 lg:w-screen-2 w-screen-6 mt-7 focus:outline-none"
-                    />
+                    <div className="flex items-center mt-2">
+                      <span className="border-2 px-3 py-[10px]">&#x20A6;</span>
+                      <input
+                        type="text"
+                        className="border-2 h-12  pl-3 lg:w-[590px] w-[280px] focus:outline-none"
+                      />
+                      <span className="border-2 px-2 py-[10px]">.00</span>
+                    </div>
                   </div>
                   <div className="mt-7">
                     <label>How do you want to pay?</label>
@@ -716,6 +704,7 @@ function DashboardTemp({
                   <img src={Paystack} className="w-60 mt-5" />
                 </div>
               )}
+              {/* Fund wallet end */}
               {/* Dashboard Temp start */}
               {showAdditionalDiv13 && (
                 <div className="flex absolute mt-20 lg:mt-0 min-[350px]:translate-x-[-10%] min-[400px]:translate-x-[-18%] min-[500px]:translate-x-[-30%] min-[600px]:translate-x-[-45%] min-[800px]:translate-x-[-90%] lg:translate-x-[2%] lg:relative lg:ml-14 overflow-hidden">
@@ -752,64 +741,59 @@ function DashboardTemp({
                       </div>
                     </Link>
                   </div>
-
-                  {/* <button
-                    className="text-white px-10 py-3 mt-12 rounded-sm"
-                    style={{ backgroundColor: myCustomColor }}
-                  >
-                    Proceed
-                  </button> */}
-                  {/* <img src={Paystack} className="w-60 mt-5" /> */}
                 </div>
               )}
               {/* Dashboard Temp end */}
 
+              {/* Buy data transaction details start */}
               {showAdditionalDiv9 && (
-                <div className="relative left-11 w-screen-2 h-screen">
-                  <p className="font-semibold relative top-1 mt-4 whitespace-nowrap">
+                <div className="relative w-[310px] lg:w-[670px] mt-24 lg:mt-10 min-[350px]:translate-x-[92.7%] min-[380px]:translate-x-[89.7%] min-[390px]:translate-x-[87.7%] min-[400px]:translate-x-[85%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[80%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[20px]">
+                  <p className="font-bold font-Roboto relative top-1 mt-4 ">
                     Please Confirm your Transaction Details
                   </p>
-                  <img src={NetworkLogo} className="w-36 mt-7" />
+                  <img src={NetworkLogo} className="w-24 lg:w-36 mt-7" />
 
                   <div className="mt-7">
-                    <hr className="lg:w-screen-2 w-80" />
-                    <p
-                      className="float-right relative lg:right-36 -right-32 p-2"
-                      style={
-                        {
-                          // left: `${LeftValue}px`,
-                        }
-                      }
-                    >
-                      {SimType} {Amount}
-                    </p>
-                    <p className="pl-3 p-2">Product</p>
-                    <hr className="lg:w-screen-2 w-80" />
-                    <p className="float-right relative lg:right-28 -right-36 p-2 mr-2">
-                      07038012912
-                    </p>
-                    <p className="pl-3 p-2">Phone</p>
-                    <hr className="lg:w-screen-2 w-80" />
-                    <p className="float-right relative lg:right-40 -right-24 mr-4 p-2">
-                      &#x20A6;260
-                    </p>
-                    <p className="pl-3 p-2">Amount</p>
-                    <hr className="lg:w-screen-2 w-80" />
-                    <p className="float-right relative lg:right-48 -right-16 mr-2 p-2">
-                      &#x20A6;
-                    </p>
-                    <p className="pl-3 p-2">Discount</p>
-                    <hr className="lg:w-screen-2 w-80" />
-                    <p className="float-right relative lg:right-16 -right-44 top-8 lg:top-0 text-sm lg:text-base mr-2 p-2">
-                      6887094653971120
-                    </p>
-                    <p className="pl-3 p-2">Transaction ID</p>
-                    <hr className="lg:w-screen-2 w-80" />
-                    <p className="float-right relative lg:right-36 -right-28 mr-2 p-2">
-                      Pending
-                    </p>
-                    <p className="pl-3 p-2">Status</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    {/* New start */}
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Product
+                      </p>
+                      <p className="font-Roboto">
+                        {SimType} {Amount}
+                      </p>
+                    </div>
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Phone
+                      </p>
+                      <p className="font-Roboto">07038012912</p>
+                    </div>
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Amount
+                      </p>
+                      <p className="font-Roboto">&#x20A6; 260</p>
+                    </div>
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Discount
+                      </p>
+                      <p className="font-Roboto">&#x20A6;</p>
+                    </div>
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Transaction ID
+                      </p>
+                      <p className="font-Roboto">6887094653971120</p>
+                    </div>
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Status
+                      </p>
+                      <p className="font-Roboto">Pending</p>
+                    </div>
+                    {/* New end */}
                   </div>
                   <button
                     className="text-white px-10 py-3 mt-12 rounded-sm"
@@ -819,6 +803,7 @@ function DashboardTemp({
                   </button>
                 </div>
               )}
+              {/* Buy data transaction details end */}
 
               {showAdditionalDiv10 && (
                 <div className="relative left-11 w-screen-2 h-screen">
@@ -868,73 +853,72 @@ function DashboardTemp({
                 </div>
               )}
 
-              {/*  */}
+              {/* Electricity Bills transaction details start */}
               {showAdditionalDiv11 && (
-                <div className="relative left-11 w-screen-2 h-screen-3">
-                  <p className="font-semibold relative top-1 mt-4 whitespace-nowrap ">
+                <div className="relative w-[310px] lg:w-[670px] mt-24 lg:mt-10 min-[350px]:translate-x-[92.7%] min-[380px]:translate-x-[89.7%] min-[390px]:translate-x-[87.7%] min-[400px]:translate-x-[85%] min-[430px]:translate-x-[80%] min-[450px]:translate-x-[80%] min-[500px]:translate-x-[60%] min-[600px]:translate-x-[50%] min-[700px]:translate-x-[40%] min-[800px]:translate-x-[20%] min-[900px]:translate-x-[0%] lg:translate-x-[20px]">
+                  <p className="font-bold font-Roboto relative top-1 mt-4">
                     Please Confirm your Transaction Details
                   </p>
                   <img src={NetworkLogo} className="w-36 mt-7" />
 
                   <div className="mt-7">
-                    <hr className="lg:w-screen-2 w-80" />
+                    {/* New start */}
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Product
+                      </p>
+                      <p className="font-Roboto">Electricity</p>
+                    </div>
 
-                    <p
-                      className="float-right relative p-2 -right-16 lg:right-32"
-                      style={
-                        {
-                          // left: `${LeftValue}vw`,
-                          // left: `${MobileLeftValue}px`,
-                          // Assuming LeftValue is a number representing pixels
-                        }
-                      }
-                    >
-                      Electricity
-                    </p>
-                    <p className="pl-3 p-2">Product</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Disco
+                      </p>
+                      <p className="font-Roboto">BEDC Benin Electricity</p>
+                    </div>
 
-                    <p className="float-right relative lg:right-7 -right-40 top-8 lg:top-0 p-2 mr-2">
-                      BEDC Benin Electricity
-                    </p>
-                    <p className="pl-3 p-2">Disco</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Meter Type
+                      </p>
+                      <p className="font-Roboto">Prepaid</p>
+                    </div>
 
-                    <p className="float-right relative lg:right-28 -right-20 mr-6 p-2">
-                      Prepaid
-                    </p>
-                    <p className="pl-3 p-2 whitespace-nowrap">Meter Type</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Meter Number
+                      </p>
+                      <p className="font-Roboto">1234567898654</p>
+                    </div>
 
-                    <p className="float-right relative lg:right-16 -right-32 lg:top-0 top-9 mr-4 p-2">
-                      1234567898654
-                    </p>
-                    <p className="pl-3 p-2">Meter Number</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Amount
+                      </p>
+                      <p className="font-Roboto">&#x20A6; 3,000</p>
+                    </div>
 
-                    <p className="float-right relative lg:right-32 -right-16 mr-4 p-2">
-                      &#x20A6;3,000
-                    </p>
-                    <p className="pl-3 p-2">Amount</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Discount
+                      </p>
+                      <p className="font-Roboto">&#x20A6;</p>
+                    </div>
 
-                    <p className="float-right relative lg:right-40 -right-8 mr-6 p-2">
-                      &#x20A6;
-                    </p>
-                    <p className="pl-3 p-2">Discount</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Transaction ID
+                      </p>
+                      <p className="font-Roboto">6887094653971120</p>
+                    </div>
 
-                    <p className="float-right relative lg:right-12 -right-36 lg:top-0 top-8 mr-2 p-2">
-                      6887094653971120
-                    </p>
-                    <p className="pl-3 p-2">Transaction ID</p>
-                    <hr className="lg:w-screen-2 w-80" />
-
-                    <p className="float-right relative lg:right-36 -right-12 -mr-2 p-2">
-                      Pending
-                    </p>
-                    <p className="pl-3 p-2">Status</p>
-                    <hr className="lg:w-screen-2 w-80" />
+                    <div className="flex items-center border-y py-2">
+                      <p className="font-Roboto w-[110px] mr-10 lg:mr-52">
+                        Status
+                      </p>
+                      <p className="font-Roboto">Pending</p>
+                    </div>
+                    {/* New end */}
                   </div>
                   <button
                     className="text-white px-10 py-3 mt-12 rounded-sm"
@@ -944,7 +928,7 @@ function DashboardTemp({
                   </button>
                 </div>
               )}
-              {/*  */}
+              {/* Electricity Bills transaction details end */}
             </div>
           </div>
         </div>

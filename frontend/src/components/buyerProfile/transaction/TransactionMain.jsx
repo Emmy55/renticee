@@ -54,8 +54,8 @@ function TransactionMain() {
     <div>
       <div className="">
         <div>
-          <div className=" mt-8">
-            <div className="pl-5">
+          <div className="mt-8">
+            <div className="pl-3 min-[380px]:pl-5">
               <h1 className="text-2xl font-bold mb-4">Transaction History</h1>
               <div className="flex gap-4 md:gap-10">
                 <DateRangePicker onDateChange={handleDateChange} />
