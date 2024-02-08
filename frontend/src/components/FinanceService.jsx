@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 import Item from "./Item.jsx";
 import Aside from "./Aside.jsx";
 import CurrentlyAvailableProperty from "./CurrentlyAvailableProperty.jsx";
+import React, { useState, useEffect } from 'react';
+
 
 function FInanceService({
   heroText,
@@ -31,6 +33,9 @@ function FInanceService({
 }) {
   const myCustomColor = "#EAEAEA";
   const myCustomColor1 = "#035FCE";
+
+
+ 
 
   return (
     <>

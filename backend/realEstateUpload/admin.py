@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models import EstateUpload
+from .models import realEstateUpload
 
 
 # Register your models here.
-@admin.register(EstateUpload)
+@admin.register(realEstateUpload)
 class EstateUploadAdmin(admin.ModelAdmin):
     list_display = [
         "name",

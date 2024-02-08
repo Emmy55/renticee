@@ -27,7 +27,7 @@ class CommaSeparatedIntegerField(models.DecimalField):
     def formated_price(self):
         return "{:,.2f}".format(self.new_price)
 
-class EstateUpload(models.Model):
+class realEstateUpload(models.Model):
     name = models.CharField(max_length=200)
 
     image = models.ImageField(upload_to="estateUpload_image//%Y/%m/%d", blank=True)
@@ -58,11 +58,11 @@ class EstateUpload(models.Model):
         indexes = [
             models.Index(fields=["name"]),
         ]
-        verbose_name = "estateUpload"
-        verbose_name_plural = "estateUploads"
+        verbose_name = "realEstateUpload"
+        verbose_name_plural = "realEstateUploads"
 
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("kobosh:estate_list_by_estateUpload", args=[self.slug])
+        return reverse("realEstateUpload:estate_list_by_estateUpload", args=[self.slug])

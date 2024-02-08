@@ -60,7 +60,7 @@ function AgentPostPics() {
 
   const handleScrollRight = () => {
     if (scrollContainerRef.current) {
-      const newScrollPosition = scrollPosition + 100; // Adjust the scroll amount as needed
+      const newScrollPosition = scrollPosition + 100;
       setScrollPosition(newScrollPosition);
       scrollContainerRef.current.scrollTo({
         left: newScrollPosition,
