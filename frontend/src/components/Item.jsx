@@ -35,7 +35,7 @@ function Item() {
       {items.map(item => (
         <div key={item.id} className="pb-12 lg:pb-20">
       <div>
-      <Link to="/agentpostprofile">
+      <Link to={`/agentpostprofile/${item.id}`}>
         <div className="w-full object-cover h-[219.48px] rounded-t overflow-hidden relative lg:hover:scale-105 cursor-pointer">
           <div className="absolute w-full h-[219.48px] opacity-45 bg-gradient-to-t from-black to-transparent via-opacity-50"></div>
           <img

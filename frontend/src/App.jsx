@@ -159,7 +159,7 @@ function App() {
           <Route path="/notification" element={<Notification />} />
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/agentprofile" element={<AgentProfile />} />
-          <Route path="/agentpostprofile" element={<AgentPostProfile />} />
+          <Route path="/agentpostprofile/:id" element={<AgentPostProfile />} />
           <Route path="/BillPayment" element={<BillPayment />} />
         </Routes>
         <CustomFooter />

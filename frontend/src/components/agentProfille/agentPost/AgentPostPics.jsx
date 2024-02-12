@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import AgentPic from "../AgentPic";
 import PostImg from "../images/post-img.svg";
 import Camera from "../images/camera.svg";
@@ -13,6 +13,7 @@ import Item5 from "./images/item5.svg";
 import Item6 from "./images/item6.svg";
 import Item7 from "./images/item7.svg";
 import Item8 from "./images/item8.svg";
+import axios from "axios";
 
 const Item = [
   {
@@ -69,14 +70,39 @@ function AgentPostPics() {
     }
   };
 
+  const [items, setItems] = useState([]);
+  const [images, setImages] = useState([]);
+  useEffect(() => {
+    async function fetchItems() {
+      try {
+        const response = await axios.get(
+          "http://127.0.0.1:8000/api/model/realEstateUpload/"
+        );
+        setItems(response.data);
+        console.log(response.data);
+
+        // const images = Object.keys(response.data)
+        //   .filter((key) => key.startsWith("image"))
+        //   .map((key) => response.data[key]);
+
+        // console.log("Image URLs:", images);
+        // setImageUrls(images);
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      }
+    }
+    fetchItems();
+  }, []);
+
   return (
     <div className="pb-10">
       <div>
+        {/* {items.map((itemss) => ( */}
         <div className="mt-10">
           <div className="flex items-center">
             <img src={LocationBlackIcon} alt="" />
             <p className="text-[1.1875rem] text-[#282D3A] font-Roboto lg:text-[1.75rem]">
-              Design District, Miami
+              {/* {itemss.locationOfProperty} */}
             </p>
           </div>
           <div className="overflow-hidden relative cursor-pointer mt-5">
@@ -90,7 +116,7 @@ function AgentPostPics() {
               <div className="flex items-center gap-2">
                 <img src={Camera} alt="Camera" className="" />
                 <p className="text-[0.8125rem] text-white font-medium font-Roboto">
-                  {Item.length}
+                  {/* {itemss.numberOfImages} */}
                 </p>
               </div>
             </div>
@@ -101,18 +127,33 @@ function AgentPostPics() {
               ref={scrollContainerRef}
               className="no-scrollbar flex gap-2 w-[712px] overflow-x-scroll"
             >
-              {Item.map((item) => (
-                <img
-                  key={item.id}
-                  src={item.image}
-                  alt=""
-                  className={`w-[100px] h-[60px] cursor-pointer ${
-                    selectedImage === item.image
-                      ? "opacity-100"
-                      : "opacity-50 lg:hover:scale-105"
-                  }`}
-                  onClick={() => handleClick(item.image)}
-                />
+              {items.map((item, index) => (
+                <div
+                  className="no-scrollbar flex gap-2 w-[712px] overflow-x-scroll"
+                  key={index}
+                >
+                  {" "}
+                  {/* Using index as key, ensure it's unique */}
+                  {Object.keys(item).map((key, i) => {
+                    // Check if the key contains 'image' to filter out other properties
+                    if (key.includes("image")) {
+                      return (
+                        <img
+                          key={i} // Assuming i can act as a unique key here
+                          src={item[key]}
+                          alt=""
+                          className={`w-[100px] h-[60px] cursor-pointer ${
+                            selectedImage === item[key]
+                              ? "opacity-100"
+                              : "opacity-50 lg:hover:scale-105"
+                          }`}
+                          onClick={() => handleClick(item[key])}
+                        />
+                      );
+                    }
+                    return null; // If key doesn't contain 'image', return null
+                  })}
+                </div>
               ))}
             </div>
             <img
@@ -124,6 +165,7 @@ function AgentPostPics() {
           </div>
           {/* Other pictures end */}
         </div>
+        {/* ))} */}
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
+import React, { useState, useEffect } from 'react';
 import Button from "./Button.jsx";
 import Button2 from "./Button2.jsx";
 import Button3 from "./Button3.jsx";
 import Button4 from "./Button4.jsx";
 import Sort from "./Sort.jsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   faChevronLeft,
@@ -16,7 +17,6 @@ import { Link } from "react-router-dom";
 import Item from "./Item.jsx";
 import Aside from "./Aside.jsx";
 import CurrentlyAvailableProperty from "./CurrentlyAvailableProperty.jsx";
-import React, { useState, useEffect } from 'react';
 
 
 function FInanceService({
