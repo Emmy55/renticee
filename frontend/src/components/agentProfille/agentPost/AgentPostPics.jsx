@@ -95,14 +95,16 @@ function AgentPostPics() {
   }, []);
 
   return (
-    <div className="pb-10">
+    <>
+      <div className="pb-10">
+    {items.map((item, index) => (
       <div>
         {/* {items.map((itemss) => ( */}
         <div className="mt-10">
           <div className="flex items-center">
             <img src={LocationBlackIcon} alt="" />
             <p className="text-[1.1875rem] text-[#282D3A] font-Roboto lg:text-[1.75rem]">
-              {/* {itemss.locationOfProperty} */}
+              {item.locationOfProperty}
             </p>
           </div>
           <div className="overflow-hidden relative cursor-pointer mt-5">
@@ -116,7 +118,7 @@ function AgentPostPics() {
               <div className="flex items-center gap-2">
                 <img src={Camera} alt="Camera" className="" />
                 <p className="text-[0.8125rem] text-white font-medium font-Roboto">
-                  {/* {itemss.numberOfImages} */}
+                  {item.numberOfImages}
                 </p>
               </div>
             </div>
@@ -127,7 +129,7 @@ function AgentPostPics() {
               ref={scrollContainerRef}
               className="no-scrollbar flex gap-2 w-[712px] overflow-x-scroll"
             >
-              {items.map((item, index) => (
+              
                 <div
                   className="no-scrollbar flex gap-2 w-[712px] overflow-x-scroll"
                   key={index}
@@ -154,7 +156,7 @@ function AgentPostPics() {
                     return null; // If key doesn't contain 'image', return null
                   })}
                 </div>
-              ))}
+              
             </div>
             <img
               src={ArrowRight}
@@ -167,7 +169,9 @@ function AgentPostPics() {
         </div>
         {/* ))} */}
       </div>
+      ))}
     </div>
+    </>
   );
 }
 

@@ -1,9 +1,32 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import ProfilePic from "./images/profile-pic.svg";
 import ContactMeIcon from "./images/contact-me-icon.svg";
 
 function ContactMe(props) {
+  const [items, setItems] = useState([]);
+  const [images, setImages] = useState([]);
+  useEffect(() => {
+    async function fetchItems() {
+      try {
+        const response = await axios.get(
+          "http://127.0.0.1:8000/api/model/realEstateUpload/"
+        );
+        setItems(response.data);
+        console.log(response.data);
+
+        // const images = Object.keys(response.data)
+        //   .filter((key) => key.startsWith("image"))
+        //   .map((key) => response.data[key]);
+
+        // console.log("Image URLs:", images);
+        // setImageUrls(images);
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      }
+    }
+    fetchItems();
+  }, []);
   return (
     <div className={`${props.size}`}>
       <div className="flex flex-col items-center justify-center px-2 h-[200px] lg:w-[423px] lg:h-[235.19px] border border-[#E4E5E7] shadow-sm md:shadow md-lg:shadow-lg">

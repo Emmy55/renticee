@@ -10,6 +10,7 @@ function AgentProfile() {
 
     // Additional cleanup or side effect code if needed
   }, []);
+  
   return (
     <div>
       <div className="px-5 sm:px-10 xl:px-20 mt-10 flex flex-col lg:flex-row sm:items-start lg:items-center justify-between">
