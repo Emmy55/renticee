@@ -1,34 +1,29 @@
-import React, {useEffect, useState} from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 import ProfilePic from "./images/profile-pic.svg";
 import ContactMeIcon from "./images/contact-me-icon.svg";
 
 function ContactMe(props) {
   const [items, setItems] = useState([]);
-  const [images, setImages] = useState([]);
+
   useEffect(() => {
-    async function fetchItems() {
-      try {
-        const response = await axios.get(
-          "http://127.0.0.1:8000/api/model/realEstateUpload/"
-        );
-        setItems(response.data);
-        console.log(response.data);
-
-        // const images = Object.keys(response.data)
-        //   .filter((key) => key.startsWith("image"))
-        //   .map((key) => response.data[key]);
-
-        // console.log("Image URLs:", images);
-        // setImageUrls(images);
-      } catch (error) {
-        console.error("Error fetching images:", error);
+      async function fetchItems() {
+          try {
+              const response = await axios.get('http://127.0.0.1:8000/api/model/realEstateUpload/');
+              setItems(response.data);
+              console.log(response.data)
+          } catch (error) {
+              console.error('Error fetching items:', error);
+          }
       }
-    }
-    fetchItems();
+      fetchItems();
   }, []);
   return (
-    <div className={`${props.size}`}>
+    <>
+      {items.map(item => (
+    <div key={item.id} className={`${props.size}`}>
       <div className="flex flex-col items-center justify-center px-2 h-[200px] lg:w-[423px] lg:h-[235.19px] border border-[#E4E5E7] shadow-sm md:shadow md-lg:shadow-lg">
         <div className="flex items-center gap-5 w-[321.09px] lg:w-[357px]">
           <div className="w-[47.21px] h-[47.21px] lg:w-[48px] lg:h-[48px] rounded-full object-cover">
@@ -40,7 +35,7 @@ function ContactMe(props) {
           </div>
           <div>
             <p className="text-[1.16788rem] text-[#404145] font-bold font-Roboto lg:text-[1.1875rem]">
-              Bright Moses
+            {item.posterName}
             </p>
           </div>
         </div>
@@ -56,6 +51,8 @@ function ContactMe(props) {
         {/* Contact me button end */}
       </div>
     </div>
+    ))}
+    </>
   );
 }
 

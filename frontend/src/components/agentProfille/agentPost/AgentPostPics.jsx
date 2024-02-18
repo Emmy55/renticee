@@ -98,7 +98,7 @@ function AgentPostPics() {
     <>
       <div className="pb-10">
     {items.map((item, index) => (
-      <div>
+      <div key={item.id}>
         {/* {items.map((itemss) => ( */}
         <div className="mt-10">
           <div className="flex items-center">
@@ -161,7 +161,7 @@ function AgentPostPics() {
             <img
               src={ArrowRight}
               alt=""
-              className="cursor-pointer w-5"
+              className="cursor-pointer z-50 w-5"
               onClick={handleScrollRight}
             />
           </div>
