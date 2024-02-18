@@ -166,14 +166,7 @@ function FInanceService({
               <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-5">
                 <Item />
                 <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
+               
 
                 {/* next item start */}
                 <div className="flex mt-16">

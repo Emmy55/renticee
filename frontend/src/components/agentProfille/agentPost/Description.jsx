@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function Description() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+      async function fetchItems() {
+          try {
+              const response = await axios.get('http://127.0.0.1:8000/api/model/realEstateUpload/');
+              setItems(response.data);
+              console.log(response.data)
+          } catch (error) {
+              console.error('Error fetching items:', error);
+          }
+      }
+      fetchItems();
+  }, []);
   return (
-    <div className="mt-10">
+    <>
+    {items.map(item => (
+    <div key={item.id} className="mt-10">
       <p className="text-[1.1875rem] text-[#222325] font-bold font-Roboto">
-        Description
+      {item.description}
       </p>
       <p className="text-base text-[#404145] font-Roboto mt-3">
-        Hi, I'm Bright Moses, your dedicated real estate professional! With a
-        passion for helping people find their dream homes, I bring expertise,
-        integrity, and enthusiasm to every client interaction. I thrive on
-        understanding your needs and providing personalized solutions to make
-        your real estate journey smooth and successful. Let's work together to
-        turn your property dreams into reality!
+      {item.posterName}
       </p>
     </div>
+    ))}
+    </>
   );
 }
 
